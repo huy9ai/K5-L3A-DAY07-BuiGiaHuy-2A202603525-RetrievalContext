@@ -10,6 +10,6 @@
   "context_hit": 0,
   "context_hit_rate": 0.0,
   "avg_context_chars": 242.3,
-  "median_ms": 0.34,
+  "median_ms": 0.32,
   "service_cost_usd": 0.0
 }

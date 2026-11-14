@@ -107,7 +107,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 0.526,
+    "elapsed_ms": 0.483,
     "hit1": true,
     "hit3": true,
     "context_hit": false
@@ -222,7 +222,7 @@
       "openstax-ics-2024_p022_para_02"
     ],
     "context_chars": 493,
-    "elapsed_ms": 0.336,
+    "elapsed_ms": 0.335,
     "hit1": true,
     "hit3": true,
     "context_hit": false
@@ -335,7 +335,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 0.424,
+    "elapsed_ms": 0.327,
     "hit1": true,
     "hit3": true,
     "context_hit": false
@@ -448,7 +448,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 0.356,
+    "elapsed_ms": 0.312,
     "hit1": true,
     "hit3": true,
     "context_hit": false
@@ -561,7 +561,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 0.243,
+    "elapsed_ms": 0.248,
     "hit1": false,
     "hit3": true,
     "context_hit": false
@@ -674,7 +674,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 0.326,
+    "elapsed_ms": 0.291,
     "hit1": true,
     "hit3": true,
     "context_hit": false
@@ -789,7 +789,7 @@
       "openstax-ics-2024_p027_para_01"
     ],
     "context_chars": 562,
-    "elapsed_ms": 0.33,
+    "elapsed_ms": 0.322,
     "hit1": true,
     "hit3": true,
     "context_hit": false
@@ -904,7 +904,7 @@
       "openstax-ics-2024_p028_para_04"
     ],
     "context_chars": 555,
-    "elapsed_ms": 0.308,
+    "elapsed_ms": 0.297,
     "hit1": true,
     "hit3": true,
     "context_hit": false
@@ -1019,7 +1019,7 @@
       "openstax-ics-2024_p040_para_01"
     ],
     "context_chars": 777,
-    "elapsed_ms": 0.351,
+    "elapsed_ms": 0.32,
     "hit1": true,
     "hit3": true,
     "context_hit": false
@@ -1134,7 +1134,7 @@
       "openstax-ics-2024_p027_para_01"
     ],
     "context_chars": 562,
-    "elapsed_ms": 0.307,
+    "elapsed_ms": 0.302,
     "hit1": true,
     "hit3": true,
     "context_hit": false
@@ -1247,7 +1247,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 0.285,
+    "elapsed_ms": 0.271,
     "hit1": false,
     "hit3": true,
     "context_hit": false
@@ -1365,7 +1365,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 0.319,
+    "elapsed_ms": 0.666,
     "hit1": true,
     "hit3": true,
     "context_hit": false
@@ -1480,7 +1480,7 @@
       "openstax-ics-2024_p059_para_01"
     ],
     "context_chars": 686,
-    "elapsed_ms": 0.345,
+    "elapsed_ms": 0.329,
     "hit1": true,
     "hit3": true,
     "context_hit": false
@@ -1593,7 +1593,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 0.457,
+    "elapsed_ms": 0.398,
     "hit1": true,
     "hit3": true,
     "context_hit": false
@@ -1706,7 +1706,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 0.416,
+    "elapsed_ms": 0.381,
     "hit1": true,
     "hit3": true,
     "context_hit": false

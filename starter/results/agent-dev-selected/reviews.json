@@ -1,1 +1,169 @@
-[]
+[
+  {
+    "query_id": "q01",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p021_para_00'] khớp trang nguồn [21]."
+  },
+  {
+    "query_id": "q02",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p022_para_00'] khớp trang nguồn [22]."
+  },
+  {
+    "query_id": "q03",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p023_para_01'] khớp trang nguồn [23]."
+  },
+  {
+    "query_id": "q04",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p023_para_02'] khớp trang nguồn [23]."
+  },
+  {
+    "query_id": "q05",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p024_para_02'] khớp trang nguồn [24]."
+  },
+  {
+    "query_id": "q06",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p025_para_03'] khớp trang nguồn [25]."
+  },
+  {
+    "query_id": "q07",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p027_para_00'] khớp trang nguồn [27]."
+  },
+  {
+    "query_id": "q08",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p028_para_01'] khớp trang nguồn [28]."
+  },
+  {
+    "query_id": "q09",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p030_para_02'] khớp trang nguồn [30]."
+  },
+  {
+    "query_id": "q10",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p036_para_00'] khớp trang nguồn [36]."
+  },
+  {
+    "query_id": "q11",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p038_para_01'] khớp trang nguồn [38]."
+  },
+  {
+    "query_id": "q12",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p041_para_01', 'openstax-ics-2024_p041_para_02'] khớp trang nguồn [41]."
+  },
+  {
+    "query_id": "q13",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p052_para_01'] khớp trang nguồn [52]."
+  },
+  {
+    "query_id": "q14",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p056_para_00'] khớp trang nguồn [56]."
+  },
+  {
+    "query_id": "q15",
+    "answerable": true,
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "rationale": "Trả lời đúng và đủ các ý chính, trích dẫn ['openstax-ics-2024_p061_para_00'] khớp trang nguồn [61]."
+  },
+  {
+    "query_id": "u01",
+    "answerable": false,
+    "context_grade": 0,
+    "abstention_correct": true,
+    "citation_support": [],
+    "rationale": "Câu thiếu bằng chứng (Checked all 37 valid pages (P019-P042, P049-P061): Chapter 1 discusses historical computer...). Agent đã gọi search kiểm tra kho dữ liệu và từ chối trả lời đúng (abstain), không bịa thông tin."
+  },
+  {
+    "query_id": "u02",
+    "answerable": false,
+    "context_grade": 0,
+    "abstention_correct": true,
+    "citation_support": [],
+    "rationale": "Câu thiếu bằng chứng (Checked all 13 valid pages of Chapter 2 Section 2.1 (P049-P061): Section 2.1 covers decomp...). Agent đã gọi search kiểm tra kho dữ liệu và từ chối trả lời đúng (abstain), không bịa thông tin."
+  }
+]

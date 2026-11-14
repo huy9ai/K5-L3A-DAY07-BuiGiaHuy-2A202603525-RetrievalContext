@@ -271,7 +271,7 @@ def main() -> None:
 
     tfidf_ret = TfidfRetriever(chunks)
     embedder = GeminiQueryEmbedder(api_key=api_key, cache_path=emb_cache_path)
-    pg_ret = Day6PgVectorRetriever(database_url=database_url, embedder=embedder, strategy_label="C")
+    pg_ret = Day6PgVectorRetriever(database_url=database_url, embedder=embedder, chunks=chunks, strategy_label="C")
     hybrid_ret = HybridPgVectorBm25Retriever(chunks=chunks, pg_retriever=pg_ret, alpha=0.75)
 
     controller = GeminiController(

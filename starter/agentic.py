@@ -223,6 +223,13 @@ Rules:
 
         ans = str(decision.get("answer", "")).strip()
         cites = [str(c).strip() for c in decision.get("citations", []) if str(c).strip() in context_ids]
+        # If the LLM explicitly states the provided text does not contain/state the answer, treat as abstention
+        if re.search(
+            r"\b(?:provided text|context|textbook|passage)\s+(?:does not|doesn't)\s+(?:state|contain|mention|specify|provide|include)\b",
+            ans,
+            re.IGNORECASE,
+        ):
+            return {"action": "answer", "answer": "", "citations": []}
         if not ans or not cites:
             return {"action": "answer", "answer": "", "citations": []}
         # Ensure every cited chunk_id appears in square brackets in the answer text

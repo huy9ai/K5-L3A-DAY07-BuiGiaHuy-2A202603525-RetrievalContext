@@ -216,15 +216,53 @@ class GeminiQueryEmbedder:
 
 
 class Day6PgVectorRetriever:
-    """Dense retrieval directly querying the Day 6 PostgreSQL + pgvector database (`chunks` table)."""
+    """Dense retrieval directly querying the Day 6 PostgreSQL + pgvector database (`document_chunks` table),
+    with fast 2s connection timeout and exact cosine fallback over the cached Day 6 768-d
+    gemini-embedding-001 document vectors if the local Docker container is paused.
+    """
 
-    def __init__(self, database_url: str, embedder: GeminiQueryEmbedder, strategy_label: str = "C") -> None:
+    def __init__(
+        self,
+        database_url: str,
+        embedder: GeminiQueryEmbedder,
+        chunks: list[dict[str, Any]] | None = None,
+        strategy_label: str = "C",
+    ) -> None:
         self.database_url = database_url
         self.embedder = embedder
+        self.chunks = chunks or []
         self.strategy_label = strategy_label
+        self._db_online: bool | None = None
+
+    def _search_cached_vectors(
+        self, q_vec: list[float], filters: dict[str, Any] | None, top_k: int
+    ) -> list[dict[str, Any]]:
+        scored = []
+        for c in self.chunks:
+            if filters:
+                meta = c.get("metadata", {})
+                if not all(str(meta.get(k, c.get(k))) == str(v) for k, v in filters.items()):
+                    continue
+            doc_key = self.embedder._cache_key(c["text"], "RETRIEVAL_DOCUMENT")
+            doc_vec = self.embedder.cache.get(doc_key)
+            if not doc_vec:
+                continue
+            sim = sum(x * y for x, y in zip(q_vec, doc_vec))
+            scored.append(
+                {
+                    **c,
+                    "score": round(float(sim), 6),
+                    "strategy": "dense_pgvector",
+                }
+            )
+        scored.sort(key=lambda x: (-x["score"], x["id"]))
+        return scored[:top_k]
 
     def search(self, question: str, *, filters: dict[str, Any] | None = None, top_k: int = 3) -> list[dict[str, Any]]:
         q_vec = self.embedder.embed_query(question)
+        if self._db_online is False and self.chunks:
+            return self._search_cached_vectors(q_vec, filters, top_k)
+
         vec_literal = "[" + ",".join(f"{v:.8f}" for v in q_vec) + "]"
 
         where_clauses = ["strategy = %s"]
@@ -250,10 +288,17 @@ class Day6PgVectorRetriever:
             ORDER BY embedding <=> %s::vector ASC, chunk_id ASC
             LIMIT %s;
         """
-        with psycopg.connect(self.database_url) as conn:
-            with conn.cursor() as cur:
-                cur.execute(sql, params)
-                rows = cur.fetchall()
+        try:
+            with psycopg.connect(self.database_url, connect_timeout=2) as conn:
+                with conn.cursor() as cur:
+                    cur.execute(sql, params)
+                    rows = cur.fetchall()
+            self._db_online = True
+        except psycopg.OperationalError:
+            self._db_online = False
+            if self.chunks:
+                return self._search_cached_vectors(q_vec, filters, top_k)
+            raise
 
         results = []
         for r in rows:
@@ -452,7 +497,7 @@ def main() -> None:
 
     tfidf_ret = TfidfRetriever(chunks)
     embedder = GeminiQueryEmbedder(api_key=api_key, cache_path=cache_path)
-    pg_ret = Day6PgVectorRetriever(database_url=database_url, embedder=embedder, strategy_label="C")
+    pg_ret = Day6PgVectorRetriever(database_url=database_url, embedder=embedder, chunks=chunks, strategy_label="C")
     hybrid_ret = HybridPgVectorBm25Retriever(chunks=chunks, pg_retriever=pg_ret, alpha=0.75)
 
     all_summaries = []

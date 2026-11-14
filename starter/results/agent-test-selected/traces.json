@@ -5,13 +5,120 @@
     "question": "How does the binary search algorithm locate a target number in a sorted array of integers?",
     "answerable": true,
     "applied_filter": null,
-    "status": "error",
-    "error": "connection timeout expired",
-    "answer": "",
-    "citations": [],
-    "num_searches": 0,
-    "elapsed_ms": 130006.99,
-    "events": []
+    "status": "answered",
+    "answer": "The binary search algorithm locates a target number in a sorted array by repeatedly dividing the search interval in half [openstax-ics-2024_p020_para_03]. If the target is less than the middle integer, the search interval is narrowed to the lower half; otherwise, it is narrowed to the upper half [openstax-ics-2024_p020_para_03]. This process repeats until the number is found or the interval becomes empty [openstax-ics-2024_p020_para_03].",
+    "citations": [
+      "openstax-ics-2024_p020_para_03"
+    ],
+    "num_searches": 1,
+    "elapsed_ms": 5.83,
+    "events": [
+      {
+        "event": "search",
+        "query": "How does the binary search algorithm locate a target number in a sorted array of integers?",
+        "filter": null,
+        "results": [
+          {
+            "id": "openstax-ics-2024_p020_para_03",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 20,
+            "text": "To introduce a concrete example of an algorithm, let us consider binary search algorithm, which is used to locate a number in a sorted array of integers efficiently. The algorithm operates by repeatedly dividing the search interval in half to perform the search. If the number being searched is less than the integer in the middle of the interval, the interval is narrowed to the lower half. In the alternative, the interval is narrowed to the upper half. The algorithm repeatedly checks until the number is found or the interval is empty.",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 20,
+              "book_page": 10,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 3980,
+              "normalized_char_count": 3872,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.1",
+              "section_title": "Computer Science",
+              "chunk_index": 3,
+              "char_start": 3326,
+              "char_end": 3865,
+              "char_length": 539,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 1.003279,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.783255,
+            "bm25_score": 41.6187
+          },
+          {
+            "id": "openstax-ics-2024_p024_para_01",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 24,
+            "text": "How is this possible? The algorithmic principles that determine how results are computed makes up software. Almost all computers, from the ENIAC to today’s computers, are considered Turing-complete (or Computationally Universal, as opposed to specialized computing devices such as scientific calculators) because they share the same fundamental model for computing results and every computer has the ability to run any algorithm. Alan Mathison Turing was an English mathematician who was highly influential in the development of theoretical computer science, which focuses on the mathematical processes behind software, and provided a formalization of the concepts of algorithm and computation with the Turing machine. A Turing-complete computer stores data in memory (either using vacuum tubes or silicon) and manipulates that data according to a computer program, which is an algorithm that can be run on a computer. These programs are represented using symbols and instructions written in a programming language consisting of symbols and instructions that can be interpreted by the computer. Programs are also stored in memory, which allows programmers to modify and improve programs by changing the instructions.",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 24,
+              "book_page": 14,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 3490,
+              "normalized_char_count": 3385,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.1",
+              "section_title": "Computer Science",
+              "chunk_index": 1,
+              "char_start": 556,
+              "char_end": 1772,
+              "char_length": 1216,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.19168,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.566669,
+            "bm25_score": 5.5275
+          },
+          {
+            "id": "openstax-ics-2024_p054_para_01",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 54,
+            "text": "Ingredients Equipment Actions\nBread Plate Repeat x times\nJam Knife Left hand (LH)\nButter Right hand (RH)\nPick up\nUnscrew\nTable 2.1 Logical Thinking and Pattern Recognition\nExample The jam sandwich pattern recognition defines\nthe ingredients, equipment, and actions needed for completion.\nThe process of identifying patterns typically requires logical thinking such as inductive or deductive reasoning. Inductive reasoning makes it possible to go from specific examples to general principles. For example, recognizing that dividing any number by 1 results in the original number leads to the broader conclusion that holds true for any number. Similarly, understanding that the sum of two odd numbers yields an even number leads to the generalization that adding two odd numbers always results in an even number. Inductive reasoning turns an observation into a pattern, which allows making a tentative hypothesis that can be turned into a theory. Deductive reasoning is the process of drawing valid conclusions from premises given the fact that it is not possible for the premises to be true and the conclusion to be false. A traditional example illustrates how the premises “all men are mortal” and “Socrates is a man” lead to the deductively correct conclusion that “Socrates is mortal.”",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 54,
+              "book_page": 44,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 2689,
+              "normalized_char_count": 2574,
+              "chapter": "chapter_2",
+              "chapter_title": "Computational Thinking and Design Reusability",
+              "section": "2.1",
+              "section_title": "Computational Thinking",
+              "chunk_index": 1,
+              "char_start": 1276,
+              "char_end": 2563,
+              "char_length": 1287,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.166977,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.555634,
+            "bm25_score": 6.4674
+          }
+        ],
+        "context": "[openstax-ics-2024_p020_para_03 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 20]\nTo introduce a concrete example of an algorithm, let us consider binary search algorithm, which is used to locate a number in a sorted array of integers efficiently. The algorithm operates by repeatedly dividing the search interval in half to perform the search. If the number being searched is less than the integer in the middle of the interval, the interval is narrowed to the lower half. In the alternative, the interval is narrowed to the upper half. The algorithm repeatedly checks until the number is found or the interval is empty.\n\n[openstax-ics-2024_p024_para_01 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 24]\nHow is this possible? The algorithmic principles that determine how results are computed makes up software. Almost all computers, from the ENIAC to today’s computers, are considered Turing-complete (or Computationally Universal, as opposed to specialized computing devices such as scientific calculators) because they share the same fundamental model for computing results and every computer has the ability to run any algorithm. Alan Mathison Turing was an English mathematician who was highly influential in the development of theoretical computer science, which focuses on the mathematical processes behind software, and provided a formalization of the concepts of algorithm and computation with the Turing machine. A Turing-complete computer stores data in memory (either using vacuum tubes or silicon) and manipulates that data according to a computer program, which is an algorithm that can be run on a computer. These programs are represented using symbols and instructions written in a programming language consisting of symbols and instructions that can be interpreted by the computer. Programs are also stored in memory, which allows programmers to modify and improve programs by changing the instructions.",
+        "context_ids": [
+          "openstax-ics-2024_p020_para_03",
+          "openstax-ics-2024_p024_para_01"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ]
   },
   {
     "query_id": "q17",
@@ -19,13 +126,121 @@
     "question": "According to Morgan Ames in The Charisma Machine, why did the MIT Media Lab's One Laptop Per Child (OLPC) initiative fail to achieve its goals?",
     "answerable": true,
     "applied_filter": null,
-    "status": "error",
-    "error": "connection timeout expired",
-    "answer": "",
-    "citations": [],
-    "num_searches": 0,
-    "elapsed_ms": 130013.69,
-    "events": []
+    "status": "answered",
+    "answer": "According to Morgan Ames, the OLPC initiative failed to achieve its goals due to several factors, including electricity infrastructure problems, hardware reliability issues, software frustrations, and a lack of curricular materials [openstax-ics-2024_p028_para_03]. Additionally, the project's educational vision did not materialize because children frequently used the laptops for personal entertainment rather than the intended learning experiences [openstax-ics-2024_p029_para_00]. Ames argues that the project was deceptive in making social change and technological adoption appear straightforward, ignoring the complex social context and history in which the technology was embedded [openstax-ics-2024_p028_para_03, openstax-ics-2024_p029_para_00].",
+    "citations": [
+      "openstax-ics-2024_p028_para_03",
+      "openstax-ics-2024_p029_para_00"
+    ],
+    "num_searches": 1,
+    "elapsed_ms": 4.81,
+    "events": [
+      {
+        "event": "search",
+        "query": "According to Morgan Ames in The Charisma Machine, why did the MIT Media Lab's One Laptop Per Child (OLPC) initiative fail to achieve its goals?",
+        "filter": null,
+        "results": [
+          {
+            "id": "openstax-ics-2024_p028_para_03",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 28,
+            "text": "Computer technologies for global development require designing around unique resource constraints such as a lack of reliable power, limited or nonexistent Internet connectivity, and low literacy. Computer scientists employ a variety of methods drawing from the social sciences to produce effective solutions. However, designing for diverse communities is difficult, particularly when the designers have little direct experience with the people they wish to serve. In The Charisma Machine, Morgan Ames criticizes the One Laptop Per Child (OLPC) project, a nonprofit initiative announced in 2005 by the Massachusetts Institute of Technology Media Lab. The project attempted to bring computer technology in the form of small, sturdy, and cheap laptops that were powered by a hand crank to children in the Global South. Based on her fieldwork in Paraguay, Ames argues that the project failed to achieve its goals for a variety of reasons, such as electricity infrastructure problems, hardware reliability issues, software frustrations, and a lack of curricular materials. Ames argues that “charismatic technologies are deceptive: they make both technological adoption and social change appear straightforward instead of as a difficult process fraught with choices and politics.” When the computers did 8 U.S. Bureau of Labor Statistics, “Computer and Information Research Scientists: Job Outlook,” 2024.",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 28,
+              "book_page": 18,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 4502,
+              "normalized_char_count": 4386,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.1",
+              "section_title": "Computer Science",
+              "chunk_index": 3,
+              "char_start": 2529,
+              "char_end": 3928,
+              "char_length": 1399,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 1.003279,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.805762,
+            "bm25_score": 48.5619
+          },
+          {
+            "id": "openstax-ics-2024_p029_para_00",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 29,
+            "text": "work, OLPC’s vision for education never truly materialized because children often used the computers for their own entertainment rather than the learning experiences the designers intended. Though Ames’s account of the OLPC project (Figure 1.6) itself has been criticized for presenting an oversimplified narrative, it still represents a valuable argument for the risks and potential pitfalls associated with designing technologies for global development: technology does not act on its own but is embedded in a complicated social context and history.\n\nFigure 1.6 In 2005, MIT’s Media Lab started the OLPC initiative to bring laptops to children in the Global South. An unexpected outcome they discovered was that designing technologies for global communities is not as straightforward as designers may initially believe. (credit: \"One Laptop per Child\" by OLE Nepal Cover/Flickr, CC BY 2.0)",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 29,
+              "book_page": 19,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 2896,
+              "normalized_char_count": 2842,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.1",
+              "section_title": "Computer Science",
+              "chunk_index": 0,
+              "char_start": 0,
+              "char_end": 891,
+              "char_length": 891,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.832268,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.758195,
+            "bm25_score": 41.4558
+          },
+          {
+            "id": "openstax-ics-2024_p029_para_02",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 29,
+            "text": "The identities of people creating computer technologies for global development are ultimately just as important as the technologies they create. In Design Justice, Sasha Costanza-Chock reiterates the call for computer scientists to “build with, not for,” the communities they wish to improve. In this way, Design Justice seeks to address the social justice tensions raised when asking the question, “Who does technology ultimately benefit?” by centering the ingenuity of the marginalized “user” rather than the dominant “designer.” In some cases, underdeveloped countries can quickly catch up without spending the money that was invested to develop the original technologies. For example, we can set up ad hoc networks quickly today and at a",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 29,
+              "book_page": 19,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 2896,
+              "normalized_char_count": 2842,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.1",
+              "section_title": "Computer Science",
+              "chunk_index": 2,
+              "char_start": 2099,
+              "char_end": 2840,
+              "char_length": 741,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.29296,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.641828,
+            "bm25_score": 0.6495
+          }
+        ],
+        "context": "[openstax-ics-2024_p028_para_03 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 28]\nComputer technologies for global development require designing around unique resource constraints such as a lack of reliable power, limited or nonexistent Internet connectivity, and low literacy. Computer scientists employ a variety of methods drawing from the social sciences to produce effective solutions. However, designing for diverse communities is difficult, particularly when the designers have little direct experience with the people they wish to serve. In The Charisma Machine, Morgan Ames criticizes the One Laptop Per Child (OLPC) project, a nonprofit initiative announced in 2005 by the Massachusetts Institute of Technology Media Lab. The project attempted to bring computer technology in the form of small, sturdy, and cheap laptops that were powered by a hand crank to children in the Global South. Based on her fieldwork in Paraguay, Ames argues that the project failed to achieve its goals for a variety of reasons, such as electricity infrastructure problems, hardware reliability issues, software frustrations, and a lack of curricular materials. Ames argues that “charismatic technologies are deceptive: they make both technological adoption and social change appear straightforward instead of as a difficult process fraught with choices and politics.” When the computers did 8 U.S. Bureau of Labor Statistics, “Computer and Information Research Scientists: Job Outlook,” 2024.\n\n[openstax-ics-2024_p029_para_00 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 29]\nwork, OLPC’s vision for education never truly materialized because children often used the computers for their own entertainment rather than the learning experiences the designers intended. Though Ames’s account of the OLPC project (Figure 1.6) itself has been criticized for presenting an oversimplified narrative, it still represents a valuable argument for the risks and potential pitfalls associated with designing technologies for global development: technology does not act on its own but is embedded in a complicated social context and history.\n\nFigure 1.6 In 2005, MIT’s Media Lab started the OLPC initiative to bring laptops to children in the Global South. An unexpected outcome they discovered was that designing technologies for global communities is not as straightforward as designers may initially believe. (credit: \"One Laptop per Child\" by OLE Nepal Cover/Flickr, CC BY 2.0)",
+        "context_ids": [
+          "openstax-ics-2024_p028_para_03",
+          "openstax-ics-2024_p029_para_00"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ]
   },
   {
     "query_id": "q18",
@@ -36,13 +251,124 @@
       "chapter": "chapter_1",
       "section": "1.3"
     },
-    "status": "error",
-    "error": "connection timeout expired",
-    "answer": "",
-    "citations": [],
-    "num_searches": 0,
-    "elapsed_ms": 130014.19,
-    "events": []
+    "status": "answered",
+    "answer": "Large neural networks often misidentify objects because they lack a deeper, conceptual representation of objects [openstax-ics-2024_p038_para_02]. Instead of relying on an intrinsic idea of an object, these networks function by memorizing every configuration of edges as they appear in sample images [openstax-ics-2024_p038_para_02]. Consequently, coincidental patterns of edges can trigger the network to misidentify objects, or minor input tweaks can cause chain reactions that lead to severe misidentification [openstax-ics-2024_p038_para_03].",
+    "citations": [
+      "openstax-ics-2024_p038_para_02",
+      "openstax-ics-2024_p038_para_03"
+    ],
+    "num_searches": 1,
+    "elapsed_ms": 2.5,
+    "events": [
+      {
+        "event": "search",
+        "query": "Why do large neural networks sometimes misidentify objects in images instead of relying on an intrinsic concept of objects?",
+        "filter": {
+          "chapter": "chapter_1",
+          "section": "1.3"
+        },
+        "results": [
+          {
+            "id": "openstax-ics-2024_p038_para_03",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 38,
+            "text": "This limitation can lead to peculiar outcomes for image recognition systems. Often, neural network approaches for image recognition have certain examples of images where objects are misidentified in unusual ways: a person’s face might be recognized in a piece of toast or in a bunch of clouds in the sky. In these examples, the pattern of edges might coincidentally trigger the neural network values so that it misidentifies objects. These are among the more human-understandable examples; there are many other odd situations that are less explainable. An adversarial attack is a sample input (e.g., an image) that is designed to cause a system to behave problematically. Researchers have found that even tweaking the color of just a single point in an image can cause a chain reaction in the neural network, leading it to severely misidentify objects. The",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 38,
+              "book_page": 28,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 4345,
+              "normalized_char_count": 4233,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.3",
+              "section_title": "Computer Science and the Future of Society",
+              "chunk_index": 3,
+              "char_start": 3374,
+              "char_end": 4230,
+              "char_length": 856,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.914672,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.758104,
+            "bm25_score": 25.0761
+          },
+          {
+            "id": "openstax-ics-2024_p038_para_02",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 38,
+            "text": "Evaluating Negative Consequences of Technology\nToday’s AI technologies work by reproducing existing patterns rather than imagining radically different futures. As much as neural networks are inspired by the human brain, it would be a stretch to suggest that AI systems have any semblance of general intelligence. Though these systems might be quite effective at identifying lettuce plants from weed plants in an image, their capacity for humanlike intelligence is limited by design. A neural network learns to recognize similar patterns that appear across millions or billions of sample images and represent these patterns with millions or billions of numbers. Mathematical optimization methods are used to choose the numeric values that best encode correlations across the sample images. However, current approaches lack a deeper, conceptual representation of objects. One criticism of very large neural networks is that there are often more numeric values than there are sample images—the network can effectively memorize the details of a million sample images by encoding them in a billion numbers. Many of today’s neural networks recognize objects in images not by relying on some intrinsic idea or concept of objects but by memorizing every single configuration of edges as they appear in the sample images.",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 38,
+              "book_page": 28,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 4345,
+              "normalized_char_count": 4233,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.3",
+              "section_title": "Computer Science and the Future of Society",
+              "chunk_index": 2,
+              "char_start": 2060,
+              "char_end": 3372,
+              "char_length": 1312,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.786108,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.679494,
+            "bm25_score": 38.8368
+          },
+          {
+            "id": "openstax-ics-2024_p037_para_00",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 37,
+            "text": "Recent approaches to AI for image recognition draw on a family of methods called neural networks instead of having programmers craft rules or instructions by hand to form an algorithm. In humans, the neural network is a complex network in the human brain that consists of neurons, or nerve cells, connected by synapses that send messages and electrical signals to all parts of the body, enabling us to think, move, feel, and function. In computer science, a neural network (Figure 1.9) is an AI algorithm architecture that emphasizes connections between artificial nerve cells whose behavior and values change in response to stimulus or input. These neural networks are not defined by individual neurons but by the combination of all the neurons in the network. Typically, artificial neurons are arranged in a hierarchy that aims to capture the structure of an image. Although the first level of neurons might respond to individual pixels, later levels of artificial neurons might respond in aggregate to the arrangement of several artificial neurons in the preceding layer. This is similar to how the human visual system responds to edges at the lower levels, then responds in aggregate to the specific arrangement of several edges in later levels, and ultimately identifies these aggregated arrangements as objects.",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 37,
+              "book_page": 27,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 3414,
+              "normalized_char_count": 3329,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.3",
+              "section_title": "Computer Science and the Future of Society",
+              "chunk_index": 0,
+              "char_start": 0,
+              "char_end": 1317,
+              "char_length": 1317,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.666079,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.685945,
+            "bm25_score": 17.4232
+          }
+        ],
+        "context": "[openstax-ics-2024_p038_para_03 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 38]\nThis limitation can lead to peculiar outcomes for image recognition systems. Often, neural network approaches for image recognition have certain examples of images where objects are misidentified in unusual ways: a person’s face might be recognized in a piece of toast or in a bunch of clouds in the sky. In these examples, the pattern of edges might coincidentally trigger the neural network values so that it misidentifies objects. These are among the more human-understandable examples; there are many other odd situations that are less explainable. An adversarial attack is a sample input (e.g., an image) that is designed to cause a system to behave problematically. Researchers have found that even tweaking the color of just a single point in an image can cause a chain reaction in the neural network, leading it to severely misidentify objects. The\n\n[openstax-ics-2024_p038_para_02 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 38]\nEvaluating Negative Consequences of Technology\nToday’s AI technologies work by reproducing existing patterns rather than imagining radically different futures. As much as neural networks are inspired by the human brain, it would be a stretch to suggest that AI systems have any semblance of general intelligence. Though these systems might be quite effective at identifying lettuce plants from weed plants in an image, their capacity for humanlike intelligence is limited by design. A neural network learns to recognize similar patterns that appear across millions or billions of sample images and represent these patterns with millions or billions of numbers. Mathematical optimization methods are used to choose the numeric values that best encode correlations across the sample images. However, current approaches lack a deeper, conceptual representation of objects. One criticism of very large neural networks is that there are often more numeric values than there are sample images—the network can effectively memorize the details of a million sample images by encoding them in a billion numbers. Many of today’s neural networks recognize objects in images not by relying on some intrinsic idea or concept of objects but by memorizing every single configuration of edges as they appear in the sample images.",
+        "context_ids": [
+          "openstax-ics-2024_p038_para_03",
+          "openstax-ics-2024_p038_para_02"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ]
   },
   {
     "query_id": "q19",
@@ -50,13 +376,120 @@
     "question": "When a computer has only one central processing unit (CPU), how does it handle parallel algorithm execution, and how does this compare to true parallelism?",
     "answerable": true,
     "applied_filter": null,
-    "status": "error",
-    "error": "connection timeout expired",
-    "answer": "",
-    "citations": [],
-    "num_searches": 0,
-    "elapsed_ms": 130003.65,
-    "events": []
+    "status": "answered",
+    "answer": "When a computer has only one CPU, it cannot execute algorithms simultaneously. Instead, it simulates parallelism by having the operating system execute the algorithms concurrently as separate tasks that share the single processor's resources [openstax-ics-2024_p057_para_01]. This simulated approach is less efficient than true parallelism [openstax-ics-2024_p057_para_01].",
+    "citations": [
+      "openstax-ics-2024_p057_para_01"
+    ],
+    "num_searches": 1,
+    "elapsed_ms": 5.23,
+    "events": [
+      {
+        "event": "search",
+        "query": "When a computer has only one central processing unit (CPU), how does it handle parallel algorithm execution, and how does this compare to true parallelism?",
+        "filter": null,
+        "results": [
+          {
+            "id": "openstax-ics-2024_p057_para_01",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 57,
+            "text": "Parallel/concurrent execution models are typically used to optimize algorithm execution efficiency. As an example, if you and a friend are buying tickets for a movie and there are three independent lines, you may opt for a parallel processing model of execution by having you and your friend join two separate lines to buy the tickets. In that case, you are guaranteed to be able to obtain the tickets quicker assuming one of the lines operating in parallel with the other ends up serving customers faster, which is most often the case. Note that executing the same algorithm simultaneously on a computer may not be possible if you only have one central processing unit (CPU) in your machine. In that case, you can simulate parallelism by having the operating system running on the machine execute the two algorithms concurrently as separate tasks while sharing the single processor resources. This approach is less efficient than true parallelism. More detail on the differences between concurrency and parallelism will be provided in Chapter 4 Linguistic Realization of Algorithms: Low- Level Programming Languages.",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 57,
+              "book_page": 47,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 3130,
+              "normalized_char_count": 3068,
+              "chapter": "chapter_2",
+              "chapter_title": "Computational Thinking and Design Reusability",
+              "section": "2.1",
+              "section_title": "Computational Thinking",
+              "chunk_index": 1,
+              "char_start": 768,
+              "char_end": 1885,
+              "char_length": 1117,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 1.003279,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.749205,
+            "bm25_score": 45.0106
+          },
+          {
+            "id": "openstax-ics-2024_p024_para_01",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 24,
+            "text": "How is this possible? The algorithmic principles that determine how results are computed makes up software. Almost all computers, from the ENIAC to today’s computers, are considered Turing-complete (or Computationally Universal, as opposed to specialized computing devices such as scientific calculators) because they share the same fundamental model for computing results and every computer has the ability to run any algorithm. Alan Mathison Turing was an English mathematician who was highly influential in the development of theoretical computer science, which focuses on the mathematical processes behind software, and provided a formalization of the concepts of algorithm and computation with the Turing machine. A Turing-complete computer stores data in memory (either using vacuum tubes or silicon) and manipulates that data according to a computer program, which is an algorithm that can be run on a computer. These programs are represented using symbols and instructions written in a programming language consisting of symbols and instructions that can be interpreted by the computer. Programs are also stored in memory, which allows programmers to modify and improve programs by changing the instructions.",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 24,
+              "book_page": 14,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 3490,
+              "normalized_char_count": 3385,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.1",
+              "section_title": "Computer Science",
+              "chunk_index": 1,
+              "char_start": 556,
+              "char_end": 1772,
+              "char_length": 1216,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.37494,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.626986,
+            "bm25_score": 10.2071
+          },
+          {
+            "id": "openstax-ics-2024_p057_para_02",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 57,
+            "text": "Recursive models of execution provide another elegant and effective alternative to the traditional sequential model of execution. The problem-solving technique where a process calls itself in order to solve smaller instances of the same problem is called recursion. It can be a powerful tool in programming because it allows for elegant solutions to complex problems by breaking them down into smaller, more manageable parts. By leveraging recursion, programmers can write concise and efficient code to solve a wide range of problems. One of the key advantages of recursion is its ability to handle complex tasks with minimal code. Instead of writing lengthy iterative loops to solve repetitive tasks, recursion allows programmers to define a process that calls itself with modified input parameters, effectively reducing the amount of code needed. However, it’s essential to be cautious when using recursion, as improper implementation can lead to stack overflow errors due to excessive process calls. Programmers should ensure that recursive processes have proper base cases to terminate the recursion and avoid infinite loops. Example:\n#include <iostream> using namespace std;",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 57,
+              "book_page": 47,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 3130,
+              "normalized_char_count": 3068,
+              "chapter": "chapter_2",
+              "chapter_title": "Computational Thinking and Design Reusability",
+              "section": "2.1",
+              "section_title": "Computational Thinking",
+              "chunk_index": 2,
+              "char_start": 1887,
+              "char_end": 3066,
+              "char_length": 1179,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.309237,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.604594,
+            "bm25_score": 12.7192
+          }
+        ],
+        "context": "[openstax-ics-2024_p057_para_01 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 57]\nParallel/concurrent execution models are typically used to optimize algorithm execution efficiency. As an example, if you and a friend are buying tickets for a movie and there are three independent lines, you may opt for a parallel processing model of execution by having you and your friend join two separate lines to buy the tickets. In that case, you are guaranteed to be able to obtain the tickets quicker assuming one of the lines operating in parallel with the other ends up serving customers faster, which is most often the case. Note that executing the same algorithm simultaneously on a computer may not be possible if you only have one central processing unit (CPU) in your machine. In that case, you can simulate parallelism by having the operating system running on the machine execute the two algorithms concurrently as separate tasks while sharing the single processor resources. This approach is less efficient than true parallelism. More detail on the differences between concurrency and parallelism will be provided in Chapter 4 Linguistic Realization of Algorithms: Low- Level Programming Languages.\n\n[openstax-ics-2024_p024_para_01 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 24]\nHow is this possible? The algorithmic principles that determine how results are computed makes up software. Almost all computers, from the ENIAC to today’s computers, are considered Turing-complete (or Computationally Universal, as opposed to specialized computing devices such as scientific calculators) because they share the same fundamental model for computing results and every computer has the ability to run any algorithm. Alan Mathison Turing was an English mathematician who was highly influential in the development of theoretical computer science, which focuses on the mathematical processes behind software, and provided a formalization of the concepts of algorithm and computation with the Turing machine. A Turing-complete computer stores data in memory (either using vacuum tubes or silicon) and manipulates that data according to a computer program, which is an algorithm that can be run on a computer. These programs are represented using symbols and instructions written in a programming language consisting of symbols and instructions that can be interpreted by the computer. Programs are also stored in memory, which allows programmers to modify and improve programs by changing the instructions.",
+        "context_ids": [
+          "openstax-ics-2024_p057_para_01",
+          "openstax-ics-2024_p024_para_01"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ]
   },
   {
     "query_id": "q20",
@@ -67,13 +500,124 @@
       "chapter": "chapter_2",
       "section": "2.1"
     },
-    "status": "error",
-    "error": "connection timeout expired",
-    "answer": "",
-    "citations": [],
-    "num_searches": 0,
-    "elapsed_ms": 130012.96,
-    "events": []
+    "status": "answered",
+    "answer": "When a user submits a prompt to a GenAI application, layers of abstraction simplify the process: the user interacts with a straightforward interface, the application's logic validates and directs the prompt invisibly, and the back end processes the prompt to generate a response [openstax-ics-2024_p055_para_02]. Each layer performs a specific role to ensure the process remains efficient for both the user and the system [openstax-ics-2024_p055_para_02, openstax-ics-2024_p056_para_00]. [openstax-ics-2024_p056_para_00]",
+    "citations": [
+      "openstax-ics-2024_p055_para_02",
+      "openstax-ics-2024_p056_para_00"
+    ],
+    "num_searches": 1,
+    "elapsed_ms": 1.62,
+    "events": [
+      {
+        "event": "search",
+        "query": "How do layers of abstraction operate from the user interface to the back end when a user submits a prompt to a generative AI (GenAI) application?",
+        "filter": {
+          "chapter": "chapter_2",
+          "section": "2.1"
+        },
+        "results": [
+          {
+            "id": "openstax-ics-2024_p055_para_02",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 55,
+            "text": "In technology, data are represented at different levels of abstraction to simplify user interaction and manage complex operations efficiently. Users interact with a web application through a straightforward interface, like requesting help from a GenAI tool, without seeing the underlying complexity. This GenAI prompt is then processed by the application’s logic, which validates and directs it appropriately, often invisibly to the user. Finally, at the back end, the prompt is processed and a GenAI-generated response is provided. Each layer of abstraction serves a separate role, making the entire process efficient for both the user and the system (Figure 2.6).",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 55,
+              "book_page": 45,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 2698,
+              "normalized_char_count": 2642,
+              "chapter": "chapter_2",
+              "chapter_title": "Computational Thinking and Design Reusability",
+              "section": "2.1",
+              "section_title": "Computational Thinking",
+              "chunk_index": 2,
+              "char_start": 1971,
+              "char_end": 2636,
+              "char_length": 665,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 1.003279,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.842067,
+            "bm25_score": 43.0083
+          },
+          {
+            "id": "openstax-ics-2024_p056_para_00",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 56,
+            "text": "Figure 2.6 When using GenAI, a user interacts with the interface while the application processes the prompt with layers of abstraction on the back end. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nAlgorithm\nAn algorithm is a sequence of steps/instructions that must be followed in a specific order to solve a problem. Algorithms make it possible to describe a solution to a problem by writing down the instructions that are required to solve the problem. Computer programs typically execute algorithms to perform certain tasks. In the jam sandwich example, the algorithm technique is about writing instructions that the robot can follow to make the jam sandwich. As you will learn in Chapter 3 Data Structures and Algorithms, algorithms are most commonly written as either pseudocode or a flowchart. An outline of the logic of algorithms using a combination of language and high-level programming concepts is called pseudocode. Each step is shown in a clearly ordered, written structure. A flowchart clearly shows the flow and direction of decisions in a visual way using a diagram. Either way is fine, and it is a matter of personal preference. Basic templates for the flowchart and pseudocode are in Figure 2.7.\n\nFigure 2.7 Pseudocode lists each step, while a flowchart visually outlines the process of decision-making. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 56,
+              "book_page": 46,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 2052,
+              "normalized_char_count": 1949,
+              "chapter": "chapter_2",
+              "chapter_title": "Computational Thinking and Design Reusability",
+              "section": "2.1",
+              "section_title": "Computational Thinking",
+              "chunk_index": 0,
+              "char_start": 0,
+              "char_end": 1441,
+              "char_length": 1441,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.649173,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.712028,
+            "bm25_score": 26.9077
+          },
+          {
+            "id": "openstax-ics-2024_p055_para_01",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 55,
+            "text": "Abstraction\nAbstraction makes it possible to pull out the important details and identify principles that apply to other problems or situations. When applying abstraction, it may be useful to write down some notes or draw diagrams to help understand how to resolve the problem. In the jam sandwich example, abstraction means forming an idea of what the sandwich should look like. To apply abstraction here, you would create a model or draw a picture representing the final appearance of the jam sandwich once it is made. This simplifies the details, providing a clearer image of the desired outcome. Simple tools like the Windows Paint program can be used to do this, as shown in Figure 2.5.\n\nFigure 2.5 This jam sandwich abstraction example illustrates what the final product should look like. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 55,
+              "book_page": 45,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 2698,
+              "normalized_char_count": 2642,
+              "chapter": "chapter_2",
+              "chapter_title": "Computational Thinking and Design Reusability",
+              "section": "2.1",
+              "section_title": "Computational Thinking",
+              "chunk_index": 1,
+              "char_start": 1094,
+              "char_end": 1969,
+              "char_length": 875,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.379099,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.623289,
+            "bm25_score": 11.0364
+          }
+        ],
+        "context": "[openstax-ics-2024_p055_para_02 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 55]\nIn technology, data are represented at different levels of abstraction to simplify user interaction and manage complex operations efficiently. Users interact with a web application through a straightforward interface, like requesting help from a GenAI tool, without seeing the underlying complexity. This GenAI prompt is then processed by the application’s logic, which validates and directs it appropriately, often invisibly to the user. Finally, at the back end, the prompt is processed and a GenAI-generated response is provided. Each layer of abstraction serves a separate role, making the entire process efficient for both the user and the system (Figure 2.6).\n\n[openstax-ics-2024_p056_para_00 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 56]\nFigure 2.6 When using GenAI, a user interacts with the interface while the application processes the prompt with layers of abstraction on the back end. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nAlgorithm\nAn algorithm is a sequence of steps/instructions that must be followed in a specific order to solve a problem. Algorithms make it possible to describe a solution to a problem by writing down the instructions that are required to solve the problem. Computer programs typically execute algorithms to perform certain tasks. In the jam sandwich example, the algorithm technique is about writing instructions that the robot can follow to make the jam sandwich. As you will learn in Chapter 3 Data Structures and Algorithms, algorithms are most commonly written as either pseudocode or a flowchart. An outline of the logic of algorithms using a combination of language and high-level programming concepts is called pseudocode. Each step is shown in a clearly ordered, written structure. A flowchart clearly shows the flow and direction of decisions in a visual way using a diagram. Either way is fine, and it is a matter of personal preference. Basic templates for the flowchart and pseudocode are in Figure 2.7.\n\nFigure 2.7 Pseudocode lists each step, while a flowchart visually outlines the process of decision-making. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)",
+        "context_ids": [
+          "openstax-ics-2024_p055_para_02",
+          "openstax-ics-2024_p056_para_00"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ]
   },
   {
     "query_id": "u03",
@@ -84,13 +628,121 @@
       "chapter": "chapter_1",
       "section": "1.3"
     },
-    "status": "error",
-    "error": "connection timeout expired",
-    "answer": "",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
-    "num_searches": 0,
-    "elapsed_ms": 130004.33,
-    "events": []
+    "num_searches": 1,
+    "elapsed_ms": 1.39,
+    "events": [
+      {
+        "event": "search",
+        "query": "What exact civil fine in dollars did the court impose on the nine Washington, D.C. housing companies in the 2021 Facebook targeted-advertising lawsuit discussed in Section 1.3?",
+        "filter": {
+          "chapter": "chapter_1",
+          "section": "1.3"
+        },
+        "results": [
+          {
+            "id": "openstax-ics-2024_p041_para_02",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 41,
+            "text": "In 2021, a Facebook user filed a class-action lawsuit that argued nine companies in the Washington, D.C., area deliberately excluded people over the age of 50 from seeing their advertisements for housing because they wanted to attract younger people to live in their apartments.16 This is an example of an issue in technology that should be addressed by responsible computing with an emphasis on ethical behavior.\n\nWith good intentions and attention to personal biases, technologies can be designed for social good. For example, a hypothetical algorithm for fair housing could evenly distribute new housing to people across protected classes and marginalized identities, such as older populations. Of course, algorithmic control and automated decision-making is challenged to consider the underlying conditions behind social problems. Still, algorithms can be important tools to enable us to distribute outcomes more fairly from a statistical perspective, and this can be an important step in addressing the larger societal systems and inequities that produce social problems.\n\nLINK TO LEARNING\nReview the Parable of the Polygons (https://openstax.org/r/76polygons) by Vi Hart and Nicky Case. In it, the authors show how a segregated world where people simply prefer living near other people who are like themselves (a “small individual bias”) can re-create and reproduce “large collective bias.”",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 41,
+              "book_page": 31,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 4533,
+              "normalized_char_count": 4438,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.3",
+              "section_title": "Computer Science and the Future of Society",
+              "chunk_index": 2,
+              "char_start": 2340,
+              "char_end": 3736,
+              "char_length": 1396,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 1.003279,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.694214,
+            "bm25_score": 30.7695
+          },
+          {
+            "id": "openstax-ics-2024_p041_para_03",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 41,
+            "text": "As part of responsible computing, computer scientists must be aware of technological fix, which refers to the idea that technologies can solve social problems, but is now often used to critique blind faith in technological solutions to human problems. Unless the process is handled responsibly, the “fix” may cause more problems than it resolves. When considering how to address social and political problems, computer scientists must take care to ensure that they select the appropriate technology to address specific problems.\n\n16 C. Silva, “Facebook ads have a problem. It’s called digital redlining,” 2022. https://mashable.com/article/facebook-digital- redlining-ads-protected-traits-section-230",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 41,
+              "book_page": 31,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 4533,
+              "normalized_char_count": 4438,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.3",
+              "section_title": "Computer Science and the Future of Society",
+              "chunk_index": 3,
+              "char_start": 3738,
+              "char_end": 4438,
+              "char_length": 700,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.790828,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.676936,
+            "bm25_score": 12.8104
+          },
+          {
+            "id": "openstax-ics-2024_p041_para_01",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 41,
+            "text": "These problematic histories are not only aggravated in medicine and public health, but also reflected in housing. Redlining refers to the inequitable access to basic public services based on residents’ neighborhoods and communities, which includes the practice of withholding financial services from areas with a large underrepresented population. In the United States, these communities reflect the histories of racial segregation and racial wealth inequalities. Fair housing laws are intended to prevent property owners from discriminating against buyers or renters because of race, color, ability, national origin, and other protected classes. But computer technologies also present new kinds of challenges. Microtargeted ads on social media platforms contribute to not only political polarization, but also discrimination in housing. This can be a particular problem when combined with redlining. Even if the ad targeting is not explicitly designed to discriminate, microtargeted ads can still reinforce historical redlining by incorporating data such as zip codes or neighborhoods. This may result in digital redlining, which is the practice of using technology, such as targeted ads, to promote discrimination.",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 41,
+              "book_page": 31,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 4533,
+              "normalized_char_count": 4438,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.3",
+              "section_title": "Computer Science and the Future of Society",
+              "chunk_index": 1,
+              "char_start": 1122,
+              "char_end": 2338,
+              "char_length": 1216,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.75619,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.673555,
+            "bm25_score": 10.1546
+          }
+        ],
+        "context": "[openstax-ics-2024_p041_para_02 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 41]\nIn 2021, a Facebook user filed a class-action lawsuit that argued nine companies in the Washington, D.C., area deliberately excluded people over the age of 50 from seeing their advertisements for housing because they wanted to attract younger people to live in their apartments.16 This is an example of an issue in technology that should be addressed by responsible computing with an emphasis on ethical behavior.\n\nWith good intentions and attention to personal biases, technologies can be designed for social good. For example, a hypothetical algorithm for fair housing could evenly distribute new housing to people across protected classes and marginalized identities, such as older populations. Of course, algorithmic control and automated decision-making is challenged to consider the underlying conditions behind social problems. Still, algorithms can be important tools to enable us to distribute outcomes more fairly from a statistical perspective, and this can be an important step in addressing the larger societal systems and inequities that produce social problems.\n\nLINK TO LEARNING\nReview the Parable of the Polygons (https://openstax.org/r/76polygons) by Vi Hart and Nicky Case. In it, the authors show how a segregated world where people simply prefer living near other people who are like themselves (a “small individual bias”) can re-create and reproduce “large collective bias.”\n\n[openstax-ics-2024_p041_para_03 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 41]\nAs part of responsible computing, computer scientists must be aware of technological fix, which refers to the idea that technologies can solve social problems, but is now often used to critique blind faith in technological solutions to human problems. Unless the process is handled responsibly, the “fix” may cause more problems than it resolves. When considering how to address social and political problems, computer scientists must take care to ensure that they select the appropriate technology to address specific problems.\n\n16 C. Silva, “Facebook ads have a problem. It’s called digital redlining,” 2022. https://mashable.com/article/facebook-digital- redlining-ads-protected-traits-section-230",
+        "context_ids": [
+          "openstax-ics-2024_p041_para_02",
+          "openstax-ics-2024_p041_para_03"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ]
   },
   {
     "query_id": "u04",
@@ -101,12 +753,120 @@
       "chapter": "chapter_1",
       "section": "1.2"
     },
-    "status": "error",
-    "error": "connection timeout expired",
-    "answer": "",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
-    "num_searches": 0,
-    "elapsed_ms": 130006.9,
-    "events": []
+    "num_searches": 1,
+    "elapsed_ms": 0.89,
+    "events": [
+      {
+        "event": "search",
+        "query": "According to Section 1.2, what minimum GPA and tuition fee are required to enroll in the OpenStax Certified Ethical Hacking degree program?",
+        "filter": {
+          "chapter": "chapter_1",
+          "section": "1.2"
+        },
+        "results": [
+          {
+            "id": "openstax-ics-2024_p030_para_00",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 30,
+            "text": "portion of the cost in Middle Eastern and African countries using technology that was developed (at a high cost) in the United States and Europe over the past several decades. This means that sometimes, progress in one part of the world can be shared with another part of the world, enabling that area to quickly progress and advance technologically.\n\nLINK TO LEARNING\nThe Design Justice Network (https://openstax.org/r/76DesignJust) is an organization that aims to advance the principles of design justice and to include people who are marginalized in the technology design process.\n\n1.2 Computer Science across the Disciplines\nLearning Objectives\nBy the end of this section, you will be able to:\n• Differentiate between discovery and invention\n• Describe how science, mathematics, and engineering each play a role in computer science\n• Discuss how data science, computational science, and information science each relate to computer science",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 30,
+              "book_page": 20,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 3658,
+              "normalized_char_count": 3553,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.2",
+              "section_title": "Computer Science across the Disciplines",
+              "chunk_index": 0,
+              "char_start": 0,
+              "char_end": 942,
+              "char_length": 942,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 1.003279,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.585918,
+            "bm25_score": 8.6919
+          },
+          {
+            "id": "openstax-ics-2024_p033_para_01",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 33,
+            "text": "CONCEPTS IN PRACTICE\nComputer Science and DNA\nResearch into DNA sequencing and indexing is opening new ways of helping medical providers offer personalized treatments for patients. Large-scale genome sequencing of not only the human genome, but also the DNA signatures for viruses has made it possible for medical providers to take human fluid samples and analyze them for the presence of infectious diseases. This research requires computer science concepts, including specialized medical computer devices to sequence the billions of nucleotides that form a DNA sequence, data structures and algorithms to efficiently process and identify DNA signatures, and the miniaturization of computer hardware so that this technology is accessible (both in terms of price and physical size) in more and more care centers.",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 33,
+              "book_page": 23,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 3302,
+              "normalized_char_count": 3223,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.2",
+              "section_title": "Computer Science across the Disciplines",
+              "chunk_index": 1,
+              "char_start": 1120,
+              "char_end": 1932,
+              "char_length": 812,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.656391,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.571675,
+            "bm25_score": 0.6056
+          },
+          {
+            "id": "openstax-ics-2024_p034_para_00",
+            "source_id": "openstax-ics-2024",
+            "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+            "page": 34,
+            "text": "Figure 1.8 While Americans used to primarily get their news from newspapers, as technology has advanced, their primary source of news media has shifted. As of 2020, 53% of American adults surveyed stated they got their news from social media at least some of the time. (data source: Elisa Shearer and Amy Mitchell, Pew Research Center. \"About Half of Americans Get News on Social Media at Least Sometimes.\" From Survey of U.S. adults conducted Aug. 31–Sept. 7, 2020. In: E. Shearer, A. Mitchell, \"News Use Across Social Media Platforms in 2020,\" Jan 12, 2021.; attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nDespite the centrality of information to decision-making and social change, dominant approaches to computer science tend to focus on computational structures, systems, and processes (such as algorithms) that describe one kind of information by focusing on the what or how of solving problems with computers, but less often the why or who questions. Information science broadly centers people, organizations, and society in the study of information technologies.",
+            "metadata": {
+              "document_id": "openstax-ics-2024",
+              "source": "starter/data/Introduction_To_Computer_Science_-_WEB.pdf",
+              "page": 34,
+              "book_page": 24,
+              "year": 2024,
+              "license": "CC BY-NC-SA 4.0",
+              "raw_char_count": 2708,
+              "normalized_char_count": 2612,
+              "chapter": "chapter_1",
+              "chapter_title": "Introduction to Computer Science",
+              "section": "1.2",
+              "section_title": "Computer Science across the Disciplines",
+              "chunk_index": 0,
+              "char_start": 0,
+              "char_end": 1104,
+              "char_length": 1104,
+              "chunking_method": "by_paragraph_1500"
+            },
+            "score": 0.527176,
+            "strategy": "hybrid_rrf",
+            "dense_score": 0.538948,
+            "bm25_score": 5.2164
+          }
+        ],
+        "context": "[openstax-ics-2024_p030_para_00 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 30]\nportion of the cost in Middle Eastern and African countries using technology that was developed (at a high cost) in the United States and Europe over the past several decades. This means that sometimes, progress in one part of the world can be shared with another part of the world, enabling that area to quickly progress and advance technologically.\n\nLINK TO LEARNING\nThe Design Justice Network (https://openstax.org/r/76DesignJust) is an organization that aims to advance the principles of design justice and to include people who are marginalized in the technology design process.\n\n1.2 Computer Science across the Disciplines\nLearning Objectives\nBy the end of this section, you will be able to:\n• Differentiate between discovery and invention\n• Describe how science, mathematics, and engineering each play a role in computer science\n• Discuss how data science, computational science, and information science each relate to computer science\n\n[openstax-ics-2024_p033_para_01 | starter/data/Introduction_To_Computer_Science_-_WEB.pdf | page 33]\nCONCEPTS IN PRACTICE\nComputer Science and DNA\nResearch into DNA sequencing and indexing is opening new ways of helping medical providers offer personalized treatments for patients. Large-scale genome sequencing of not only the human genome, but also the DNA signatures for viruses has made it possible for medical providers to take human fluid samples and analyze them for the presence of infectious diseases. This research requires computer science concepts, including specialized medical computer devices to sequence the billions of nucleotides that form a DNA sequence, data structures and algorithms to efficiently process and identify DNA signatures, and the miniaturization of computer hardware so that this technology is accessible (both in terms of price and physical size) in more and more care centers.",
+        "context_ids": [
+          "openstax-ics-2024_p030_para_00",
+          "openstax-ics-2024_p033_para_01"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ]
   }
 ]

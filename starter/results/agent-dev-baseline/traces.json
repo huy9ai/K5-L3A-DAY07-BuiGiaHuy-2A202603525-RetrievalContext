@@ -9,7 +9,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 1.0,
+    "elapsed_ms": 0.87,
     "events": [
       {
         "event": "search",
@@ -212,7 +212,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 1.37,
+    "elapsed_ms": 1.13,
     "events": [
       {
         "event": "search",
@@ -419,7 +419,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.52,
+    "elapsed_ms": 0.81,
     "events": [
       {
         "event": "search",
@@ -622,7 +622,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.5,
+    "elapsed_ms": 0.56,
     "events": [
       {
         "event": "search",
@@ -827,7 +827,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.42,
+    "elapsed_ms": 0.43,
     "events": [
       {
         "event": "search",
@@ -1030,7 +1030,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.45,
+    "elapsed_ms": 0.46,
     "events": [
       {
         "event": "search",
@@ -1233,7 +1233,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.8,
+    "elapsed_ms": 0.74,
     "events": [
       {
         "event": "search",
@@ -1440,7 +1440,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.76,
+    "elapsed_ms": 0.6,
     "events": [
       {
         "event": "search",
@@ -1647,7 +1647,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.57,
+    "elapsed_ms": 0.55,
     "events": [
       {
         "event": "search",
@@ -1854,7 +1854,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.73,
+    "elapsed_ms": 1.01,
     "events": [
       {
         "event": "search",
@@ -2061,7 +2061,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.5,
+    "elapsed_ms": 0.51,
     "events": [
       {
         "event": "search",
@@ -2264,7 +2264,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.48,
+    "elapsed_ms": 0.59,
     "events": [
       {
         "event": "search",
@@ -2467,7 +2467,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.75,
+    "elapsed_ms": 0.6,
     "events": [
       {
         "event": "search",
@@ -2674,7 +2674,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.78,
+    "elapsed_ms": 0.57,
     "events": [
       {
         "event": "search",
@@ -2877,7 +2877,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 0.99,
+    "elapsed_ms": 0.81,
     "events": [
       {
         "event": "search",
@@ -3082,7 +3082,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 1.11,
+    "elapsed_ms": 0.53,
     "events": [
       {
         "event": "search",
@@ -3287,7 +3287,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 2,
-    "elapsed_ms": 1.36,
+    "elapsed_ms": 0.72,
     "events": [
       {
         "event": "search",
