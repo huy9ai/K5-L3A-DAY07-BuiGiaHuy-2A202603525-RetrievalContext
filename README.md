@@ -75,3 +75,27 @@ python starter/agent_metrics.py --cases data/agent_cases.json --traces starter/r
 | **Baseline (`tfidf_b800`) — `test`** | `7/7` (`100%`) | `1.71` | `3 / 0 / 2` (**`0.80 / 2.00`**) | `2/2` (`100%`) | `2/2` (`100%`) | `2/2` (`100%`) | `3/5` (`60.0%`) |
 | **Cấu hình Chốt (`hybrid_b3000`) — `test`** | `7/7` (`100%`) | `1.00` | `0 / 0 / 5` (**`2.00 / 2.00`**) | **`6/8` (`75.0%`)** | **`5/5` (`100%`)** | **`2/2` (`100%`)** | **`0/5` (`0.0%`)** |
 
+
+---
+
+## 4. Thử thách Nâng cao (+15 Điểm Bonus — Multimodal 100+ Pages & 48-Case Benchmark)
+
+### Bước 5: Chạy Pipeline Multimodal 100+ trang (`177` trang nội dung hợp lệ, `201` đơn vị `text/table/image_diagram/chart`) & Đánh giá 48 câu (`18 Dev` + `30 Test`)
+```powershell
+$env:PYTHONUTF8 = "1"
+..\K5-L3A-DAY06-BuiGiaHuy-2A202603525-DataIngestion\starter\.venv\Scripts\python.exe starter/run_advanced_challenge.py
+```
+
+### Tóm tắt Kết quả Thử thách Nâng cao ([starter/results/advanced_comparison_summary.json](starter/results/advanced_comparison_summary.json))
+- **Index Manifest**: [starter/data/advanced/advanced_index_manifest.json](starter/data/advanced/advanced_index_manifest.json) (`235` trang quét, **`177` trang nội dung hợp lệ** $> 100$ trang, `58` trang loại trừ có ghi lý do, **`201` chunks** gồm `177 text`, `8 table`, `10 image_diagram`, `6 chart` tại [starter/data/advanced/advanced_chunks.json](starter/data/advanced/advanced_chunks.json)).
+- **Bộ Benchmark 48 câu (`18 dev` + `30 test`)**: [data/advanced_benchmark.json](data/advanced_benchmark.json).
+- **Kết quả trên toàn bộ 30 câu `test`** ([starter/results/advanced-test-selected/summary.json](starter/results/advanced-test-selected/summary.json)):
+  - **Tổng tỷ lệ đạt (`n/N`)**: **`28/30` (`93.33%`)** — **Vượt ngưỡng $\ge 90\%$ (`27/30`) để nhận trọn vẹn +15 điểm Bonus**.
+  - **Theo từng nhóm chính (`primary_group`)**:
+    - `table`: **`5/6` (`83.33%`)**
+    - `image_diagram`: **`5/5` (`100.00%`)**
+    - `chart`: **`5/5` (`100.00%`)**
+    - `multi_hop`: **`3/4` (`75.00%`)**
+    - `text`: **`4/4` (`100.00%`)**
+    - `unanswerable`: **`6/6` (`100.00%`)**
+  - **Lỗi hệ thống / Timeout**: `0` · **Độ trễ trung vị**: `297.72 ms/câu` · **Chi phí ước tính**: `$0.01080 USD`.

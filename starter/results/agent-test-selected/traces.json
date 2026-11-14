@@ -11,7 +11,7 @@
       "openstax-ics-2024_p020_para_03"
     ],
     "num_searches": 1,
-    "elapsed_ms": 5.83,
+    "elapsed_ms": 5.18,
     "events": [
       {
         "event": "search",
@@ -133,7 +133,7 @@
       "openstax-ics-2024_p029_para_00"
     ],
     "num_searches": 1,
-    "elapsed_ms": 4.81,
+    "elapsed_ms": 5.14,
     "events": [
       {
         "event": "search",
@@ -258,7 +258,7 @@
       "openstax-ics-2024_p038_para_03"
     ],
     "num_searches": 1,
-    "elapsed_ms": 2.5,
+    "elapsed_ms": 1.25,
     "events": [
       {
         "event": "search",
@@ -382,7 +382,7 @@
       "openstax-ics-2024_p057_para_01"
     ],
     "num_searches": 1,
-    "elapsed_ms": 5.23,
+    "elapsed_ms": 4.24,
     "events": [
       {
         "event": "search",
@@ -507,7 +507,7 @@
       "openstax-ics-2024_p056_para_00"
     ],
     "num_searches": 1,
-    "elapsed_ms": 1.62,
+    "elapsed_ms": 2.14,
     "events": [
       {
         "event": "search",
@@ -632,7 +632,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 1,
-    "elapsed_ms": 1.39,
+    "elapsed_ms": 1.31,
     "events": [
       {
         "event": "search",
@@ -757,7 +757,7 @@
     "answer": "Không đủ bằng chứng để trả lời.",
     "citations": [],
     "num_searches": 1,
-    "elapsed_ms": 0.89,
+    "elapsed_ms": 0.86,
     "events": [
       {
         "event": "search",

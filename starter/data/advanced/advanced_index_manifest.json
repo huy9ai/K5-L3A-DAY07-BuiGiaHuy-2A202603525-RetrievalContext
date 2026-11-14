@@ -1,0 +1,257 @@
+{
+  "document_id": "openstax-ics-2024",
+  "title": "Introduction to Computer Science (OpenStax, Rice University, 2024)",
+  "license": "CC BY-NC-SA 4.0",
+  "scanned_physical_pages": 235,
+  "valid_content_pages_count": 177,
+  "excluded_pages_count": 58,
+  "total_chunks_indexed": 201,
+  "modality_breakdown": {
+    "text": 177,
+    "table": 8,
+    "image_diagram": 10,
+    "chart": 6
+  },
+  "unprocessed_or_excluded_sections": {
+    "excluded_pages": [
+      {
+        "page": 1,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 2,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 3,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 4,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 5,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 6,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 7,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 8,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 9,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 10,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 11,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 12,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 13,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 14,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 15,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 16,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 17,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 18,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 43,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 44,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 45,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 46,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 47,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 48,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 90,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 91,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 92,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 93,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 94,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 95,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 96,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 97,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 98,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 139,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 140,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 141,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 142,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 143,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 144,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 145,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 146,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 147,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 148,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 149,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 150,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 152,
+        "reason": "insufficient_text_length"
+      },
+      {
+        "page": 193,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 194,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 195,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 196,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 197,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 198,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 199,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 200,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 201,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 202,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 203,
+        "reason": "front_matter_or_chapter_review_exercises"
+      },
+      {
+        "page": 204,
+        "reason": "front_matter_or_chapter_review_exercises"
+      }
+    ],
+    "decorative_stock_photos_skipped": [
+      "Figure 1.1 (decorative collage p.19)",
+      "Figure 2.1 (office furniture photo p.49)",
+      "Figure 3.1 (decorative street map photo p.99)"
+    ],
+    "impact": "Excluded front matter, end-of-chapter review questions, and purely decorative stock photos per ADVANCED.md rules so retrieval focuses strictly on informative text, tables, architectural diagrams, and quantitative charts."
+  }
+}

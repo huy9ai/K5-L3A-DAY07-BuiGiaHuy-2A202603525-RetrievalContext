@@ -45,7 +45,7 @@
     "N": 5,
     "mean": 2.0
   },
-  "median_ms": 2.5,
+  "median_ms": 2.14,
   "llm_api_calls": 0,
   "prompt_tokens": 0,
   "completion_tokens": 0,

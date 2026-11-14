@@ -1,0 +1,914 @@
+[
+  {
+    "case_id": "adv_d01",
+    "split": "dev",
+    "primary_group": "table",
+    "question": "In Table 2.2 (Sample Table for Recording Test Problems and Improvements, pages 60–61), what are the three exact column headers, and how is this table used during algorithm testing and debugging?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "In Table 2.2 (Sample Table for Recording Test Problems and Improvements, pages 60–61), what are the three exact column headers, and how is this table used during algorithm testing and debugging?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p060_txt_00",
+          "openstax-ics-2024_p061_txt_00",
+          "openstax-ics-2024_p071_txt_00"
+        ],
+        "returned_pages": [
+          60,
+          61,
+          71
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p060_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 60,
+        "modality": "text",
+        "element_id": "Page 60 Text Block 0",
+        "bbox_region": "page=60, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 144.51,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d02",
+    "split": "dev",
+    "primary_group": "table",
+    "question": "According to Table 2.4 (Organizational Roles, page 67), what are the exact Responsibilities and Reporting lines for each of the three roles (DBA, CIO, and HR employee)?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "According to Table 2.4 (Organizational Roles, page 67), what are the exact Responsibilities and Reporting lines for each of the three roles (DBA, CIO, and HR employee)?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p067_txt_00",
+          "openstax-ics-2024_p068_txt_00",
+          "openstax-ics-2024_p071_txt_00"
+        ],
+        "returned_pages": [
+          67,
+          68,
+          71
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p067_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 67,
+        "modality": "text",
+        "element_id": "Page 67 Text Block 0",
+        "bbox_region": "page=67, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 143.71,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d03",
+    "split": "dev",
+    "primary_group": "table",
+    "question": "In Table 5.1 (Compilers and Their I/O, page 212), which compiler numbers take HLL 1 versus HLL 2 as input, and what target ISA is produced by Compiler #4 and Compiler #5?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "In Table 5.1 (Compilers and Their I/O, page 212), which compiler numbers take HLL 1 versus HLL 2 as input, and what target ISA is produced by Compiler #4 and Compiler #5?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p212_txt_00",
+          "openstax-ics-2024_p211_txt_00",
+          "openstax-ics-2024_p221_txt_00"
+        ],
+        "returned_pages": [
+          212,
+          211,
+          221
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p212_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 212,
+        "modality": "text",
+        "element_id": "Page 212 Text Block 0",
+        "bbox_region": "page=212, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 143.78,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d04",
+    "split": "dev",
+    "primary_group": "image_diagram",
+    "question": "In Figure 3.3 (Array List memory layout diagram, page 102), how are list elements arranged in physical memory cells, and why does this layout enable single-step random access?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "In Figure 3.3 (Array List memory layout diagram, page 102), how are list elements arranged in physical memory cells, and why does this layout enable single-step random access?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p102_txt_00",
+          "openstax-ics-2024_p135_txt_00",
+          "openstax-ics-2024_p133_txt_00"
+        ],
+        "returned_pages": [
+          102,
+          135,
+          133
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p102_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 102,
+        "modality": "text",
+        "element_id": "Page 102 Text Block 0",
+        "bbox_region": "page=102, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 143.5,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d05",
+    "split": "dev",
+    "primary_group": "image_diagram",
+    "question": "Comparing the divide-and-conquer diagrams in Figure 3.16 (Binary Search) and Figure 3.17 (Merge Sort) on page 121, how many recursive subproblems does each algorithm create at the divide step, and how do their combine steps differ?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Comparing the divide-and-conquer diagrams in Figure 3.16 (Binary Search) and Figure 3.17 (Merge Sort) on page 121, how many recursive subproblems does each algorithm create at the divide step, and how do their combine steps differ?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p121_txt_00",
+          "openstax-ics-2024_p128_txt_00",
+          "openstax-ics-2024_p122_txt_00"
+        ],
+        "returned_pages": [
+          121,
+          128,
+          122
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p121_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 121,
+        "modality": "text",
+        "element_id": "Page 121 Text Block 0",
+        "bbox_region": "page=121, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 144.05,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d06",
+    "split": "dev",
+    "primary_group": "image_diagram",
+    "question": "In the computational model diagrams on page 155 (Figures 4.2, 4.3, and 4.4), what do the black arrows versus red arrows represent in the Standard CPU Model (Figure 4.2), and how does the Random Access Machine (Figure 4.3) model memory?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "In the computational model diagrams on page 155 (Figures 4.2, 4.3, and 4.4), what do the black arrows versus red arrows represent in the Standard CPU Model (Figure 4.2), and how does the Random Access Machine (Figure 4.3) model memory?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p155_txt_00",
+          "openstax-ics-2024_p154_txt_00",
+          "openstax-ics-2024_p178_txt_00"
+        ],
+        "returned_pages": [
+          155,
+          154,
+          178
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p155_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 155,
+        "modality": "text",
+        "element_id": "Page 155 Text Block 0",
+        "bbox_region": "page=155, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 144.65,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d07",
+    "split": "dev",
+    "primary_group": "chart",
+    "question": "In the Performance Profiling Flame Graph chart (Figure 3.12, page 115), what does the vertical axis (stacking order from bottom to top) represent compared to the horizontal axis?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "In the Performance Profiling Flame Graph chart (Figure 3.12, page 115), what does the vertical axis (stacking order from bottom to top) represent compared to the horizontal axis?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p115_txt_00",
+          "openstax-ics-2024_p103_txt_00",
+          "openstax-ics-2024_p126_txt_00"
+        ],
+        "returned_pages": [
+          115,
+          103,
+          126
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p115_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 115,
+        "modality": "text",
+        "element_id": "Page 115 Text Block 0",
+        "bbox_region": "page=115, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 143.49,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d08",
+    "split": "dev",
+    "primary_group": "chart",
+    "question": "On the Sequential Search runtime comparison chart (Figure 3.13, page 117), what are the horizontal and vertical axes, and what is the exact shape, repetition count, and Big-O complexity of the best-case curve?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "On the Sequential Search runtime comparison chart (Figure 3.13, page 117), what are the horizontal and vertical axes, and what is the exact shape, repetition count, and Big-O complexity of the best-case curve?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p117_txt_00",
+          "openstax-ics-2024_p118_txt_00",
+          "openstax-ics-2024_p119_txt_00"
+        ],
+        "returned_pages": [
+          117,
+          118,
+          119
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p117_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 117,
+        "modality": "text",
+        "element_id": "Page 117 Text Block 0",
+        "bbox_region": "page=117, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 143.74,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d09",
+    "split": "dev",
+    "primary_group": "chart",
+    "question": "According to the Runtime vs. Problem Size chart and scaling multipliers on page 119 (Figure 3.15), when the input problem size N doubles (to 2N), how many times more resources are required for an O(N) linear algorithm, an O(N log N) linearithmic algorithm, and an O(N^3) cubic algorithm?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "According to the Runtime vs. Problem Size chart and scaling multipliers on page 119 (Figure 3.15), when the input problem size N doubles (to 2N), how many times more resources are required for an O(N) linear algorithm, an O(N log N) linearithmic algorithm, and an O(N^3) cubic algorithm?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p119_txt_00",
+          "openstax-ics-2024_p118_txt_00",
+          "openstax-ics-2024_p135_txt_00"
+        ],
+        "returned_pages": [
+          119,
+          118,
+          135
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p119_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 119,
+        "modality": "text",
+        "element_id": "Page 119 Text Block 0",
+        "bbox_region": "page=119, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 143.74,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d10",
+    "split": "dev",
+    "primary_group": "multi_hop",
+    "question": "Combining Figure 2.10 (Layered Software Architectures, page 65) and Table 2.3 (Common Enterprise-Level Architecture Domains, page 66), what three software architecture styles are compared in Figure 2.10, and how do they connect to the 'Application architecture' and 'Integration architecture' domains in Table 2.3?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Combining Figure 2.10 (Layered Software Architectures, page 65) and Table 2.3 (Common Enterprise-Level Architecture Domains, page 66), what three software architecture styles are compared in Figure 2.10, and how do they connect to the 'Application architecture' and 'Integration architecture' domains in Table 2.3?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p065_txt_00",
+          "openstax-ics-2024_p066_txt_00",
+          "openstax-ics-2024_p064_txt_00"
+        ],
+        "returned_pages": [
+          65,
+          66,
+          64
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p065_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 65,
+        "modality": "text",
+        "element_id": "Page 65 Text Block 0",
+        "bbox_region": "page=65, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 145.27,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d11",
+    "split": "dev",
+    "primary_group": "multi_hop",
+    "question": "Combining the Order of Growth chart (Figure 3.14, page 118) with the Binary Search recurrence analysis in Section 3.5 (page 125), where does O(log N) rank among the complexity curves in Figure 3.14, and what exact recurrence relation C(N) on page 125 proves that Binary Search requires log_2(N) + 1 comparisons when N is a power of 2?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Combining the Order of Growth chart (Figure 3.14, page 118) with the Binary Search recurrence analysis in Section 3.5 (page 125), where does O(log N) rank among the complexity curves in Figure 3.14, and what exact recurrence relation C(N) on page 125 proves that Binary Search requires log_2(N) + 1 comparisons when N is a power of 2?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p118_txt_00",
+          "openstax-ics-2024_p117_txt_00",
+          "openstax-ics-2024_p119_txt_00"
+        ],
+        "returned_pages": [
+          118,
+          117,
+          119
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p118_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 118,
+        "modality": "text",
+        "element_id": "Page 118 Text Block 0",
+        "bbox_region": "page=118, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 144.61,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d12",
+    "split": "dev",
+    "primary_group": "multi_hop",
+    "question": "Combining the Memory Hierarchy Triangle chart (Figure 5.20, page 229) and the On-Chip SRAM Cache diagram and text (Figure 5.23, page 232), why is SRAM placed at the top apex of Figure 5.20 despite requiring 4 to 6 transistors per bit, and how many 4-byte integer elements (A[0]..A[x]) are fetched from DRAM into SRAM on a single 64-byte cache miss?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Combining the Memory Hierarchy Triangle chart (Figure 5.20, page 229) and the On-Chip SRAM Cache diagram and text (Figure 5.23, page 232), why is SRAM placed at the top apex of Figure 5.20 despite requiring 4 to 6 transistors per bit, and how many 4-byte integer elements (A[0]..A[x]) are fetched from DRAM into SRAM on a single 64-byte cache miss?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p232_txt_00",
+          "openstax-ics-2024_p229_txt_00",
+          "openstax-ics-2024_p231_txt_00"
+        ],
+        "returned_pages": [
+          232,
+          229,
+          231
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p232_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 232,
+        "modality": "text",
+        "element_id": "Page 232 Text Block 0",
+        "bbox_region": "page=232, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 144.68,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d13",
+    "split": "dev",
+    "primary_group": "text",
+    "question": "What are the 'Three As' of computational thinking defined in Section 2.1 (page 52), and what are the four levels of architectural description defined in Section 2.2 (page 73)?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "What are the 'Three As' of computational thinking defined in Section 2.1 (page 52), and what are the four levels of architectural description defined in Section 2.2 (page 73)?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p052_txt_00",
+          "openstax-ics-2024_p073_txt_00",
+          "openstax-ics-2024_p062_txt_00"
+        ],
+        "returned_pages": [
+          52,
+          73,
+          62
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p052_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 52,
+        "modality": "text",
+        "element_id": "Page 52 Text Block 0",
+        "bbox_region": "page=52, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 143.46,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d14",
+    "split": "dev",
+    "primary_group": "text",
+    "question": "According to Section 3.5 (Sorting Algorithms, page 127), how do Insertion Sort and Selection Sort compare in best-case versus worst-case time complexity, and why does Insertion Sort achieve O(N) best-case runtime on an already-sorted list?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "According to Section 3.5 (Sorting Algorithms, page 127), how do Insertion Sort and Selection Sort compare in best-case versus worst-case time complexity, and why does Insertion Sort achieve O(N) best-case runtime on an already-sorted list?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p127_txt_00",
+          "openstax-ics-2024_p117_txt_00",
+          "openstax-ics-2024_p129_txt_00"
+        ],
+        "returned_pages": [
+          127,
+          117,
+          129
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p127_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 127,
+        "modality": "text",
+        "element_id": "Page 127 Text Block 0",
+        "bbox_region": "page=127, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": false,
+    "answer": "On page 127, Selection Sort always requires O(N^2) quadratic time in both the best case and worst case because it repeatedly scans the entire unsorted remainder to find the minimum element. Insertion Sort has an O(N^2) worst-case runtime (on a reverse-sorted list), but achieves an O(N) linear best-case runtime when the input list is already sorted (or nearly sorted) because each new element only needs a single comparison against its immediate left neighbor without shifting elements. [openstax-ics-2024, p.127]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 127,
+        "region": "page=127"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 143.68,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_d15",
+    "split": "dev",
+    "primary_group": "text",
+    "question": "According to Section 5.2 (Computer Levels of Abstraction, page 209), what three key characteristics must every algorithm have to be executable and useful on a computer, and why does an algorithm that counts all even numbers fail?",
+    "expected_behavior": "answer",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "According to Section 5.2 (Computer Levels of Abstraction, page 209), what three key characteristics must every algorithm have to be executable and useful on a computer, and why does an algorithm that counts all even numbers fail?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p209_txt_00",
+          "openstax-ics-2024_p208_txt_00",
+          "openstax-ics-2024_p109_txt_00"
+        ],
+        "returned_pages": [
+          209,
+          208,
+          109
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p209_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 209,
+        "modality": "text",
+        "element_id": "Page 209 Text Block 0",
+        "bbox_region": "page=209, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": false,
+    "answer": "On page 209, every algorithm must have three key characteristics: (1) it must be unambiguous (each step is well-defined and precise), (2) it must be deterministic (reproducible and repeatable so the same inputs always produce the same output), and (3) it must be finite and consume a reasonable amount of time and storage (an algorithm taking 100 years is useless). An algorithm that counts all even numbers fails the finiteness/reasonable-time requirement because there are infinitely many even numbers. [openstax-ics-2024, p.209]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 209,
+        "region": "page=209"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 143.65,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_du01",
+    "split": "dev",
+    "primary_group": "unanswerable",
+    "question": "In Table 5.3 (Technologies Used for Storage in a Typical Computer System, page 229), what is the exact read/write latency in nanoseconds (ns) and cost in USD per gigabyte ($/GB) listed for Intel Optane 3D XPoint persistent memory?",
+    "expected_behavior": "abstain",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "In Table 5.3 (Technologies Used for Storage in a Typical Computer System, page 229), what is the exact read/write latency in nanoseconds (ns) and cost in USD per gigabyte ($/GB) listed for Intel Optane 3D XPoint persistent memory?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p229_txt_00",
+          "openstax-ics-2024_p230_txt_00",
+          "openstax-ics-2024_p228_txt_00"
+        ],
+        "returned_pages": [
+          229,
+          230,
+          228
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p229_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "modality": "text",
+        "element_id": "Page 229 Text Block 0",
+        "bbox_region": "page=229, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I must abstain from answering because the provided textbook context does not contain evidence for the requested specification/metric.",
+    "citations": [],
+    "pass": true,
+    "latency_ms": 143.78,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_du02",
+    "split": "dev",
+    "primary_group": "unanswerable",
+    "question": "According to the Performance Profiling Flame Graph chart (Figure 3.12, page 115), what exact percentage of CPU execution time was consumed by Python 3.12's `gc.collect()` garbage collector function?",
+    "expected_behavior": "abstain",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "According to the Performance Profiling Flame Graph chart (Figure 3.12, page 115), what exact percentage of CPU execution time was consumed by Python 3.12's `gc.collect()` garbage collector function?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p115_txt_00",
+          "openstax-ics-2024_p206_txt_00",
+          "openstax-ics-2024_p185_txt_00"
+        ],
+        "returned_pages": [
+          115,
+          206,
+          185
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p115_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 115,
+        "modality": "text",
+        "element_id": "Page 115 Text Block 0",
+        "bbox_region": "page=115, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I must abstain from answering because the provided textbook context does not contain evidence for the requested specification/metric.",
+    "citations": [],
+    "pass": true,
+    "latency_ms": 143.65,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  },
+  {
+    "case_id": "adv_du03",
+    "split": "dev",
+    "primary_group": "unanswerable",
+    "question": "In Table 2.4 (Organizational Roles, page 67), what annual base salary range in USD and TOGAF 10 certification exam score are required for the CIO and DBA roles?",
+    "expected_behavior": "abstain",
+    "searches_executed": 1,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "In Table 2.4 (Organizational Roles, page 67), what annual base salary range in USD and TOGAF 10 certification exam score are required for the CIO and DBA roles?",
+        "top_k": 3,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p067_txt_00",
+          "openstax-ics-2024_p066_txt_00",
+          "openstax-ics-2024_p068_txt_00"
+        ],
+        "returned_pages": [
+          67,
+          66,
+          68
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p067_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 67,
+        "modality": "text",
+        "element_id": "Page 67 Text Block 0",
+        "bbox_region": "page=67, bbox=[72, 72, 540, 720]",
+        "chars": 1200
+      }
+    ],
+    "context_chars": 1200,
+    "abstained": true,
+    "answer": "I must abstain from answering because the provided textbook context does not contain evidence for the requested specification/metric.",
+    "citations": [],
+    "pass": true,
+    "latency_ms": 143.52,
+    "estimated_cost_usd": 0.00018,
+    "error": null
+  }
+]

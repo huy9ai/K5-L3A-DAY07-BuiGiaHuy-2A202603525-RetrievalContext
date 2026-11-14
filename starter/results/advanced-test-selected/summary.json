@@ -1,0 +1,54 @@
+{
+  "suite": "adv_test_selected_interleaved_b6000",
+  "split": "test",
+  "budget_chars": 6000,
+  "top_k": 5,
+  "max_searches": 2,
+  "multimodal_enabled": true,
+  "total_cases": 30,
+  "passed_cases": 28,
+  "overall_n_over_N": "28/30",
+  "overall_pass_rate_pct": 93.33,
+  "meets_90pct_bonus_threshold": true,
+  "system_errors_or_timeouts": 0,
+  "by_primary_group": {
+    "table": {
+      "n": 5,
+      "N": 6,
+      "ratio": "5/6",
+      "pass_rate_pct": 83.33
+    },
+    "image_diagram": {
+      "n": 5,
+      "N": 5,
+      "ratio": "5/5",
+      "pass_rate_pct": 100.0
+    },
+    "chart": {
+      "n": 5,
+      "N": 5,
+      "ratio": "5/5",
+      "pass_rate_pct": 100.0
+    },
+    "multi_hop": {
+      "n": 3,
+      "N": 4,
+      "ratio": "3/4",
+      "pass_rate_pct": 75.0
+    },
+    "text": {
+      "n": 4,
+      "N": 4,
+      "ratio": "4/4",
+      "pass_rate_pct": 100.0
+    },
+    "unanswerable": {
+      "n": 6,
+      "N": 6,
+      "ratio": "6/6",
+      "pass_rate_pct": 100.0
+    }
+  },
+  "median_latency_ms": 292.07,
+  "total_estimated_cost_usd": 0.0108
+}

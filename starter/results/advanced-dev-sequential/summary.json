@@ -1,0 +1,54 @@
+{
+  "suite": "adv_dev_config2_multimodal_sequential_b4500",
+  "split": "dev",
+  "budget_chars": 4500,
+  "top_k": 5,
+  "max_searches": 2,
+  "multimodal_enabled": true,
+  "total_cases": 18,
+  "passed_cases": 15,
+  "overall_n_over_N": "15/18",
+  "overall_pass_rate_pct": 83.33,
+  "meets_90pct_bonus_threshold": false,
+  "system_errors_or_timeouts": 0,
+  "by_primary_group": {
+    "table": {
+      "n": 3,
+      "N": 3,
+      "ratio": "3/3",
+      "pass_rate_pct": 100.0
+    },
+    "image_diagram": {
+      "n": 3,
+      "N": 3,
+      "ratio": "3/3",
+      "pass_rate_pct": 100.0
+    },
+    "chart": {
+      "n": 3,
+      "N": 3,
+      "ratio": "3/3",
+      "pass_rate_pct": 100.0
+    },
+    "multi_hop": {
+      "n": 1,
+      "N": 3,
+      "ratio": "1/3",
+      "pass_rate_pct": 33.33
+    },
+    "text": {
+      "n": 2,
+      "N": 3,
+      "ratio": "2/3",
+      "pass_rate_pct": 66.67
+    },
+    "unanswerable": {
+      "n": 3,
+      "N": 3,
+      "ratio": "3/3",
+      "pass_rate_pct": 100.0
+    }
+  },
+  "median_latency_ms": 291.57,
+  "total_estimated_cost_usd": 0.00648
+}

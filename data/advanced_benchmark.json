@@ -1,0 +1,1104 @@
+[
+  {
+    "id": "adv_d01",
+    "split": "dev",
+    "primary_group": "table",
+    "secondary_tags": [
+      "chapter_2",
+      "testing_debugging"
+    ],
+    "question": "In Table 2.2 (Sample Table for Recording Test Problems and Improvements, pages 60–61), what are the three exact column headers, and how is this table used during algorithm testing and debugging?",
+    "expected_behavior": "answer",
+    "gold_answer": "Table 2.2 has three column headers: (1) 'Test Case #', (2) 'Description of Problem Encountered', and (3) 'Improvement Needed to Fix Problem'. It is used during Testing and Debugging to systematically record test case failures in algorithms and code and track the required improvements before deployment.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      60
+    ],
+    "evidence_region": "page=60, Table 2.2, bbox=[72, 580, 540, 710], Header row (3 columns)",
+    "verification_method": "Verify against PDF Page 60 bottom table header row for Table 2.2.",
+    "rationale": "Tests table column header extraction and purpose identification on Dev.",
+    "sub_queries": [
+      "Table 2.2 Sample Table for Recording Test Problems and Improvements column headers",
+      "Testing and Debugging Table 2.2 Test Case Description of Problem Improvement"
+    ]
+  },
+  {
+    "id": "adv_d02",
+    "split": "dev",
+    "primary_group": "table",
+    "secondary_tags": [
+      "chapter_2",
+      "organizational_roles"
+    ],
+    "question": "According to Table 2.4 (Organizational Roles, page 67), what are the exact Responsibilities and Reporting lines for each of the three roles (DBA, CIO, and HR employee)?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Table 2.4 (page 67): (1) DBA (database administrator) is responsible for 'Managing and monitoring the database activities' and reports to the 'IT manager or VP of IT'; (2) CIO (chief information officer) is responsible for 'Overall IT leadership' and reports to the 'CEO (chief executive officer)'; (3) HR employee is responsible for 'Human resources operations' and reports to the 'HR manager'.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      67
+    ],
+    "evidence_region": "page=67, Table 2.4, bbox=[72, 540, 540, 690], Rows 1–3 across Columns (Role Title, Responsibilities, Reporting)",
+    "verification_method": "Verify all 3 rows and 3 columns of Table 2.4 on PDF Page 67.",
+    "rationale": "Tests multi-row, multi-column cell lookup in a structured organizational table.",
+    "sub_queries": [
+      "Table 2.4 Organizational Roles DBA CIO HR employee Responsibilities Reporting",
+      "database administrator IT manager CIO CEO Table 2.4 page 67"
+    ]
+  },
+  {
+    "id": "adv_d03",
+    "split": "dev",
+    "primary_group": "table",
+    "secondary_tags": [
+      "chapter_5",
+      "compilers_isa"
+    ],
+    "question": "In Table 5.1 (Compilers and Their I/O, page 212), which compiler numbers take HLL 1 versus HLL 2 as input, and what target ISA is produced by Compiler #4 and Compiler #5?",
+    "expected_behavior": "answer",
+    "gold_answer": "According to Table 5.1 (page 212), HLL 1 is the input to Compiler #1 (outputs ISA 1) and Compiler #4 (outputs ISA 2), while HLL 2 is the input to Compiler #2 (outputs ISA 2) and Compiler #5 (outputs ISA 1). Specifically, Compiler #4 outputs ISA 2 and Compiler #5 outputs ISA 1.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      212
+    ],
+    "evidence_region": "page=212, Table 5.1, bbox=[72, 100, 540, 290], Rows 1, 2, 4, 5",
+    "verification_method": "Cross-check rows 1, 2, 4, and 5 of Table 5.1 on PDF Page 212.",
+    "rationale": "Tests conditional row filtering by input column and target lookup in Table 5.1.",
+    "sub_queries": [
+      "Table 5.1 Compilers and Their I/O HLL 1 HLL 2 Compiler 4 Compiler 5 ISA",
+      "Table 5.1 page 212 Input to the Compiler Output from the Compiler"
+    ]
+  },
+  {
+    "id": "adv_d04",
+    "split": "dev",
+    "primary_group": "image_diagram",
+    "secondary_tags": [
+      "chapter_3",
+      "array_list_layout"
+    ],
+    "question": "In Figure 3.3 (Array List memory layout diagram, page 102), how are list elements arranged in physical memory cells, and why does this layout enable single-step random access?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 3.3 (page 102), Array List elements are stored contiguously (directly next to each other) in adjacent memory cells in exact list order. Because any element's memory address can be computed directly from the base address and index, it enables random access to any element in a single step, though inserting or deleting elements in the middle is slow.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      102
+    ],
+    "evidence_region": "page=102, Figure 3.3, bbox=[72, 310, 540, 460]",
+    "verification_method": "Check Figure 3.3 diagram and caption/text on PDF Page 102.",
+    "rationale": "Tests visual memory layout interpretation on Dev.",
+    "sub_queries": [
+      "Figure 3.3 Array List memory layout contiguous adjacent cells random access",
+      "page 102 Figure 3.3 Figure 3.4 array list linked list memory"
+    ]
+  },
+  {
+    "id": "adv_d05",
+    "split": "dev",
+    "primary_group": "image_diagram",
+    "secondary_tags": [
+      "chapter_3",
+      "divide_and_conquer"
+    ],
+    "question": "Comparing the divide-and-conquer diagrams in Figure 3.16 (Binary Search) and Figure 3.17 (Merge Sort) on page 121, how many recursive subproblems does each algorithm create at the divide step, and how do their combine steps differ?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 3.16 (page 121), Binary Search divides the problem into 1 active subproblem of half the size (the remaining half of the sorted list), makes a single recursive call, and returns that result directly with no extra combine work. In contrast, Figure 3.17 shows that Merge Sort divides the unsorted list into 2 equal halves, recursively sorts both halves until sublists reach size 1, and combines adjacent sorted sublists by merging them into a single sorted list.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      121
+    ],
+    "evidence_region": "page=121, Figure 3.16 & Figure 3.17, bbox=[72, 140, 540, 610]",
+    "verification_method": "Verify against Figure 3.16 and Figure 3.17 diagrams and numbered steps on PDF Page 121.",
+    "rationale": "Tests comparative diagram analysis between two divide-and-conquer trees.",
+    "sub_queries": [
+      "Figure 3.16 Binary Search Figure 3.17 Merge Sort divide conquer combine page 121",
+      "divide and conquer one recursive call half two subproblems merge sort"
+    ]
+  },
+  {
+    "id": "adv_d06",
+    "split": "dev",
+    "primary_group": "image_diagram",
+    "secondary_tags": [
+      "chapter_4",
+      "models_of_computation"
+    ],
+    "question": "In the computational model diagrams on page 155 (Figures 4.2, 4.3, and 4.4), what do the black arrows versus red arrows represent in the Standard CPU Model (Figure 4.2), and how does the Random Access Machine (Figure 4.3) model memory?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 4.2 (Standard CPU Model, page 155), the black arrows show how the program leverages registers and memory for data transfer, whereas the red arrows show how the CPU orchestrates overall execution of the program applying low-level instructions to an input to produce an output. In Figure 4.3, the Random Access Machine (RAM) models memory as an unlimited sequence of numbered memory cells that can store any arbitrary value, with a Program Counter (PC) determining the next statement to execute.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      155
+    ],
+    "evidence_region": "page=155, Figure 4.2 & Figure 4.3, bbox=[72, 95, 540, 660]",
+    "verification_method": "Inspect Figure 4.2 caption (black arrows vs red arrows) and Figure 4.3 description on PDF Page 155.",
+    "rationale": "Tests reading color-coded arrow semantics and structural blocks in architectural diagrams.",
+    "sub_queries": [
+      "Figure 4.2 Standard CPU Model black arrows red arrows Figure 4.3 Random Access Machine",
+      "page 155 unlimited memory cells Program Counter PC Turing machine Figure 4.4"
+    ]
+  },
+  {
+    "id": "adv_d07",
+    "split": "dev",
+    "primary_group": "chart",
+    "secondary_tags": [
+      "chapter_3",
+      "flame_graph"
+    ],
+    "question": "In the Performance Profiling Flame Graph chart (Figure 3.12, page 115), what does the vertical axis (stacking order from bottom to top) represent compared to the horizontal axis?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 3.12 (Flame Graph chart, page 115), the vertical axis (y-axis) represents the function call stack depth, with parent caller functions at the bottom and called child functions stacked on top. The horizontal axis (x-axis) represents relative execution duration, where each bar's width indicates the percentage (%) of total execution time spent in that function.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      115
+    ],
+    "evidence_region": "page=115, Figure 3.12, bbox=[72, 470, 540, 710]",
+    "verification_method": "Check Figure 3.12 flame graph axes and text explanation on PDF Page 115.",
+    "rationale": "Tests reading chart axes on Dev.",
+    "sub_queries": [
+      "Figure 3.12 Flame Graph chart vertical axis horizontal axis call stack duration",
+      "page 115 performance profiling flame graph percentage of total duration"
+    ]
+  },
+  {
+    "id": "adv_d08",
+    "split": "dev",
+    "primary_group": "chart",
+    "secondary_tags": [
+      "chapter_3",
+      "sequential_search_chart"
+    ],
+    "question": "On the Sequential Search runtime comparison chart (Figure 3.13, page 117), what are the horizontal and vertical axes, and what is the exact shape, repetition count, and Big-O complexity of the best-case curve?",
+    "expected_behavior": "answer",
+    "gold_answer": "On Figure 3.13 (page 117), the horizontal axis (x-axis) plots list size N (number of words in the list) and the vertical axis (y-axis) plots the number of repetitions (runtime cost). The best-case curve (when the target word is at the very top/start of the list) requires exactly 1 repetition regardless of N and is plotted as a flat horizontal line representing constant order of growth O(1).",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      117
+    ],
+    "evidence_region": "page=117, Figure 3.13, bbox=[72, 180, 540, 420]",
+    "verification_method": "Verify axes and best-case horizontal line in Figure 3.13 on PDF Page 117.",
+    "rationale": "Tests chart axis reading and best-case trendline interpretation.",
+    "sub_queries": [
+      "Figure 3.13 Sequential Search best case flat horizontal line 1 repetition O(1)",
+      "page 117 Figure 3.13 repetitions list size N best-case worst-case"
+    ]
+  },
+  {
+    "id": "adv_d09",
+    "split": "dev",
+    "primary_group": "chart",
+    "secondary_tags": [
+      "chapter_3",
+      "scaling_multipliers"
+    ],
+    "question": "According to the Runtime vs. Problem Size chart and scaling multipliers on page 119 (Figure 3.15), when the input problem size N doubles (to 2N), how many times more resources are required for an O(N) linear algorithm, an O(N log N) linearithmic algorithm, and an O(N^3) cubic algorithm?",
+    "expected_behavior": "answer",
+    "gold_answer": "According to Figure 3.15 and the scaling summary on page 119, when input size N doubles (2N): an O(N) linear algorithm requires 2 times (2x) the resources; an O(N log N) linearithmic algorithm requires a little more than 2 times (>2x) the resources; and an O(N^3) cubic algorithm requires 8 times (8x) the resources.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      119
+    ],
+    "evidence_region": "page=119, Figure 3.15, bbox=[72, 320, 540, 620]",
+    "verification_method": "Check the doubling N resource multiplier list and Figure 3.15 on PDF Page 119.",
+    "rationale": "Tests quantitative multiplier comparison from an algorithmic scaling chart.",
+    "sub_queries": [
+      "Figure 3.15 page 119 problem size N doubles O(N) O(N log N) O(N^3) 8 times resources",
+      "Runtime vs Problem Size N chart scaling multipliers 2 times 8 times"
+    ]
+  },
+  {
+    "id": "adv_d10",
+    "split": "dev",
+    "primary_group": "multi_hop",
+    "secondary_tags": [
+      "chapter_2",
+      "software_enterprise_architecture"
+    ],
+    "question": "Combining Figure 2.10 (Layered Software Architectures, page 65) and Table 2.3 (Common Enterprise-Level Architecture Domains, page 66), what three software architecture styles are compared in Figure 2.10, and how do they connect to the 'Application architecture' and 'Integration architecture' domains in Table 2.3?",
+    "expected_behavior": "answer",
+    "gold_answer": "Figure 2.10 (page 65) compares three evolutionary software architecture patterns: (1) Tiered architectures, (2) Service-Oriented Architectures (SOA), and (3) Microservices architectures. In Table 2.3 (page 66), 'Application architecture' (Domain 3) designs and organizes software applications via application portfolios, application integration, and interface design, while 'Integration architecture' (Domain 6) facilitates seamless communication and data exchange across those tiers, SOA services, and microservices using middleware, messaging systems, and integration patterns.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      65,
+      66
+    ],
+    "evidence_region": "page=65, Figure 2.10, bbox=[72, 95, 540, 390]; page=66, Table 2.3 Rows 3 & 6, bbox=[72, 85, 540, 480]",
+    "verification_method": "Verify Figure 2.10 on PDF Page 65 and Rows 3 & 6 of Table 2.3 on PDF Page 66.",
+    "rationale": "Multi-hop synthesis across a diagram on page 65 and an enterprise table on page 66.",
+    "sub_queries": [
+      "Figure 2.10 Tiered Service-Oriented Architectures SOA Microservices page 65",
+      "Table 2.3 Common Enterprise-Level Architecture Domains Application Integration architecture page 66"
+    ]
+  },
+  {
+    "id": "adv_d11",
+    "split": "dev",
+    "primary_group": "multi_hop",
+    "secondary_tags": [
+      "chapter_3",
+      "binary_search_complexity"
+    ],
+    "question": "Combining the Order of Growth chart (Figure 3.14, page 118) with the Binary Search recurrence analysis in Section 3.5 (page 125), where does O(log N) rank among the complexity curves in Figure 3.14, and what exact recurrence relation C(N) on page 125 proves that Binary Search requires log_2(N) + 1 comparisons when N is a power of 2?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 3.14 (page 118), O(log N) logarithmic growth is the second most efficient complexity class right after constant O(1) and grows much slower than linear O(N). On page 125, the number of comparisons C(N) for Binary Search satisfies the recurrence relation C(N) = 1 + C(floor(N/2)) with base case C(1) = 1 (and C(0) = 0); when N is a power of 2, repeatedly halving N simplifies this recurrence to C(N) = log_2(N) + 1, which is O(log N).",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      118,
+      125
+    ],
+    "evidence_region": "page=118, Figure 3.14, bbox=[72, 85, 540, 330]; page=125, Section 3.5 Recurrence Relation text",
+    "verification_method": "Check Figure 3.14 on PDF Page 118 and the C(N) = log_2(N) + 1 derivation on PDF Page 125.",
+    "rationale": "Multi-hop combining a complexity chart (page 118) with mathematical recurrence analysis (page 125).",
+    "sub_queries": [
+      "Figure 3.14 Order of Growth O(1) O(log N) logarithmic efficiency curve page 118",
+      "Binary search recurrence C(N) log_2(N) + 1 power of 2 page 125"
+    ]
+  },
+  {
+    "id": "adv_d12",
+    "split": "dev",
+    "primary_group": "multi_hop",
+    "secondary_tags": [
+      "chapter_5",
+      "sram_cache_hierarchy"
+    ],
+    "question": "Combining the Memory Hierarchy Triangle chart (Figure 5.20, page 229) and the On-Chip SRAM Cache diagram and text (Figure 5.23, page 232), why is SRAM placed at the top apex of Figure 5.20 despite requiring 4 to 6 transistors per bit, and how many 4-byte integer elements (A[0]..A[x]) are fetched from DRAM into SRAM on a single 64-byte cache miss?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 5.20 (page 229), SRAM (Technology 1, cache memory) sits at the top apex closest to the processor because it is the fastest storage technology and resides directly on-chip with the CPU (Figure 5.23, page 232), avoiding slow off-chip bus transfers and needing no refresh. Because each SRAM bit requires 4 to 6 transistors (taking much larger chip area than DRAM's 1 capacitor), SRAM is limited to a few KB to a few MB. On page 232, when a cache miss occurs on A[0], the cache fetches a 64-byte line from DRAM; for 4-byte integers, 64 / 4 = 16 consecutive elements (A[0] through A[15]) are brought into SRAM, turning subsequent accesses to A[1]..A[15] into cache hits.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      229,
+      232
+    ],
+    "evidence_region": "page=229, Figure 5.20, bbox=[72, 230, 540, 425]; page=232, Figure 5.23 & Cache Miss calculation",
+    "verification_method": "Verify Figure 5.20 on PDF Page 229 and Figure 5.23 + 64-byte / 16-element calculation on PDF Page 232.",
+    "rationale": "Multi-hop combining a chart on page 229 with an architecture diagram and arithmetic calculation on page 232.",
+    "sub_queries": [
+      "Figure 5.20 Memory Hierarchy Triangle apex SRAM cache page 229",
+      "Figure 5.23 SRAM 4 to 6 transistors 64 bytes 16 elements A[0] to A[15] cache miss page 232"
+    ]
+  },
+  {
+    "id": "adv_d13",
+    "split": "dev",
+    "primary_group": "text",
+    "secondary_tags": [
+      "chapter_2",
+      "computational_thinking_architecture"
+    ],
+    "question": "What are the 'Three As' of computational thinking defined in Section 2.1 (page 52), and what are the four levels of architectural description defined in Section 2.2 (page 73)?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Section 2.1 (page 52), the 'Three As' of computational thinking are: (1) Abstraction (problem formulation), (2) Automation (expressing the solution), and (3) Analysis (solution execution and evaluation). In Section 2.2 (page 73), the four levels of architectural description are: (1) Presentation (simplified form for communication), (2) Conceptual (structured view omitting technical details), (3) Logical (detailed architecture independent of specific technologies), and (4) Physical (actual technological specifics used in implementation).",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      52,
+      73
+    ],
+    "evidence_region": "page=52, Section 2.1 Three As list; page=73, Section 2.2 Four architectural levels list",
+    "verification_method": "Verify the numbered lists on PDF Page 52 and PDF Page 73.",
+    "rationale": "Tests conditional synthesis of numbered definitions from textbook prose.",
+    "sub_queries": [
+      "three As abstraction automation analysis computational thinking page 52",
+      "Presentation Conceptual Logical Physical levels of architecture page 73"
+    ]
+  },
+  {
+    "id": "adv_d14",
+    "split": "dev",
+    "primary_group": "text",
+    "secondary_tags": [
+      "chapter_3",
+      "elementary_sorts"
+    ],
+    "question": "According to Section 3.5 (Sorting Algorithms, page 127), how do Insertion Sort and Selection Sort compare in best-case versus worst-case time complexity, and why does Insertion Sort achieve O(N) best-case runtime on an already-sorted list?",
+    "expected_behavior": "answer",
+    "gold_answer": "On page 127, Selection Sort always requires O(N^2) quadratic time in both the best case and worst case because it repeatedly scans the entire unsorted remainder to find the minimum element. Insertion Sort has an O(N^2) worst-case runtime (on a reverse-sorted list), but achieves an O(N) linear best-case runtime when the input list is already sorted (or nearly sorted) because each new element only needs a single comparison against its immediate left neighbor without shifting elements.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      127
+    ],
+    "evidence_region": "page=127, Section 3.5 Selection Sort and Insertion Sort analysis",
+    "verification_method": "Verify against Section 3.5 text on PDF Page 127.",
+    "rationale": "Tests prose comparison of algorithmic best/worst case conditions.",
+    "sub_queries": [
+      "Insertion sort Selection sort best case O(N) worst case O(N^2) already sorted page 127",
+      "Section 3.5 elementary sorting algorithms comparison"
+    ]
+  },
+  {
+    "id": "adv_d15",
+    "split": "dev",
+    "primary_group": "text",
+    "secondary_tags": [
+      "chapter_5",
+      "algorithm_characteristics"
+    ],
+    "question": "According to Section 5.2 (Computer Levels of Abstraction, page 209), what three key characteristics must every algorithm have to be executable and useful on a computer, and why does an algorithm that counts all even numbers fail?",
+    "expected_behavior": "answer",
+    "gold_answer": "On page 209, every algorithm must have three key characteristics: (1) it must be unambiguous (each step is well-defined and precise), (2) it must be deterministic (reproducible and repeatable so the same inputs always produce the same output), and (3) it must be finite and consume a reasonable amount of time and storage (an algorithm taking 100 years is useless). An algorithm that counts all even numbers fails the finiteness/reasonable-time requirement because there are infinitely many even numbers.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      209
+    ],
+    "evidence_region": "page=209, Section 5.2 paragraphs 3–4",
+    "verification_method": "Check Section 5.2 text on PDF Page 209.",
+    "rationale": "Tests extracting multi-condition requirements and counterexamples from prose.",
+    "sub_queries": [
+      "unambiguous deterministic finite reasonable amount of time counts even numbers page 209",
+      "Section 5.2 key set of characteristics algorithm 100 years"
+    ]
+  },
+  {
+    "id": "adv_du01",
+    "split": "dev",
+    "primary_group": "unanswerable",
+    "secondary_tags": [
+      "chapter_5",
+      "missing_evidence"
+    ],
+    "question": "In Table 5.3 (Technologies Used for Storage in a Typical Computer System, page 229), what is the exact read/write latency in nanoseconds (ns) and cost in USD per gigabyte ($/GB) listed for Intel Optane 3D XPoint persistent memory?",
+    "expected_behavior": "abstain",
+    "gold_answer": "ABSTAIN: Table 5.3 (pages 229–230) only lists four qualitative storage technologies (SRAM, DRAM, SSD, and HDD) with qualitative speed/cost descriptors; it does not mention Intel Optane 3D XPoint memory, nanosecond latencies, or $/GB prices.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [],
+    "evidence_region": "None (verified absent on pages 229–230; Table 5.3 only contains SRAM, DRAM, SSD, HDD without ns or $/GB figures).",
+    "verification_method": "Inspect Table 5.3 on PDF Pages 229–230 to confirm Intel Optane, ns latencies, and $/GB costs are absent.",
+    "rationale": "Tests abstention on near-topic storage table query requesting nonexistent technology and metrics.",
+    "sub_queries": [
+      "Table 5.3 Intel Optane 3D XPoint latency nanoseconds USD per gigabyte",
+      "Table 5.3 Technologies Used for Storage SRAM DRAM SSD HDD page 229"
+    ]
+  },
+  {
+    "id": "adv_du02",
+    "split": "dev",
+    "primary_group": "unanswerable",
+    "secondary_tags": [
+      "chapter_3",
+      "missing_evidence"
+    ],
+    "question": "According to the Performance Profiling Flame Graph chart (Figure 3.12, page 115), what exact percentage of CPU execution time was consumed by Python 3.12's `gc.collect()` garbage collector function?",
+    "expected_behavior": "abstain",
+    "gold_answer": "ABSTAIN: Figure 3.12 (page 115) illustrates how flame graphs represent call stack depth and percentage of execution duration, but does not report a specific CPU percentage for Python 3.12's `gc.collect()` garbage collector.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [],
+    "evidence_region": "None (verified absent on page 115; Figure 3.12 is a general flame graph illustration without Python 3.12 gc.collect() metrics).",
+    "verification_method": "Check Figure 3.12 and surrounding text on PDF Page 115.",
+    "rationale": "Tests abstention when asked for a specific function metric not present in the chart.",
+    "sub_queries": [
+      "Figure 3.12 flame graph Python 3.12 gc.collect garbage collector percentage",
+      "Figure 3.12 page 115 performance profiling flame graph"
+    ]
+  },
+  {
+    "id": "adv_du03",
+    "split": "dev",
+    "primary_group": "unanswerable",
+    "secondary_tags": [
+      "chapter_2",
+      "missing_evidence"
+    ],
+    "question": "In Table 2.4 (Organizational Roles, page 67), what annual base salary range in USD and TOGAF 10 certification exam score are required for the CIO and DBA roles?",
+    "expected_behavior": "abstain",
+    "gold_answer": "ABSTAIN: Table 2.4 (page 67) only specifies Role Title, Responsibilities, and Reporting lines for DBA, CIO, and HR employee; it does not contain salary ranges in USD or TOGAF 10 certification requirements.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [],
+    "evidence_region": "None (verified absent on page 67; Table 2.4 has only Role Title, Responsibilities, and Reporting columns).",
+    "verification_method": "Check Table 2.4 on PDF Page 67 to confirm salary and certification columns do not exist.",
+    "rationale": "Tests abstention on unstated attributes of an existing table.",
+    "sub_queries": [
+      "Table 2.4 CIO DBA annual salary USD TOGAF 10 certification score",
+      "Table 2.4 Organizational Roles page 67 DBA CIO HR employee"
+    ]
+  },
+  {
+    "id": "adv_t01",
+    "split": "test",
+    "primary_group": "table",
+    "secondary_tags": [
+      "chapter_2",
+      "table_calculation"
+    ],
+    "question": "In Table 2.1 (Logical Thinking and Pattern Recognition — Jam Sandwich Example, page 54), list the exact items under the 'Ingredients', 'Equipment', and 'Actions' columns, and compute both (a) the total number of items across all three columns and (b) how many more 'Actions' there are than 'Equipment' items.",
+    "expected_behavior": "answer",
+    "gold_answer": "In Table 2.1 (page 54): (1) Ingredients (3 items): Bread, Jam, Butter; (2) Equipment (2 items): Plate, Knife; (3) Actions (5 items): Repeat x times, Left hand (LH), Right hand (RH), Pick up, Unscrew. (a) Total items across all three columns = 3 + 2 + 5 = 10 items. (b) Difference between Actions and Equipment = 5 - 2 = 3 more Actions than Equipment items.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      54
+    ],
+    "evidence_region": "page=54, Table 2.1, bbox=[72, 410, 540, 565], Rows 1–5 across Columns (Ingredients, Equipment, Actions)",
+    "verification_method": "Count non-empty cells in each column of Table 2.1 on PDF Page 54 (3 + 2 + 5 = 10; 5 - 2 = 3).",
+    "rationale": "Tests exact cell extraction plus count and subtraction arithmetic over a table.",
+    "sub_queries": [
+      "Table 2.1 Ingredients Equipment Actions Bread Jam Butter Plate Knife Unscrew page 54",
+      "Table 2.1 Logical Thinking and Pattern Recognition total items"
+    ]
+  },
+  {
+    "id": "adv_t02",
+    "split": "test",
+    "primary_group": "table",
+    "secondary_tags": [
+      "chapter_2",
+      "enterprise_architecture"
+    ],
+    "question": "According to Table 2.3 (Common Enterprise-Level Architecture Domains, page 66), list all 7 Architecture Domains in order, and compare the exact 'Purpose' and 'Components' of 'Information architecture' (Row 2) with those of 'Security architecture' (Row 5).",
+    "expected_behavior": "answer",
+    "gold_answer": "Table 2.3 (page 66) lists 7 Architecture Domains: (1) Business architecture, (2) Information architecture, (3) Application architecture, (4) Technology architecture, (5) Security architecture, (6) Integration architecture, and (7) Process architecture. Comparing Row 2 and Row 5: Information architecture has Purpose = 'Manages data and information assets' and Components = 'Data models, information flow diagrams, data governance, data standards, and metadata', whereas Security architecture has Purpose = 'Ensures the protection of information assets, systems, and networks' and Components = 'Security policies, access controls, and encryption mechanisms'.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      66
+    ],
+    "evidence_region": "page=66, Table 2.3, bbox=[72, 85, 540, 480], Rows 1–7, specifically Row 2 and Row 5",
+    "verification_method": "Verify all 7 domain names and the exact Purpose/Components cells of Rows 2 and 5 in Table 2.3 on PDF Page 66.",
+    "rationale": "Tests full-column enumeration and row-to-row comparison in a 7x3 table.",
+    "sub_queries": [
+      "Table 2.3 Common Enterprise-Level Architecture Domains Information architecture Security architecture page 66",
+      "Business Information Application Technology Security Integration Process architecture Table 2.3"
+    ]
+  },
+  {
+    "id": "adv_t03",
+    "split": "test",
+    "primary_group": "table",
+    "secondary_tags": [
+      "chapter_2",
+      "financial_organization_roles"
+    ],
+    "question": "Based on Table 2.5 (Roles and Responsibilities within a Financial Organization, page 68), which of the 7 titles is responsible for 'Process and settle trades; Handle trade confirmation and reconciliation', and how do its responsibilities differ from those of 'Risk managers' (Row 4) and 'Technology professionals' (Row 6)?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Table 2.5 (page 68), the title responsible for 'Process and settle trades; Handle trade confirmation and reconciliation' is 'Back-office operations' (Row 3 of 7). In contrast, 'Risk managers' (Row 4) are responsible for 'Monitor and manage risk exposure; Ensure compliance with risk management policies', and 'Technology professionals' (Row 6) are responsible for 'Develop and maintain trading systems and IT infrastructure; Ensure the security and efficiency of technology resources'.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      68
+    ],
+    "evidence_region": "page=68, Table 2.5, bbox=[72, 130, 540, 540], Rows 3, 4, and 6",
+    "verification_method": "Check Rows 3, 4, and 6 of Table 2.5 on PDF Page 68.",
+    "rationale": "Tests reverse lookup from responsibility description to title and multi-row comparison.",
+    "sub_queries": [
+      "Table 2.5 Roles and Responsibilities within a Financial Organization Back-office operations Risk managers page 68",
+      "Process and settle trades trade confirmation reconciliation Technology professionals Table 2.5"
+    ]
+  },
+  {
+    "id": "adv_t04",
+    "split": "test",
+    "primary_group": "table",
+    "secondary_tags": [
+      "chapter_5",
+      "compiler_mapping_table"
+    ],
+    "question": "Using Table 5.1 (Compilers and Their I/O, page 212), how many total compilers are listed to map the 3 High-Level Languages (HLL 1, HLL 2, HLL 3) to the 2 Instruction Set Architectures (ISA 1, ISA 2), which specific compiler numbers output ISA 1 versus ISA 2, and what pattern links odd-numbered versus even-numbered compilers to their output ISA?",
+    "expected_behavior": "answer",
+    "gold_answer": "Table 5.1 (page 212) lists 6 total compilers (3 HLLs x 2 ISAs = 6 compilers). Odd-numbered compilers — Compiler #1 (HLL 1 -> ISA 1), Compiler #3 (HLL 3 -> ISA 1), and Compiler #5 (HLL 2 -> ISA 1) — all output ISA 1, whereas even-numbered compilers — Compiler #2 (HLL 2 -> ISA 2), Compiler #4 (HLL 1 -> ISA 2), and Compiler #6 (HLL 3 -> ISA 2) — all output ISA 2.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      212
+    ],
+    "evidence_region": "page=212, Table 5.1, bbox=[72, 100, 540, 290], Rows 1–6",
+    "verification_method": "Inspect all 6 rows of Table 5.1 on PDF Page 212.",
+    "rationale": "Tests aggregation, grouping, and pattern extraction across all rows of Table 5.1.",
+    "sub_queries": [
+      "Table 5.1 Compilers and Their I/O HLL 1 HLL 2 HLL 3 ISA 1 ISA 2 odd even compilers page 212",
+      "6 compilers Table 5.1 page 212 Output from the Compiler"
+    ]
+  },
+  {
+    "id": "adv_t05",
+    "split": "test",
+    "primary_group": "table",
+    "secondary_tags": [
+      "chapter_5",
+      "binary_addition_twos_complement"
+    ],
+    "question": "Using Table 5.2 (Op1 and Op2 Inputs to the Addition Operation, page 217) and the accompanying 3-bit signed representation table (Figure 5.12, pages 216–217), state the Carry and Sum outputs for all four 1-bit input pairs (0+0, 0+1, 1+0, 1+1), and explain why 3-bit Two's Complement represents [-4, +3] (8 unique integers) whereas Sign-Magnitude and One's Complement only represent [-3, +3].",
+    "expected_behavior": "answer",
+    "gold_answer": "In Table 5.2 (page 217), the 1-bit binary addition results for (Op1, Op2) are: (0, 0) -> Carry = 0, Sum = 0; (0, 1) -> Carry = 0, Sum = 1; (1, 0) -> Carry = 0, Sum = 1; and (1, 1) -> Carry = 1, Sum = 0 (since 1 + 1 = 10 in base 2). According to pages 216–217 (Figure 5.12), with n = 3 bits, Two's Complement spans [-2^(3-1), +2^(3-1)-1] = [-4, +3] (8 unique values, where 100 = -4 and 101 = -3) because it has a single representation for zero (000), whereas Sign-Magnitude and One's Complement waste one bit pattern on a second representation of zero (+0 and -0), restricting their range to [-3, +3].",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      216,
+      217
+    ],
+    "evidence_region": "page=217, Table 5.2, bbox=[72, 520, 540, 665]; page=216, Figure 5.12 3-bit Signed Representation Table",
+    "verification_method": "Verify Table 5.2 truth table on PDF Page 217 and Figure 5.12 range comparison on PDF Pages 216–217.",
+    "rationale": "Tests binary truth-table reading and range comparison across number representation tables.",
+    "sub_queries": [
+      "Table 5.2 Op1 Op2 Carry Sum page 217 Figure 5.12 two's complement [-4, +3] [-3, +3]",
+      "sign-magnitude one's complement two representations of 0 +0 -0 page 216 217"
+    ]
+  },
+  {
+    "id": "adv_t06",
+    "split": "test",
+    "primary_group": "table",
+    "secondary_tags": [
+      "chapter_5",
+      "storage_media_table"
+    ],
+    "question": "According to Table 5.3 (Technologies Used for Storage in a Typical Computer System, pages 229–230), compare all four storage technologies (Technology 1 through Technology 4) by stating each technology's full name, system role (cache/main memory/storage), volatility or persistence, relative speed, relative cost, and typical size range.",
+    "expected_behavior": "answer",
+    "gold_answer": "In Table 5.3 (pages 229–230): (1) Technology 1 = Static random access memory (SRAM): used as Cache memory; Volatile, Very fast, Expensive, Small in size (from a few KB to a few MB). (2) Technology 2 = Dynamic random access memory (DRAM): used as Main memory; Volatile, Fast, Less expensive, Average in size (1GB to 128GB). (3) Technology 3 = Solid-state drive (SSD): used as Storage; Persistent, Slow (relative to RAM), Cheap, Big in size (a few GB to a few TB). (4) Technology 4 = Hard disk drive (HDD): used as Storage; Persistent, Very slow, Very cheap, Several TB of storage.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      229,
+      230
+    ],
+    "evidence_region": "page=229-230, Table 5.3, bbox=[72, 430, 540, 720], Rows 1–4",
+    "verification_method": "Verify all 4 rows of Table 5.3 across PDF Pages 229 and 230.",
+    "rationale": "Tests structured comparison across a multi-page hardware specification table.",
+    "sub_queries": [
+      "Table 5.3 Technologies Used for Storage Technology 1 SRAM Technology 2 DRAM SSD HDD page 229 230",
+      "Volatile Persistent Very fast Expensive 1GB to 128GB Several TB Table 5.3"
+    ]
+  },
+  {
+    "id": "adv_t07",
+    "split": "test",
+    "primary_group": "image_diagram",
+    "secondary_tags": [
+      "chapter_1",
+      "neural_network_diagram"
+    ],
+    "question": "In Figure 1.9 (Architecture Diagram of an Artificial Neural Network, page 37), what three layers are arranged from left to right in part (a), what is the functional role of each layer, and what structural change in part (b) distinguishes a deep neural network?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 1.9 (page 37), part (a) shows three layers arranged left-to-right: (1) Input layer (where raw data enters the network), (2) Hidden layer (which processes inputs through weighted connections and activation functions), and (3) Output layer (which produces the final prediction or classification). Part (b) illustrates that a deep neural network stacks multiple hidden layers between the input and output layers to extract hierarchical features.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      37
+    ],
+    "evidence_region": "page=37, Figure 1.9, bbox=[72, 220, 540, 490], parts (a) and (b)",
+    "verification_method": "Check Figure 1.9(a) and (b) diagram labels and caption on PDF Page 37.",
+    "rationale": "Tests architectural layer identification and sub-figure comparison in a diagram.",
+    "sub_queries": [
+      "Figure 1.9 Artificial Neural Network ANN Input layer Hidden layer Output layer page 37",
+      "deep neural networks multiple hidden layers Figure 1.9"
+    ]
+  },
+  {
+    "id": "adv_t08",
+    "split": "test",
+    "primary_group": "image_diagram",
+    "secondary_tags": [
+      "chapter_2",
+      "flowchart_diagram"
+    ],
+    "question": "In Figure 2.9 (Flowchart for Iterative Solution of Adding N Numbers, page 59), identify the four standard flowchart geometric symbols used in the diagram and explain how the diamond decision symbol controls the iterative loop.",
+    "expected_behavior": "answer",
+    "gold_answer": "Figure 2.9 (page 59) uses four geometric flowchart symbols: (1) rounded rectangles/terminals for Start and Stop, (2) parallelograms for Input and Output operations, (3) rectangles for Process steps (initializing sum = 0 and counter, and adding the current number to sum), and (4) a diamond Decision symbol. The diamond decision symbol tests whether all N numbers have been added: if False, an arrow loops back to read and add the next number; if True, execution exits the loop to output the final sum and Stop.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      59
+    ],
+    "evidence_region": "page=59, Figure 2.9, bbox=[72, 110, 540, 430]",
+    "verification_method": "Verify flowchart shapes and loop arrows in Figure 2.9 on PDF Page 59.",
+    "rationale": "Tests visual symbol recognition and control-flow tracing in an algorithmic flowchart.",
+    "sub_queries": [
+      "Figure 2.9 Flowchart for Iterative Solution of Adding N Numbers diamond decision symbol page 59",
+      "rounded Start Stop parallelogram Input Output rectangle Process Figure 2.9"
+    ]
+  },
+  {
+    "id": "adv_t09",
+    "split": "test",
+    "primary_group": "image_diagram",
+    "secondary_tags": [
+      "chapter_3",
+      "array_vs_linked_list"
+    ],
+    "question": "Comparing Figure 3.3 (Array List) and Figure 3.4 (Linked List) on page 102, contrast how elements are positioned and connected in memory between the two diagrams, and state the resulting trade-off between element access speed and insertion/deletion efficiency.",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 3.3 (page 102), Array List elements are stored contiguously (next to each other) in adjacent memory cells in list order, whereas in Figure 3.4, Linked List nodes are scattered across non-adjacent memory locations with each node storing its element plus an explicit pointer/link arrow to the next node. Consequently, an Array List provides fast single-step random access to any element but slow insertion and deletion, whereas a Linked List provides fast insertion and deletion (by updating pointers) but requires slower sequential access from the head.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      102
+    ],
+    "evidence_region": "page=102, Figure 3.3 & Figure 3.4, bbox=[72, 310, 540, 620]",
+    "verification_method": "Verify Figure 3.3 and Figure 3.4 diagrams and comparison text on PDF Page 102.",
+    "rationale": "Tests side-by-side memory diagram comparison and algorithmic trade-off extraction.",
+    "sub_queries": [
+      "Figure 3.3 Figure 3.4 Array List Linked List contiguous pointers random access sequential access page 102",
+      "insertion deletion memory layout diagrams page 102"
+    ]
+  },
+  {
+    "id": "adv_t10",
+    "split": "test",
+    "primary_group": "image_diagram",
+    "secondary_tags": [
+      "chapter_3",
+      "bst_avl_tree_diagrams"
+    ],
+    "question": "In Figure 3.6 (Binary Search Tree of letters A–G, page 103) and Figure 3.7 (AVL Self-Balancing Tree, page 104), which letter is at the root of Figure 3.6, what are the exact left and right child letters of nodes D, B, and F, and what do the solid black arrows indicate during the insertion of 1, 2, 3, 4, 5, 6 in Figure 3.7?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 3.6 (page 103), the root node at the top of the Binary Search Tree is 'D' (the middle of the 7 letters A–G). Node 'D' has left child 'B' and right child 'F'; node 'B' has left child 'A' and right child 'C'; and node 'F' has left child 'E' and right child 'G', ordering letters least-to-greatest from left to right. In Figure 3.7 (page 104), as numbers 1, 2, 3, 4, 5, 6 are inserted sequentially into an initially empty AVL tree, the solid black arrows mark the tree rotation steps that rebalance the left and right subtrees at every node.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      103,
+      104
+    ],
+    "evidence_region": "page=103-104, Figure 3.6 & Figure 3.7, bbox=[72, 360, 540, 680]",
+    "verification_method": "Inspect tree nodes A–G in Figure 3.6 (Page 103) and rotation arrows in Figure 3.7 (Page 104).",
+    "rationale": "Tests exact node topology reading in tree diagrams and visual arrow semantics.",
+    "sub_queries": [
+      "Figure 3.6 Binary Search Tree A B C D E F G root D Figure 3.7 AVL tree rotations page 103 104",
+      "solid black arrows rotation steps rebalance 1 2 3 4 5 6 Figure 3.7"
+    ]
+  },
+  {
+    "id": "adv_t11",
+    "split": "test",
+    "primary_group": "image_diagram",
+    "secondary_tags": [
+      "chapter_4",
+      "compilation_linking_diagrams"
+    ],
+    "question": "In Figure 4.18 (C Compilation/Linking Pipeline, page 173) and Figure 4.24 (Linker Symbol Resolution Diagram, page 177), how does the compiler driver (`gcc -Og -o prog main.c sum.c`) transform source files into an executable, and how does the linker handle strong symbols versus weak symbols while merging `.text` and `.data` segments?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 4.18 (page 173), the compiler driver (`gcc -Og -o prog main.c sum.c`) translates C source files (`main.c`, `sum.c`) into relocatable object files (`.o`) and invokes the linker to combine them into a single executable object file (`prog`). In Figure 4.24 (page 177), the linker resolves symbols across `.o` files — distinguishing strong symbols (procedures/functions and initialized global variables) from weak symbols (uninitialized global variables) — and merges the separate `.text` (code) and `.data` segments of the relocatable object files into the unified `.text` and `.data` segments of the final executable.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      173,
+      177
+    ],
+    "evidence_region": "page=173-177, Figure 4.18 & Figure 4.24, bbox=[72, 95, 540, 380]",
+    "verification_method": "Check Figure 4.18 (Page 173) and Figure 4.24 (Page 177) diagrams and accompanying text.",
+    "rationale": "Tests systems pipeline diagram interpretation and linker segment mapping.",
+    "sub_queries": [
+      "Figure 4.18 Figure 4.24 gcc -Og -o prog main.c sum.c relocatable object files strong weak symbols .text .data page 177",
+      "linker symbol resolution diagram page 173 177"
+    ]
+  },
+  {
+    "id": "adv_t12",
+    "split": "test",
+    "primary_group": "chart",
+    "secondary_tags": [
+      "chapter_1",
+      "pew_research_chart"
+    ],
+    "question": "According to Figure 1.8 (Chart of U.S. News Media Consumption Shift, page 34) based on the Pew Research Center survey conducted Aug. 31–Sept. 7, 2020, what major media consumption shift does the chart depict and what exact percentage (%) of American adults surveyed reported getting their news from social media?",
+    "expected_behavior": "answer",
+    "gold_answer": "Figure 1.8 (page 34) depicts how Americans' primary source of news shifted away from traditional print newspapers toward digital and social media platforms. According to the cited Pew Research Center survey of U.S. adults conducted Aug. 31–Sept. 7, 2020 (published Jan 12, 2021), 53% of American adults surveyed stated that they got their news from social media at least some of the time.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      34
+    ],
+    "evidence_region": "page=34, Figure 1.8, bbox=[72, 85, 540, 340]",
+    "verification_method": "Verify Figure 1.8 chart and Pew Research Center 53% figure on PDF Page 34.",
+    "rationale": "Tests extracting trend direction, survey timeframe, and exact percentage from a statistical chart.",
+    "sub_queries": [
+      "Figure 1.8 Pew Research Center 53% American adults news from social media Aug 31 Sept 7 2020 page 34",
+      "Chart of U.S. News Media Consumption Shift page 34"
+    ]
+  },
+  {
+    "id": "adv_t13",
+    "split": "test",
+    "primary_group": "chart",
+    "secondary_tags": [
+      "chapter_3",
+      "flame_graph_bottlenecks"
+    ],
+    "question": "In the Performance Profiling Flame Graph chart (Figure 3.12, page 115), what do the horizontal bar width (in % of total duration) and vertical call stack depth represent, and how do engineers visually identify a CPU performance bottleneck on this chart?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 3.12 (page 115), the horizontal axis (bar width) represents the relative execution duration as a percentage (%) of total runtime spent in each function, while the vertical axis represents the call stack depth (parent functions below, child functions stacked above). Engineers visually pinpoint CPU performance bottlenecks by looking for wide rectangular bars near the top of the flame graph, which indicate leaf functions consuming the largest share of CPU time.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      115
+    ],
+    "evidence_region": "page=115, Figure 3.12, bbox=[72, 470, 540, 710]",
+    "verification_method": "Check Figure 3.12 flame graph axes, bar widths, and text explanation on PDF Page 115.",
+    "rationale": "Tests interpreting both axes and visual bottleneck semantics of a profiling chart.",
+    "sub_queries": [
+      "Figure 3.12 Performance Profiling Flame Graph horizontal bar width percentage vertical call stack bottlenecks page 115",
+      "wide bars at the top of the flame graph CPU time page 115"
+    ]
+  },
+  {
+    "id": "adv_t14",
+    "split": "test",
+    "primary_group": "chart",
+    "secondary_tags": [
+      "chapter_3",
+      "sequential_search_worst_case"
+    ],
+    "question": "On the Sequential Search runtime comparison chart (Figure 3.13, page 117), why is the worst-case runtime plotted as an upward-sloping diagonal line O(N) while the best-case runtime is a flat horizontal line O(1), and what two physical search conditions trigger the worst case of N repetitions?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 3.13 (page 117), the best-case runtime is a flat horizontal line O(1) at 1 repetition because the target word is found immediately at the very top/start of the list regardless of list size N. The worst-case runtime is an upward-sloping diagonal line O(N) because doubling list size N doubles the required repetitions; this worst case of N repetitions occurs under two search conditions: (1) when the target word is at the very bottom/end of the list, or (2) when the target word is not in the list at all.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      117
+    ],
+    "evidence_region": "page=117, Figure 3.13, bbox=[72, 180, 540, 420]",
+    "verification_method": "Verify Figure 3.13 best-case vs worst-case lines and text on PDF Page 117.",
+    "rationale": "Tests contrasting two curves on a chart and identifying exact boundary conditions.",
+    "sub_queries": [
+      "Figure 3.13 Sequential Search worst case upward-sloping diagonal line O(N) bottom of the list not in the list page 117",
+      "best case flat horizontal line O(1) N repetitions Figure 3.13"
+    ]
+  },
+  {
+    "id": "adv_t15",
+    "split": "test",
+    "primary_group": "chart",
+    "secondary_tags": [
+      "chapter_3",
+      "order_of_growth_chart"
+    ],
+    "question": "In the Order of Growth Asymptotic Efficiency Curves chart (Figure 3.14, page 118), list all eight complexity classes plotted from slowest-growing (most efficient) to fastest-growing (least efficient), and state the mathematical upper-bound condition on f(N)/g(N) as N -> infinity that defines f(N) = O(g(N)).",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 3.14 (page 118), the eight complexity classes ordered from slowest-growing (most efficient) to fastest-growing (least efficient) are: (1) O(1) constant, (2) O(log N) logarithmic, (3) O(N) linear, (4) O(N log N) linearithmic, (5) O(N^2) quadratic, (6) O(N^3) cubic, (7) O(2^N) exponential, and (8) O(N!) factorial. Mathematically, f(N) = O(g(N)) if the ratio f(N)/g(N) is upper bounded by a positive constant as N approaches infinity (N -> infinity).",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      118
+    ],
+    "evidence_region": "page=118, Figure 3.14, bbox=[72, 85, 540, 330]",
+    "verification_method": "Check curve ordering in Figure 3.14 and Big-O definition on PDF Page 118.",
+    "rationale": "Tests ordering multiple series on an asymptotic chart and extracting the formal mathematical condition.",
+    "sub_queries": [
+      "Figure 3.14 Order of Growth O(1) O(log N) O(N) O(N log N) O(N^2) O(N^3) O(2^N) O(N!) f(N)/g(N) page 118",
+      "asymptotic efficiency curves upper bounded by a constant as N approaches infinity"
+    ]
+  },
+  {
+    "id": "adv_t16",
+    "split": "test",
+    "primary_group": "chart",
+    "secondary_tags": [
+      "chapter_3",
+      "chapter_5",
+      "chart_synthesis"
+    ],
+    "question": "According to the Runtime vs. Problem Size chart (Figure 3.15, page 119) and the Memory Hierarchy Triangle chart (Figure 5.20, page 229), by what factor do required resources multiply when input size N doubles (2N) versus quadruples (4N) for a quadratic O(N^2) algorithm, what runtime threshold (in years) on Figure 3.15 exceeds the current age of the universe, and how are the 4 storage technologies ordered from apex to base in Figure 5.20?",
+    "expected_behavior": "answer",
+    "gold_answer": "On page 119 (Figure 3.15), for a quadratic O(N^2) algorithm, doubling input size N to 2N multiplies required resources by 4 times (4x), and quadrupling N to 4N multiplies required resources by 16 times (16x). On the Figure 3.15 chart, when an algorithm's runtime exceeds 10^25 years (such as an exponential algorithm on N = 1,000 elements), it exceeds the current age of the universe. In the Memory Hierarchy Triangle chart (Figure 5.20, page 229), the 4 storage technologies are ordered from top apex (closest to CPU, smallest, fastest) to bottom base (largest capacity, slowest) as: (1) SRAM (cache) -> (2) DRAM (main memory) -> (3) SSD -> (4) HDD.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      119,
+      229
+    ],
+    "evidence_region": "page=119, Figure 3.15, bbox=[72, 320, 540, 620]; page=229, Figure 5.20, bbox=[72, 230, 540, 425]",
+    "verification_method": "Check quadratic 4x/16x multipliers and 10^25 years on PDF Page 119, and pyramid levels in Figure 5.20 on PDF Page 229.",
+    "rationale": "Tests reading numerical thresholds, scaling multipliers, and hierarchy ordering from charts.",
+    "sub_queries": [
+      "Figure 3.15 page 119 quadratic O(N^2) 4 times 16 times 10^25 years age of the universe",
+      "Figure 5.20 Memory Hierarchy Triangle Chart apex base SRAM DRAM SSD HDD page 229"
+    ]
+  },
+  {
+    "id": "adv_t17",
+    "split": "test",
+    "primary_group": "multi_hop",
+    "secondary_tags": [
+      "chapter_5",
+      "dram_capacitor_calculation"
+    ],
+    "question": "Combining Table 5.3 (Technologies Used for Storage, page 229) with the DRAM hardware explanation in Section 5.4 (page 230), what typical size range and volatility does Table 5.3 specify for DRAM, why is DRAM called 'dynamic' (what hardware component stores each bit and why must it be refreshed), and how many capacitors are required to build a 32GB DRAM module (where 32GB = 32 x 2^30 bytes)?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Table 5.3 (page 229), DRAM (Technology 2, Main memory) is specified as Volatile, Fast, Less expensive, with an average size range of 1GB to 128GB. According to Section 5.4 (page 230), DRAM stores each bit as an electrical charge in a tiny capacitor (paired with a transistor); because capacitors naturally leak charge over time, the memory controller must periodically read and recharge (refresh) them, which is why DRAM is called 'dynamic' and is volatile. For a 32GB DRAM module (32 x 2^30 bytes = 2^35 bytes) with 8 bits per byte, it requires 32 x 2^30 x 8 = 256 x 2^30 = 2^38 capacitors (approximately 2.75 x 10^11 or 274.88 billion capacitors).",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      229,
+      230
+    ],
+    "evidence_region": "page=229, Table 5.3 Row 2, bbox=[72, 430, 540, 720]; page=230, Section 5.4 Memory: DRAM paragraphs 1–3",
+    "verification_method": "Check Table 5.3 Row 2 on PDF Page 229 and the 32GB DRAM capacitor calculation (32 x 2^30 x 8) on PDF Page 230.",
+    "rationale": "Multi-hop combining Table 5.3 (page 229) with hardware physics and exact power-of-2 arithmetic on page 230.",
+    "sub_queries": [
+      "Table 5.3 Technology 2 Dynamic random access memory DRAM Volatile 1GB to 128GB page 229",
+      "DRAM capacitor leaks charge refresh 32GB 32 x 2^30 bytes 8 bits capacitors page 230"
+    ]
+  },
+  {
+    "id": "adv_t18",
+    "split": "test",
+    "primary_group": "multi_hop",
+    "secondary_tags": [
+      "chapter_3",
+      "binary_search_scaling_multihop"
+    ],
+    "question": "Combining the asymptotic growth charts (Figures 3.14 and 3.15, pages 118–119) with the Binary Search Divide-and-Conquer diagram (Figure 3.16, page 121), why does Binary Search achieve O(log N) logarithmic scaling by halving the sorted list at each recursive call, and how many additional resource units does an O(log N) algorithm require when the problem size N doubles according to page 119?",
+    "expected_behavior": "answer",
+    "gold_answer": "According to Figure 3.16 (page 121), Binary Search is a divide-and-conquer algorithm that compares the target against the middle element and makes just 1 recursive call on the remaining half of the sorted list, discarding half of the search space at every step. Because halving N repeatedly takes at most log_2(N) + 1 steps, it achieves O(log N) logarithmic order of growth (plotted in Figure 3.14, page 118, right above O(1)). Consequently, as shown in Figure 3.15 and the scaling rules on page 119, when the input problem size N doubles to 2N, an O(log N) logarithmic algorithm requires only 1 additional resource unit (1 extra comparison step).",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      118,
+      119,
+      121
+    ],
+    "evidence_region": "page=118, Figure 3.14; page=119, Figure 3.15 scaling list; page=121, Figure 3.16",
+    "verification_method": "Cross-check Figure 3.14 (p.118), Figure 3.15 '1 additional resource' rule (p.119), and Figure 3.16 (p.121).",
+    "rationale": "Multi-hop across three pages connecting divide-and-conquer structure to logarithmic resource scaling.",
+    "sub_queries": [
+      "Figure 3.16 Binary Search divide and conquer one recursive call half sorted list page 121",
+      "Figure 3.14 Figure 3.15 O(log N) logarithmic 1 additional resource when N doubles page 118 119"
+    ]
+  },
+  {
+    "id": "adv_t19",
+    "split": "test",
+    "primary_group": "multi_hop",
+    "secondary_tags": [
+      "chapter_3",
+      "heapsort_quicksort_multihop"
+    ],
+    "question": "Combining the Binary Heap Priority Queue diagram (Figure 3.8, page 105) with the sorting algorithm analysis in Section 3.5 (page 128), what parent-child ordering property does Figure 3.8 enforce, how does Heapsort use a binary max-heap to guarantee O(N log N) worst-case runtime, and why does Quicksort degrade to O(N^2) in the worst case unless the input list is randomly shuffled?",
+    "expected_behavior": "answer",
+    "gold_answer": "In Figure 3.8 (page 105), a binary heap enforces the heap property: every parent node's priority value is greater than or equal to the priority values of its children, keeping the maximum-priority element at the root (while allowing nodes in the right subtree to be smaller than nodes in the left subtree). In Section 3.5 (page 128), Heapsort builds a binary max-heap and repeatedly extracts the maximum root element in O(log N) time per element, guaranteeing O(N log N) time in both the best and worst cases with O(1) extra space. In contrast, Quicksort partitions the list around a pivot and averages O(N log N), but degrades to O(N^2) quadratic worst-case runtime if the pivot repeatedly lands at an extreme end (such as on an already-sorted list), which is prevented by randomly shuffling the input before sorting.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      105,
+      128
+    ],
+    "evidence_region": "page=105, Figure 3.8, bbox=[72, 240, 540, 510]; page=128, Section 3.5 Heapsort & Quicksort paragraphs",
+    "verification_method": "Verify Figure 3.8 heap property on PDF Page 105 and Heapsort/Quicksort complexity on PDF Page 128.",
+    "rationale": "Multi-hop connecting a data structure diagram (page 105) to sorting algorithm analysis (page 128).",
+    "sub_queries": [
+      "Figure 3.8 Binary Heap priority queue parent node greater than or equal children root page 105",
+      "Heapsort binary max-heap O(N log N) Quicksort pivot O(N^2) worst case randomly shuffle page 128"
+    ]
+  },
+  {
+    "id": "adv_t20",
+    "split": "test",
+    "primary_group": "multi_hop",
+    "secondary_tags": [
+      "chapter_3",
+      "graph_algorithms_multihop"
+    ],
+    "question": "Combining pages 132 and 133 of Section 3.6 (Graph Algorithms), contrast the optimization goal and graph type of a Minimum Spanning Tree (solved by Kruskal's and Prim's algorithms) with those of a Shortest Paths Tree (solved by Dijkstra's algorithm), explain how Kruskal's and Prim's differ in how they grow the tree, and state why Dijkstra's algorithm must not be used when negative edge weights exist.",
+    "expected_behavior": "answer",
+    "gold_answer": "On page 132, a Minimum Spanning Tree (MST) operates on an undirected weighted graph and connects all vertices using a subset of edges with the minimum possible total edge weight and no cycles: Kruskal's algorithm grows the MST by sorting all edges by weight and adding the lowest-weight edge that does not create a cycle, whereas Prim's algorithm grows a single connected tree outward from a starting vertex by repeatedly adding the lowest-weight frontier edge. On page 133, a Shortest Paths Tree operates on a directed (or undirected) weighted graph from a source vertex s and minimizes the path weight from s to every other vertex using Dijkstra's greedy algorithm. Dijkstra's algorithm assumes adding an edge never decreases path weight, so it fails and must not be used when graphs contain negative edge weights.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      132,
+      133
+    ],
+    "evidence_region": "page=132, Section 3.6 Minimum Spanning Trees (Kruskal's & Prim's); page=133, Section 3.6 Shortest Paths (Dijkstra's)",
+    "verification_method": "Verify MST (Kruskal's/Prim's) on PDF Page 132 and Shortest Paths (Dijkstra's negative weight restriction) on PDF Page 133.",
+    "rationale": "Multi-hop synthesis across consecutive pages comparing three classic graph algorithms and their constraints.",
+    "sub_queries": [
+      "Minimum Spanning Tree MST Kruskal Prim undirected weighted graph lowest weight edge cycle page 132",
+      "Shortest Paths Tree Dijkstra directed weighted graph negative edge weights page 133"
+    ]
+  },
+  {
+    "id": "adv_t21",
+    "split": "test",
+    "primary_group": "text",
+    "secondary_tags": [
+      "chapter_3",
+      "complexity_cost_model"
+    ],
+    "question": "According to Section 3.3 (Algorithmic Complexity, page 116), how are 'time complexity' and 'space complexity' defined, and how does the theoretical 'cost model' simplify experimental runtime profiling when analyzing an algorithm's order of growth?",
+    "expected_behavior": "answer",
+    "gold_answer": "On page 116, 'time complexity' quantifies the amount of execution time an algorithm needs as a function of input size, while 'space complexity' quantifies the amount of computer memory (storage space) an algorithm requires. Instead of running hardware-dependent experimental timing tests, the theoretical 'cost model' simplifies analysis by counting only the most frequent fundamental operations (such as array accesses or comparisons) as a mathematical function of input size N to determine asymptotic order of growth.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      116
+    ],
+    "evidence_region": "page=116, Section 3.3 Time Complexity, Space Complexity, and Cost Model paragraphs",
+    "verification_method": "Check Section 3.3 definitions on PDF Page 116.",
+    "rationale": "Tests extracting formal definitions and analytical methodology from textbook text.",
+    "sub_queries": [
+      "time complexity space complexity cost model fundamental operations input size N page 116",
+      "Section 3.3 Algorithmic Complexity experimental runtime analysis"
+    ]
+  },
+  {
+    "id": "adv_t22",
+    "split": "test",
+    "primary_group": "text",
+    "secondary_tags": [
+      "chapter_3",
+      "combinatorial_explosion"
+    ],
+    "question": "In Section 3.4 (Exhaustive Search and Combinatorial Explosion, page 122), what two contrasting consequences of 'combinatorial explosion' (one beneficial for cybersecurity and one limiting for problem-solving) are illustrated using the example of brute-forcing a 16-digit credit card number (10^16 possibilities)?",
+    "expected_behavior": "answer",
+    "gold_answer": "On page 122, combinatorial explosion refers to the rapid exponential growth in the number of possible combinations as problem size increases (such as 10^16 possible 16-digit credit card numbers). It has two contrasting consequences: (1) Beneficial for security/cryptography: it protects sensitive systems (like 16-digit credit card numbers and cryptographic keys) because brute-force guessing all 10^16 combinations is computationally infeasible for attackers; (2) Limiting for algorithm design: it makes exhaustive search (brute-force) algorithms completely impractical for solving large real-world optimization problems.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      122
+    ],
+    "evidence_region": "page=122, Section 3.4 Exhaustive Search & Combinatorial Explosion paragraphs",
+    "verification_method": "Check the 16-digit credit card (10^16) combinatorial explosion discussion on PDF Page 122.",
+    "rationale": "Tests extracting dual implications and quantitative examples from prose.",
+    "sub_queries": [
+      "combinatorial explosion 16-digit credit card number 10^16 exhaustive search brute-force page 122",
+      "Section 3.4 security cryptography optimization problems"
+    ]
+  },
+  {
+    "id": "adv_t23",
+    "split": "test",
+    "primary_group": "text",
+    "secondary_tags": [
+      "chapter_3",
+      "hashing_dfs_complexity"
+    ],
+    "question": "According to Section 3.5 (Hashing, page 130) and Section 3.6 (Graph Traversal, page 130), what is a 'hash collision', what is the best-case lookup and insertion time complexity of a hash table when collisions are rare, and what is the exact time complexity of Depth-First Search (DFS) on a graph with |V| vertices and |E| edges?",
+    "expected_behavior": "answer",
+    "gold_answer": "On page 130, a 'hash collision' occurs when a hash function maps two or more distinct keys to the same bucket/index in a hash table. When collisions are rare (well-distributed hash function), hash table lookup and insertion achieve O(1) constant best-case/average-case time complexity. In Section 3.6 on the same page (page 130), Depth-First Search (DFS) visits every reachable vertex and edge once, achieving a time complexity of O(|V| + |E|), where |V| is the number of vertices and |E| is the number of edges.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      130
+    ],
+    "evidence_region": "page=130, Section 3.5 Hashing & Section 3.6 Depth-First Search paragraphs",
+    "verification_method": "Verify hash collision O(1) and DFS O(|V| + |E|) on PDF Page 130.",
+    "rationale": "Tests synthesizing two distinct algorithmic complexity results from a single textbook page.",
+    "sub_queries": [
+      "hash collision O(1) constant time Depth-First Search DFS O(|V| + |E|) vertices edges page 130",
+      "Section 3.5 Hashing Section 3.6 Graph Traversal page 130"
+    ]
+  },
+  {
+    "id": "adv_t24",
+    "split": "test",
+    "primary_group": "text",
+    "secondary_tags": [
+      "chapter_5",
+      "twos_complement_formula"
+    ],
+    "question": "In Section 5.3 (Two's Complement Representation, pages 216–217), what is the general formula for the signed integer range of an n-bit two's complement representation, what is the exact signed decimal value of the 3-bit two's complement binary number `101`, and how is it calculated from the positional weights -2^2, 2^1, and 2^0?",
+    "expected_behavior": "answer",
+    "gold_answer": "According to Section 5.3 (pages 216–217), the general signed integer range for an n-bit two's complement representation is [-2^(n-1), +2^(n-1) - 1] (which gives [-4, +3] for n = 3 bits). In two's complement, the most significant bit (sign bit) has a negative positional weight of -2^(n-1). Therefore, for the 3-bit two's complement number `101`, its signed decimal value is calculated as: (-1 x 2^2) + (0 x 2^1) + (1 x 2^0) = -4 + 0 + 1 = -3.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [
+      216,
+      217
+    ],
+    "evidence_region": "page=216-217, Section 5.3 Two's Complement formula and 101 = -4 + 0 + 1 = -3 derivation",
+    "verification_method": "Verify the [-2^(n-1), 2^(n-1)-1] formula and 101 = -3 calculation on PDF Pages 216–217.",
+    "rationale": "Tests mathematical formula extraction and positional binary arithmetic from text.",
+    "sub_queries": [
+      "two's complement range -2^(n-1) 2^(n-1) - 1 3-bit 101 -3 -2^2 page 216 217",
+      "Section 5.3 signed binary representation most significant bit negative weight"
+    ]
+  },
+  {
+    "id": "adv_tu01",
+    "split": "test",
+    "primary_group": "unanswerable",
+    "secondary_tags": [
+      "chapter_5",
+      "missing_evidence"
+    ],
+    "question": "According to Table 5.3 (Technologies Used for Storage in a Typical Computer System, page 229), what is the exact sequential read throughput in MB/s and write endurance in Terabytes Written (TBW) specified for PCIe Gen 5 NVMe SSDs?",
+    "expected_behavior": "abstain",
+    "gold_answer": "ABSTAIN: Table 5.3 (pages 229–230) only provides general qualitative descriptions of SSDs (Persistent, Slow relative to RAM, Cheap, Big in size from a few GB to a few TB); it does not specify PCIe Gen 5 NVMe throughput in MB/s or write endurance in TBW.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [],
+    "evidence_region": "None (verified absent on pages 229–230; Table 5.3 has no MB/s throughput or TBW endurance metrics).",
+    "verification_method": "Inspect Table 5.3 and SSD section on PDF Pages 229–233 to confirm PCIe Gen 5 MB/s and TBW are absent.",
+    "rationale": "Tests abstention when asked for hardware benchmark numbers not present in Table 5.3.",
+    "sub_queries": [
+      "Table 5.3 PCIe Gen 5 NVMe SSD sequential read throughput MB/s Terabytes Written TBW",
+      "Table 5.3 Technology 3 Solid-state drive SSD page 229 230"
+    ]
+  },
+  {
+    "id": "adv_tu02",
+    "split": "test",
+    "primary_group": "unanswerable",
+    "secondary_tags": [
+      "chapter_3",
+      "missing_evidence"
+    ],
+    "question": "In Figure 3.14 and Figure 3.15 (pages 118–119), what is the exact wall-clock execution time in milliseconds reported for running Strassen's O(N^2.807) matrix multiplication algorithm on an N = 4,096 x 4,096 matrix?",
+    "expected_behavior": "abstain",
+    "gold_answer": "ABSTAIN: Figures 3.14 and 3.15 (pages 118–119) plot standard asymptotic complexity classes (O(1), O(log N), O(N), O(N log N), O(N^2), O(N^3), O(2^N), O(N!)); they do not mention Strassen's O(N^2.807) matrix multiplication algorithm or report millisecond benchmarks for 4,096 x 4,096 matrices.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [],
+    "evidence_region": "None (verified absent on pages 118–119; Strassen's algorithm is not in Figures 3.14 or 3.15).",
+    "verification_method": "Check Figures 3.14 and 3.15 on PDF Pages 118–119.",
+    "rationale": "Tests abstention on an unmentioned complexity class and benchmark timing.",
+    "sub_queries": [
+      "Figure 3.14 Figure 3.15 Strassen O(N^2.807) matrix multiplication 4096 milliseconds",
+      "Order of Growth chart page 118 119 complexity classes"
+    ]
+  },
+  {
+    "id": "adv_tu03",
+    "split": "test",
+    "primary_group": "unanswerable",
+    "secondary_tags": [
+      "chapter_2",
+      "missing_evidence"
+    ],
+    "question": "Based on Table 2.3 and Table 2.5 (pages 66–68), what minimum Basel III Common Equity Tier 1 (CET1) capital adequacy ratio (%) must the Risk managers in a financial organization maintain?",
+    "expected_behavior": "abstain",
+    "gold_answer": "ABSTAIN: Table 2.3 (page 66) and Table 2.5 (page 68) describe enterprise architecture domains and general financial organization roles (stating that Risk managers monitor risk exposure and ensure policy compliance), but do not mention Basel III or CET1 capital adequacy percentages.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [],
+    "evidence_region": "None (verified absent on pages 66–68; no Basel III or CET1 ratios appear in Table 2.3 or Table 2.5).",
+    "verification_method": "Check Table 2.3 (Page 66) and Table 2.5 (Page 68) in the PDF.",
+    "rationale": "Tests abstention on domain-specific regulatory figures absent from the textbook tables.",
+    "sub_queries": [
+      "Table 2.3 Table 2.5 Basel III Common Equity Tier 1 CET1 capital adequacy ratio Risk managers",
+      "Table 2.5 Roles and Responsibilities within a Financial Organization Risk managers page 68"
+    ]
+  },
+  {
+    "id": "adv_tu04",
+    "split": "test",
+    "primary_group": "unanswerable",
+    "secondary_tags": [
+      "chapter_5",
+      "missing_evidence"
+    ],
+    "question": "In Section 5.4 (Memory Hierarchy and SRAM Cache, page 232), what are the exact L1, L2, and L3 cache sizes in megabytes (MB) and set-associativity ways specified for the AMD Ryzen 9 7950X processor?",
+    "expected_behavior": "abstain",
+    "gold_answer": "ABSTAIN: Section 5.4 (page 232) explains general on-chip SRAM cache concepts (such as 4–6 transistors per bit, KB-to-MB range, and 64-byte cache line transfers), but does not mention the AMD Ryzen 9 7950X processor or specific L1/L2/L3 cache sizes and set-associativity ways.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [],
+    "evidence_region": "None (verified absent on page 232; no AMD Ryzen 9 7950X specifications exist in Chapter 5).",
+    "verification_method": "Inspect PDF Page 232 to confirm no AMD Ryzen 9 7950X cache specifications are given.",
+    "rationale": "Tests abstention when asked for commercial CPU cache specs not in the textbook.",
+    "sub_queries": [
+      "AMD Ryzen 9 7950X L1 L2 L3 cache size MB set-associativity page 232",
+      "Section 5.4 Memory SRAM cache 64 bytes page 232"
+    ]
+  },
+  {
+    "id": "adv_tu05",
+    "split": "test",
+    "primary_group": "unanswerable",
+    "secondary_tags": [
+      "chapter_4",
+      "missing_evidence"
+    ],
+    "question": "According to Figure 4.18 and Figure 4.24 (pages 173–177), what exact command-line flags does the textbook prescribe for enabling Link-Time Optimization (`-flto`) and AddressSanitizer (`-fsanitize=address`) in `clang++`?",
+    "expected_behavior": "abstain",
+    "gold_answer": "ABSTAIN: Figures 4.18 and 4.24 (pages 173–177) illustrate standard C compilation (`gcc -Og -o prog main.c sum.c`) and linker symbol resolution (`.text` and `.data` segments), and do not mention `clang++`, Link-Time Optimization (`-flto`), or AddressSanitizer (`-fsanitize=address`).",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [],
+    "evidence_region": "None (verified absent on pages 173–177; only `gcc -Og -o prog main.c sum.c` is shown).",
+    "verification_method": "Check Figures 4.18–4.24 and surrounding text on PDF Pages 173–177.",
+    "rationale": "Tests abstention on compiler flags not present in the compilation diagrams.",
+    "sub_queries": [
+      "Figure 4.18 Figure 4.24 clang++ -flto Link-Time Optimization AddressSanitizer -fsanitize=address",
+      "Figure 4.18 gcc -Og -o prog main.c sum.c linker page 173 177"
+    ]
+  },
+  {
+    "id": "adv_tu06",
+    "split": "test",
+    "primary_group": "unanswerable",
+    "secondary_tags": [
+      "chapter_3",
+      "missing_evidence"
+    ],
+    "question": "In Section 3.6 (Graph Algorithms, pages 132–133), how does the Bellman-Ford algorithm or Johnson's algorithm reweight negative edges using O(|V| * |E|) dynamic programming relaxations?",
+    "expected_behavior": "abstain",
+    "gold_answer": "ABSTAIN: Section 3.6 (pages 132–133) covers Kruskal's and Prim's algorithms for Minimum Spanning Trees and Dijkstra's algorithm for Shortest Paths (noting only that Dijkstra's algorithm must not be used when negative edge weights exist); it does not explain the Bellman-Ford algorithm or Johnson's algorithm.",
+    "source_id": "openstax-ics-2024",
+    "evidence_pages": [],
+    "evidence_region": "None (verified absent on pages 132–133; Bellman-Ford and Johnson's algorithms are not covered).",
+    "verification_method": "Inspect PDF Pages 132–133 to verify Bellman-Ford and Johnson's algorithms are not discussed.",
+    "rationale": "Tests abstention when asked about advanced negative-weight shortest-path algorithms omitted by the textbook.",
+    "sub_queries": [
+      "Bellman-Ford Johnson's algorithm negative edges O(|V| * |E|) dynamic programming page 132 133",
+      "Section 3.6 Shortest Paths Dijkstra negative weights page 133"
+    ]
+  }
+]

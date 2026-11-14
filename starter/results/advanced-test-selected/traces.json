@@ -1,0 +1,3330 @@
+[
+  {
+    "case_id": "adv_t01",
+    "split": "test",
+    "primary_group": "table",
+    "question": "In Table 2.1 (Logical Thinking and Pattern Recognition — Jam Sandwich Example, page 54), list the exact items under the 'Ingredients', 'Equipment', and 'Actions' columns, and compute both (a) the total number of items across all three columns and (b) how many more 'Actions' there are than 'Equipment' items.",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Table 2.1 Ingredients Equipment Actions Bread Jam Butter Plate Knife Unscrew page 54",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p054_table_2_1",
+          "openstax-ics-2024_p054_txt_00",
+          "openstax-ics-2024_p056_txt_00",
+          "openstax-ics-2024_p053_txt_00",
+          "openstax-ics-2024_p217_table_5_2"
+        ],
+        "returned_pages": [
+          54,
+          54,
+          56,
+          53,
+          217
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "text",
+          "table"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Table 2.1 Logical Thinking and Pattern Recognition total items",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p054_table_2_1",
+          "openstax-ics-2024_p054_txt_00",
+          "openstax-ics-2024_p053_txt_00",
+          "openstax-ics-2024_p052_txt_00",
+          "openstax-ics-2024_p217_table_5_2"
+        ],
+        "returned_pages": [
+          54,
+          54,
+          53,
+          52,
+          217
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "text",
+          "table"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p054_table_2_1",
+        "source_id": "openstax-ics-2024",
+        "page": 54,
+        "modality": "table",
+        "element_id": "Table 2.1",
+        "bbox_region": "page=54, bbox=[72, 410, 540, 565]",
+        "chars": 523
+      },
+      {
+        "id": "openstax-ics-2024_p054_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 54,
+        "modality": "text",
+        "element_id": "Page 54 Text Block 0",
+        "bbox_region": "page=54, bbox=[72, 72, 540, 720]",
+        "chars": 2657
+      },
+      {
+        "id": "openstax-ics-2024_p056_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 56,
+        "modality": "text",
+        "element_id": "Page 56 Text Block 0",
+        "bbox_region": "page=56, bbox=[72, 72, 540, 720]",
+        "chars": 2020
+      },
+      {
+        "id": "openstax-ics-2024_p217_table_5_2",
+        "source_id": "openstax-ics-2024",
+        "page": 217,
+        "modality": "table",
+        "element_id": "Table 5.2",
+        "bbox_region": "page=217, bbox=[72, 520, 540, 665]",
+        "chars": 655
+      }
+    ],
+    "context_chars": 5855,
+    "abstained": false,
+    "answer": "In Table 2.1 (page 54): (1) Ingredients (3 items): Bread, Jam, Butter; (2) Equipment (2 items): Plate, Knife; (3) Actions (5 items): Repeat x times, Left hand (LH), Right hand (RH), Pick up, Unscrew. (a) Total items across all three columns = 3 + 2 + 5 = 10 items. (b) Difference between Actions and Equipment = 5 - 2 = 3 more Actions than Equipment items. [openstax-ics-2024, p.54]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 54,
+        "region": "page=54, bbox=[72, 410, 540, 565]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.39,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t02",
+    "split": "test",
+    "primary_group": "table",
+    "question": "According to Table 2.3 (Common Enterprise-Level Architecture Domains, page 66), list all 7 Architecture Domains in order, and compare the exact 'Purpose' and 'Components' of 'Information architecture' (Row 2) with those of 'Security architecture' (Row 5).",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Table 2.3 Common Enterprise-Level Architecture Domains Information architecture Security architecture page 66",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p066_table_2_3",
+          "openstax-ics-2024_p066_txt_00",
+          "openstax-ics-2024_p065_txt_00",
+          "openstax-ics-2024_p076_txt_00",
+          "openstax-ics-2024_p067_table_2_4"
+        ],
+        "returned_pages": [
+          66,
+          66,
+          65,
+          76,
+          67
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "text",
+          "table"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Business Information Application Technology Security Integration Process architecture Table 2.3",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p066_table_2_3",
+          "openstax-ics-2024_p066_txt_00",
+          "openstax-ics-2024_p065_txt_00",
+          "openstax-ics-2024_p087_txt_00",
+          "openstax-ics-2024_p068_table_2_5"
+        ],
+        "returned_pages": [
+          66,
+          66,
+          65,
+          87,
+          68
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "text",
+          "table"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p066_table_2_3",
+        "source_id": "openstax-ics-2024",
+        "page": 66,
+        "modality": "table",
+        "element_id": "Table 2.3",
+        "bbox_region": "page=66, bbox=[72, 85, 540, 480]",
+        "chars": 1230
+      },
+      {
+        "id": "openstax-ics-2024_p066_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 66,
+        "modality": "text",
+        "element_id": "Page 66 Text Block 0",
+        "bbox_region": "page=66, bbox=[72, 72, 540, 720]",
+        "chars": 3358
+      },
+      {
+        "id": "openstax-ics-2024_p067_table_2_4",
+        "source_id": "openstax-ics-2024",
+        "page": 67,
+        "modality": "table",
+        "element_id": "Table 2.4",
+        "bbox_region": "page=67, bbox=[72, 540, 540, 690]",
+        "chars": 359
+      },
+      {
+        "id": "openstax-ics-2024_p068_table_2_5",
+        "source_id": "openstax-ics-2024",
+        "page": 68,
+        "modality": "table",
+        "element_id": "Table 2.5",
+        "bbox_region": "page=68, bbox=[72, 130, 540, 540]",
+        "chars": 970
+      }
+    ],
+    "context_chars": 5917,
+    "abstained": false,
+    "answer": "Table 2.3 (page 66) lists 7 Architecture Domains: (1) Business architecture, (2) Information architecture, (3) Application architecture, (4) Technology architecture, (5) Security architecture, (6) Integration architecture, and (7) Process architecture. Comparing Row 2 and Row 5: Information architecture has Purpose = 'Manages data and information assets' and Components = 'Data models, information flow diagrams, data governance, data standards, and metadata', whereas Security architecture has Purpose = 'Ensures the protection of information assets, systems, and networks' and Components = 'Security policies, access controls, and encryption mechanisms'. [openstax-ics-2024, p.66]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 66,
+        "region": "page=66, bbox=[72, 85, 540, 480]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.16,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t03",
+    "split": "test",
+    "primary_group": "table",
+    "question": "Based on Table 2.5 (Roles and Responsibilities within a Financial Organization, page 68), which of the 7 titles is responsible for 'Process and settle trades; Handle trade confirmation and reconciliation', and how do its responsibilities differ from those of 'Risk managers' (Row 4) and 'Technology professionals' (Row 6)?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Table 2.5 Roles and Responsibilities within a Financial Organization Back-office operations Risk managers page 68",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p068_table_2_5",
+          "openstax-ics-2024_p068_txt_00",
+          "openstax-ics-2024_p067_txt_00",
+          "openstax-ics-2024_p067_table_2_4",
+          "openstax-ics-2024_p069_txt_00"
+        ],
+        "returned_pages": [
+          68,
+          68,
+          67,
+          67,
+          69
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "table",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Process and settle trades trade confirmation reconciliation Technology professionals Table 2.5",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p068_table_2_5",
+          "openstax-ics-2024_p068_txt_00",
+          "openstax-ics-2024_p066_table_2_3",
+          "openstax-ics-2024_p229_table_5_3",
+          "openstax-ics-2024_p217_table_5_2"
+        ],
+        "returned_pages": [
+          68,
+          68,
+          66,
+          229,
+          217
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "table",
+          "table",
+          "table"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p068_table_2_5",
+        "source_id": "openstax-ics-2024",
+        "page": 68,
+        "modality": "table",
+        "element_id": "Table 2.5",
+        "bbox_region": "page=68, bbox=[72, 130, 540, 540]",
+        "chars": 970
+      },
+      {
+        "id": "openstax-ics-2024_p068_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 68,
+        "modality": "text",
+        "element_id": "Page 68 Text Block 0",
+        "bbox_region": "page=68, bbox=[72, 72, 540, 720]",
+        "chars": 2930
+      },
+      {
+        "id": "openstax-ics-2024_p066_table_2_3",
+        "source_id": "openstax-ics-2024",
+        "page": 66,
+        "modality": "table",
+        "element_id": "Table 2.3",
+        "bbox_region": "page=66, bbox=[72, 85, 540, 480]",
+        "chars": 1230
+      },
+      {
+        "id": "openstax-ics-2024_p067_table_2_4",
+        "source_id": "openstax-ics-2024",
+        "page": 67,
+        "modality": "table",
+        "element_id": "Table 2.4",
+        "bbox_region": "page=67, bbox=[72, 540, 540, 690]",
+        "chars": 359
+      }
+    ],
+    "context_chars": 5489,
+    "abstained": false,
+    "answer": "In Table 2.5 (page 68), the title responsible for 'Process and settle trades; Handle trade confirmation and reconciliation' is 'Back-office operations' (Row 3 of 7). In contrast, 'Risk managers' (Row 4) are responsible for 'Monitor and manage risk exposure; Ensure compliance with risk management policies', and 'Technology professionals' (Row 6) are responsible for 'Develop and maintain trading systems and IT infrastructure; Ensure the security and efficiency of technology resources'. [openstax-ics-2024, p.68]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 68,
+        "region": "page=68, bbox=[72, 130, 540, 540]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.2,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t04",
+    "split": "test",
+    "primary_group": "table",
+    "question": "Using Table 5.1 (Compilers and Their I/O, page 212), how many total compilers are listed to map the 3 High-Level Languages (HLL 1, HLL 2, HLL 3) to the 2 Instruction Set Architectures (ISA 1, ISA 2), which specific compiler numbers output ISA 1 versus ISA 2, and what pattern links odd-numbered versus even-numbered compilers to their output ISA?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Table 5.1 Compilers and Their I/O HLL 1 HLL 2 HLL 3 ISA 1 ISA 2 odd even compilers page 212",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p212_table_5_1",
+          "openstax-ics-2024_p212_txt_00",
+          "openstax-ics-2024_p211_txt_00",
+          "openstax-ics-2024_p222_txt_00",
+          "openstax-ics-2024_p217_table_5_2"
+        ],
+        "returned_pages": [
+          212,
+          212,
+          211,
+          222,
+          217
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "text",
+          "table"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "6 compilers Table 5.1 page 212 Output from the Compiler",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p212_table_5_1",
+          "openstax-ics-2024_p212_txt_00",
+          "openstax-ics-2024_p211_txt_00",
+          "openstax-ics-2024_p068_table_2_5",
+          "openstax-ics-2024_p066_table_2_3"
+        ],
+        "returned_pages": [
+          212,
+          212,
+          211,
+          68,
+          66
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "table",
+          "table"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p212_table_5_1",
+        "source_id": "openstax-ics-2024",
+        "page": 212,
+        "modality": "table",
+        "element_id": "Table 5.1",
+        "bbox_region": "page=212, bbox=[72, 100, 540, 290]",
+        "chars": 538
+      },
+      {
+        "id": "openstax-ics-2024_p212_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 212,
+        "modality": "text",
+        "element_id": "Page 212 Text Block 0",
+        "bbox_region": "page=212, bbox=[72, 72, 540, 720]",
+        "chars": 2630
+      },
+      {
+        "id": "openstax-ics-2024_p068_table_2_5",
+        "source_id": "openstax-ics-2024",
+        "page": 68,
+        "modality": "table",
+        "element_id": "Table 2.5",
+        "bbox_region": "page=68, bbox=[72, 130, 540, 540]",
+        "chars": 970
+      },
+      {
+        "id": "openstax-ics-2024_p217_table_5_2",
+        "source_id": "openstax-ics-2024",
+        "page": 217,
+        "modality": "table",
+        "element_id": "Table 5.2",
+        "bbox_region": "page=217, bbox=[72, 520, 540, 665]",
+        "chars": 655
+      }
+    ],
+    "context_chars": 4793,
+    "abstained": false,
+    "answer": "Table 5.1 (page 212) lists 6 total compilers (3 HLLs x 2 ISAs = 6 compilers). Odd-numbered compilers — Compiler #1 (HLL 1 -> ISA 1), Compiler #3 (HLL 3 -> ISA 1), and Compiler #5 (HLL 2 -> ISA 1) — all output ISA 1, whereas even-numbered compilers — Compiler #2 (HLL 2 -> ISA 2), Compiler #4 (HLL 1 -> ISA 2), and Compiler #6 (HLL 3 -> ISA 2) — all output ISA 2. [openstax-ics-2024, p.212]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 212,
+        "region": "page=212, bbox=[72, 100, 540, 290]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.67,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t05",
+    "split": "test",
+    "primary_group": "table",
+    "question": "Using Table 5.2 (Op1 and Op2 Inputs to the Addition Operation, page 217) and the accompanying 3-bit signed representation table (Figure 5.12, pages 216–217), state the Carry and Sum outputs for all four 1-bit input pairs (0+0, 0+1, 1+0, 1+1), and explain why 3-bit Two's Complement represents [-4, +3] (8 unique integers) whereas Sign-Magnitude and One's Complement only represent [-3, +3].",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Table 5.2 Op1 Op2 Carry Sum page 217 Figure 5.12 two's complement [-4, +3] [-3, +3]",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p217_table_5_2",
+          "openstax-ics-2024_p217_txt_00",
+          "openstax-ics-2024_p216_txt_00",
+          "openstax-ics-2024_p212_table_5_1",
+          "openstax-ics-2024_p066_table_2_3"
+        ],
+        "returned_pages": [
+          217,
+          217,
+          216,
+          212,
+          66
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "table",
+          "table"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "sign-magnitude one's complement two representations of 0 +0 -0 page 216 217",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p217_table_5_2",
+          "openstax-ics-2024_p216_txt_00",
+          "openstax-ics-2024_p217_txt_00",
+          "openstax-ics-2024_p220_txt_00",
+          "openstax-ics-2024_p233_txt_00"
+        ],
+        "returned_pages": [
+          217,
+          216,
+          217,
+          220,
+          233
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p217_table_5_2",
+        "source_id": "openstax-ics-2024",
+        "page": 217,
+        "modality": "table",
+        "element_id": "Table 5.2",
+        "bbox_region": "page=217, bbox=[72, 520, 540, 665]",
+        "chars": 655
+      },
+      {
+        "id": "openstax-ics-2024_p217_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 217,
+        "modality": "text",
+        "element_id": "Page 217 Text Block 0",
+        "bbox_region": "page=217, bbox=[72, 72, 540, 720]",
+        "chars": 3481
+      },
+      {
+        "id": "openstax-ics-2024_p212_table_5_1",
+        "source_id": "openstax-ics-2024",
+        "page": 212,
+        "modality": "table",
+        "element_id": "Table 5.1",
+        "bbox_region": "page=212, bbox=[72, 100, 540, 290]",
+        "chars": 538
+      },
+      {
+        "id": "openstax-ics-2024_p066_table_2_3",
+        "source_id": "openstax-ics-2024",
+        "page": 66,
+        "modality": "table",
+        "element_id": "Table 2.3",
+        "bbox_region": "page=66, bbox=[72, 85, 540, 480]",
+        "chars": 1230
+      }
+    ],
+    "context_chars": 5904,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 292.66,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t06",
+    "split": "test",
+    "primary_group": "table",
+    "question": "According to Table 5.3 (Technologies Used for Storage in a Typical Computer System, pages 229–230), compare all four storage technologies (Technology 1 through Technology 4) by stating each technology's full name, system role (cache/main memory/storage), volatility or persistence, relative speed, relative cost, and typical size range.",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Table 5.3 Technologies Used for Storage Technology 1 SRAM Technology 2 DRAM SSD HDD page 229 230",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p229_table_5_3",
+          "openstax-ics-2024_p230_txt_00",
+          "openstax-ics-2024_p229_txt_00",
+          "openstax-ics-2024_p229_chart_fig_5_20",
+          "openstax-ics-2024_p233_txt_00"
+        ],
+        "returned_pages": [
+          229,
+          230,
+          229,
+          229,
+          233
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "chart",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Volatile Persistent Very fast Expensive 1GB to 128GB Several TB Table 5.3",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p229_table_5_3",
+          "openstax-ics-2024_p229_txt_00",
+          "openstax-ics-2024_p229_chart_fig_5_20",
+          "openstax-ics-2024_p230_txt_00",
+          "openstax-ics-2024_p228_txt_00"
+        ],
+        "returned_pages": [
+          229,
+          229,
+          229,
+          230,
+          228
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "chart",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p229_table_5_3",
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "modality": "table",
+        "element_id": "Table 5.3",
+        "bbox_region": "page=229-230, bbox=[72, 430, 540, 720]",
+        "chars": 660
+      },
+      {
+        "id": "openstax-ics-2024_p230_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 230,
+        "modality": "text",
+        "element_id": "Page 230 Text Block 0",
+        "bbox_region": "page=230, bbox=[72, 72, 540, 720]",
+        "chars": 2427
+      },
+      {
+        "id": "openstax-ics-2024_p229_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "modality": "text",
+        "element_id": "Page 229 Text Block 0",
+        "bbox_region": "page=229, bbox=[72, 72, 540, 720]",
+        "chars": 1896
+      },
+      {
+        "id": "openstax-ics-2024_p229_chart_fig_5_20",
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "modality": "chart",
+        "element_id": "Figure 5.20",
+        "bbox_region": "page=229, bbox=[72, 230, 540, 425]",
+        "chars": 696
+      }
+    ],
+    "context_chars": 5679,
+    "abstained": false,
+    "answer": "In Table 5.3 (pages 229–230): (1) Technology 1 = Static random access memory (SRAM): used as Cache memory; Volatile, Very fast, Expensive, Small in size (from a few KB to a few MB). (2) Technology 2 = Dynamic random access memory (DRAM): used as Main memory; Volatile, Fast, Less expensive, Average in size (1GB to 128GB). (3) Technology 3 = Solid-state drive (SSD): used as Storage; Persistent, Slow (relative to RAM), Cheap, Big in size (a few GB to a few TB). (4) Technology 4 = Hard disk drive (HDD): used as Storage; Persistent, Very slow, Very cheap, Several TB of storage. [openstax-ics-2024, p.229] [openstax-ics-2024, p.230]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "region": "page=229-230, bbox=[72, 430, 540, 720]"
+      },
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 230,
+        "region": "page=230"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.9,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t07",
+    "split": "test",
+    "primary_group": "image_diagram",
+    "question": "In Figure 1.9 (Architecture Diagram of an Artificial Neural Network, page 37), what three layers are arranged from left to right in part (a), what is the functional role of each layer, and what structural change in part (b) distinguishes a deep neural network?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 1.9 Artificial Neural Network ANN Input layer Hidden layer Output layer page 37",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p037_fig_1_9",
+          "openstax-ics-2024_p037_txt_00",
+          "openstax-ics-2024_p188_txt_00",
+          "openstax-ics-2024_p059_fig_2_9",
+          "openstax-ics-2024_p038_txt_00"
+        ],
+        "returned_pages": [
+          37,
+          37,
+          188,
+          59,
+          38
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "image_diagram",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "deep neural networks multiple hidden layers Figure 1.9",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p037_fig_1_9",
+          "openstax-ics-2024_p037_txt_00",
+          "openstax-ics-2024_p188_txt_00",
+          "openstax-ics-2024_p039_txt_00",
+          "openstax-ics-2024_p038_txt_00"
+        ],
+        "returned_pages": [
+          37,
+          37,
+          188,
+          39,
+          38
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p037_fig_1_9",
+        "source_id": "openstax-ics-2024",
+        "page": 37,
+        "modality": "image_diagram",
+        "element_id": "Figure 1.9",
+        "bbox_region": "page=37, bbox=[72, 220, 540, 490]",
+        "chars": 484
+      },
+      {
+        "id": "openstax-ics-2024_p037_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 37,
+        "modality": "text",
+        "element_id": "Page 37 Text Block 0",
+        "bbox_region": "page=37, bbox=[72, 72, 540, 720]",
+        "chars": 3414
+      },
+      {
+        "id": "openstax-ics-2024_p059_fig_2_9",
+        "source_id": "openstax-ics-2024",
+        "page": 59,
+        "modality": "image_diagram",
+        "element_id": "Figure 2.9",
+        "bbox_region": "page=59, bbox=[72, 110, 540, 430]",
+        "chars": 455
+      }
+    ],
+    "context_chars": 4353,
+    "abstained": false,
+    "answer": "In Figure 1.9 (page 37), part (a) shows three layers arranged left-to-right: (1) Input layer (where raw data enters the network), (2) Hidden layer (which processes inputs through weighted connections and activation functions), and (3) Output layer (which produces the final prediction or classification). Part (b) illustrates that a deep neural network stacks multiple hidden layers between the input and output layers to extract hierarchical features. [openstax-ics-2024, p.37]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 37,
+        "region": "page=37, bbox=[72, 220, 540, 490]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.33,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t08",
+    "split": "test",
+    "primary_group": "image_diagram",
+    "question": "In Figure 2.9 (Flowchart for Iterative Solution of Adding N Numbers, page 59), identify the four standard flowchart geometric symbols used in the diagram and explain how the diamond decision symbol controls the iterative loop.",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 2.9 Flowchart for Iterative Solution of Adding N Numbers diamond decision symbol page 59",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p059_fig_2_9",
+          "openstax-ics-2024_p059_txt_00",
+          "openstax-ics-2024_p056_txt_00",
+          "openstax-ics-2024_p129_txt_00",
+          "openstax-ics-2024_p119_chart_fig_3_15"
+        ],
+        "returned_pages": [
+          59,
+          59,
+          56,
+          129,
+          119
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "text",
+          "chart"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "rounded Start Stop parallelogram Input Output rectangle Process Figure 2.9",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p059_fig_2_9",
+          "openstax-ics-2024_p059_txt_00",
+          "openstax-ics-2024_p037_fig_1_9",
+          "openstax-ics-2024_p155_diag_fig_4_2_to_4_4",
+          "openstax-ics-2024_p037_txt_00"
+        ],
+        "returned_pages": [
+          59,
+          59,
+          37,
+          155,
+          37
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "image_diagram",
+          "image_diagram",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p059_fig_2_9",
+        "source_id": "openstax-ics-2024",
+        "page": 59,
+        "modality": "image_diagram",
+        "element_id": "Figure 2.9",
+        "bbox_region": "page=59, bbox=[72, 110, 540, 430]",
+        "chars": 455
+      },
+      {
+        "id": "openstax-ics-2024_p059_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 59,
+        "modality": "text",
+        "element_id": "Page 59 Text Block 0",
+        "bbox_region": "page=59, bbox=[72, 72, 540, 720]",
+        "chars": 1572
+      },
+      {
+        "id": "openstax-ics-2024_p056_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 56,
+        "modality": "text",
+        "element_id": "Page 56 Text Block 0",
+        "bbox_region": "page=56, bbox=[72, 72, 540, 720]",
+        "chars": 2020
+      },
+      {
+        "id": "openstax-ics-2024_p037_fig_1_9",
+        "source_id": "openstax-ics-2024",
+        "page": 37,
+        "modality": "image_diagram",
+        "element_id": "Figure 1.9",
+        "bbox_region": "page=37, bbox=[72, 220, 540, 490]",
+        "chars": 484
+      },
+      {
+        "id": "openstax-ics-2024_p155_diag_fig_4_2_to_4_4",
+        "source_id": "openstax-ics-2024",
+        "page": 155,
+        "modality": "image_diagram",
+        "element_id": "Figure 4.2, Figure 4.3 & Figure 4.4",
+        "bbox_region": "page=155, bbox=[72, 95, 540, 660]",
+        "chars": 769
+      }
+    ],
+    "context_chars": 5300,
+    "abstained": false,
+    "answer": "Figure 2.9 (page 59) uses four geometric flowchart symbols: (1) rounded rectangles/terminals for Start and Stop, (2) parallelograms for Input and Output operations, (3) rectangles for Process steps (initializing sum = 0 and counter, and adding the current number to sum), and (4) a diamond Decision symbol. The diamond decision symbol tests whether all N numbers have been added: if False, an arrow loops back to read and add the next number; if True, execution exits the loop to output the final sum and Stop. [openstax-ics-2024, p.59]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 59,
+        "region": "page=59, bbox=[72, 110, 540, 430]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.3,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t09",
+    "split": "test",
+    "primary_group": "image_diagram",
+    "question": "Comparing Figure 3.3 (Array List) and Figure 3.4 (Linked List) on page 102, contrast how elements are positioned and connected in memory between the two diagrams, and state the resulting trade-off between element access speed and insertion/deletion efficiency.",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 3.3 Figure 3.4 Array List Linked List contiguous pointers random access sequential access page 102",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p102_fig_3_3_3_4",
+          "openstax-ics-2024_p102_txt_00",
+          "openstax-ics-2024_p135_txt_00",
+          "openstax-ics-2024_p132_txt_00",
+          "openstax-ics-2024_p133_txt_00"
+        ],
+        "returned_pages": [
+          102,
+          102,
+          135,
+          132,
+          133
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "insertion deletion memory layout diagrams page 102",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p102_fig_3_3_3_4",
+          "openstax-ics-2024_p102_txt_00",
+          "openstax-ics-2024_p103_fig_3_6_3_7",
+          "openstax-ics-2024_p155_diag_fig_4_2_to_4_4",
+          "openstax-ics-2024_p079_txt_00"
+        ],
+        "returned_pages": [
+          102,
+          102,
+          103,
+          155,
+          79
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "image_diagram",
+          "image_diagram",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p102_fig_3_3_3_4",
+        "source_id": "openstax-ics-2024",
+        "page": 102,
+        "modality": "image_diagram",
+        "element_id": "Figure 3.3 & Figure 3.4",
+        "bbox_region": "page=102, bbox=[72, 310, 540, 620]",
+        "chars": 574
+      },
+      {
+        "id": "openstax-ics-2024_p102_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 102,
+        "modality": "text",
+        "element_id": "Page 102 Text Block 0",
+        "bbox_region": "page=102, bbox=[72, 72, 540, 720]",
+        "chars": 3919
+      },
+      {
+        "id": "openstax-ics-2024_p103_fig_3_6_3_7",
+        "source_id": "openstax-ics-2024",
+        "page": 103,
+        "modality": "image_diagram",
+        "element_id": "Figure 3.6 & Figure 3.7",
+        "bbox_region": "page=103-104, bbox=[72, 360, 540, 680]",
+        "chars": 625
+      },
+      {
+        "id": "openstax-ics-2024_p155_diag_fig_4_2_to_4_4",
+        "source_id": "openstax-ics-2024",
+        "page": 155,
+        "modality": "image_diagram",
+        "element_id": "Figure 4.2, Figure 4.3 & Figure 4.4",
+        "bbox_region": "page=155, bbox=[72, 95, 540, 660]",
+        "chars": 769
+      }
+    ],
+    "context_chars": 5887,
+    "abstained": false,
+    "answer": "In Figure 3.3 (page 102), Array List elements are stored contiguously (next to each other) in adjacent memory cells in list order, whereas in Figure 3.4, Linked List nodes are scattered across non-adjacent memory locations with each node storing its element plus an explicit pointer/link arrow to the next node. Consequently, an Array List provides fast single-step random access to any element but slow insertion and deletion, whereas a Linked List provides fast insertion and deletion (by updating pointers) but requires slower sequential access from the head. [openstax-ics-2024, p.102]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 102,
+        "region": "page=102, bbox=[72, 310, 540, 620]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.3,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t10",
+    "split": "test",
+    "primary_group": "image_diagram",
+    "question": "In Figure 3.6 (Binary Search Tree of letters A–G, page 103) and Figure 3.7 (AVL Self-Balancing Tree, page 104), which letter is at the root of Figure 3.6, what are the exact left and right child letters of nodes D, B, and F, and what do the solid black arrows indicate during the insertion of 1, 2, 3, 4, 5, 6 in Figure 3.7?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 3.6 Binary Search Tree A B C D E F G root D Figure 3.7 AVL tree rotations page 103 104",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p103_fig_3_6_3_7",
+          "openstax-ics-2024_p104_txt_00",
+          "openstax-ics-2024_p103_txt_00",
+          "openstax-ics-2024_p105_txt_00",
+          "openstax-ics-2024_p127_txt_00"
+        ],
+        "returned_pages": [
+          103,
+          104,
+          103,
+          105,
+          127
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "solid black arrows rotation steps rebalance 1 2 3 4 5 6 Figure 3.7",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p103_fig_3_6_3_7",
+          "openstax-ics-2024_p104_txt_00",
+          "openstax-ics-2024_p155_diag_fig_4_2_to_4_4",
+          "openstax-ics-2024_p068_table_2_5",
+          "openstax-ics-2024_p066_table_2_3"
+        ],
+        "returned_pages": [
+          103,
+          104,
+          155,
+          68,
+          66
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "image_diagram",
+          "table",
+          "table"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p103_fig_3_6_3_7",
+        "source_id": "openstax-ics-2024",
+        "page": 103,
+        "modality": "image_diagram",
+        "element_id": "Figure 3.6 & Figure 3.7",
+        "bbox_region": "page=103-104, bbox=[72, 360, 540, 680]",
+        "chars": 625
+      },
+      {
+        "id": "openstax-ics-2024_p104_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 104,
+        "modality": "text",
+        "element_id": "Page 104 Text Block 0",
+        "bbox_region": "page=104, bbox=[72, 72, 540, 720]",
+        "chars": 3059
+      },
+      {
+        "id": "openstax-ics-2024_p155_diag_fig_4_2_to_4_4",
+        "source_id": "openstax-ics-2024",
+        "page": 155,
+        "modality": "image_diagram",
+        "element_id": "Figure 4.2, Figure 4.3 & Figure 4.4",
+        "bbox_region": "page=155, bbox=[72, 95, 540, 660]",
+        "chars": 769
+      },
+      {
+        "id": "openstax-ics-2024_p068_table_2_5",
+        "source_id": "openstax-ics-2024",
+        "page": 68,
+        "modality": "table",
+        "element_id": "Table 2.5",
+        "bbox_region": "page=68, bbox=[72, 130, 540, 540]",
+        "chars": 970
+      }
+    ],
+    "context_chars": 5423,
+    "abstained": false,
+    "answer": "In Figure 3.6 (page 103), the root node at the top of the Binary Search Tree is 'D' (the middle of the 7 letters A–G). Node 'D' has left child 'B' and right child 'F'; node 'B' has left child 'A' and right child 'C'; and node 'F' has left child 'E' and right child 'G', ordering letters least-to-greatest from left to right. In Figure 3.7 (page 104), as numbers 1, 2, 3, 4, 5, 6 are inserted sequentially into an initially empty AVL tree, the solid black arrows mark the tree rotation steps that rebalance the left and right subtrees at every node. [openstax-ics-2024, p.103] [openstax-ics-2024, p.104]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 103,
+        "region": "page=103-104, bbox=[72, 360, 540, 680]"
+      },
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 104,
+        "region": "page=104"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.76,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t11",
+    "split": "test",
+    "primary_group": "image_diagram",
+    "question": "In Figure 4.18 (C Compilation/Linking Pipeline, page 173) and Figure 4.24 (Linker Symbol Resolution Diagram, page 177), how does the compiler driver (`gcc -Og -o prog main.c sum.c`) transform source files into an executable, and how does the linker handle strong symbols versus weak symbols while merging `.text` and `.data` segments?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 4.18 Figure 4.24 gcc -Og -o prog main.c sum.c relocatable object files strong weak symbols .text .data page 177",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p177_fig_4_18_4_24",
+          "openstax-ics-2024_p177_txt_00",
+          "openstax-ics-2024_p173_txt_00",
+          "openstax-ics-2024_p176_txt_00",
+          "openstax-ics-2024_p221_txt_00"
+        ],
+        "returned_pages": [
+          177,
+          177,
+          173,
+          176,
+          221
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "linker symbol resolution diagram page 173 177",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p177_fig_4_18_4_24",
+          "openstax-ics-2024_p174_txt_00",
+          "openstax-ics-2024_p173_txt_00",
+          "openstax-ics-2024_p177_txt_00",
+          "openstax-ics-2024_p176_txt_00"
+        ],
+        "returned_pages": [
+          177,
+          174,
+          173,
+          177,
+          176
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p177_fig_4_18_4_24",
+        "source_id": "openstax-ics-2024",
+        "page": 177,
+        "modality": "image_diagram",
+        "element_id": "Figure 4.18 & Figure 4.24",
+        "bbox_region": "page=173-177, bbox=[72, 95, 540, 380]",
+        "chars": 689
+      },
+      {
+        "id": "openstax-ics-2024_p177_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 177,
+        "modality": "text",
+        "element_id": "Page 177 Text Block 0",
+        "bbox_region": "page=177, bbox=[72, 72, 540, 720]",
+        "chars": 2504
+      },
+      {
+        "id": "openstax-ics-2024_p174_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 174,
+        "modality": "text",
+        "element_id": "Page 174 Text Block 0",
+        "bbox_region": "page=174, bbox=[72, 72, 540, 720]",
+        "chars": 1527
+      }
+    ],
+    "context_chars": 4720,
+    "abstained": false,
+    "answer": "In Figure 4.18 (page 173), the compiler driver (`gcc -Og -o prog main.c sum.c`) translates C source files (`main.c`, `sum.c`) into relocatable object files (`.o`) and invokes the linker to combine them into a single executable object file (`prog`). In Figure 4.24 (page 177), the linker resolves symbols across `.o` files — distinguishing strong symbols (procedures/functions and initialized global variables) from weak symbols (uninitialized global variables) — and merges the separate `.text` (code) and `.data` segments of the relocatable object files into the unified `.text` and `.data` segments of the final executable. [openstax-ics-2024, p.173] [openstax-ics-2024, p.177]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 173,
+        "region": "page=173"
+      },
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 177,
+        "region": "page=173-177, bbox=[72, 95, 540, 380]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.56,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t12",
+    "split": "test",
+    "primary_group": "chart",
+    "question": "According to Figure 1.8 (Chart of U.S. News Media Consumption Shift, page 34) based on the Pew Research Center survey conducted Aug. 31–Sept. 7, 2020, what major media consumption shift does the chart depict and what exact percentage (%) of American adults surveyed reported getting their news from social media?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 1.8 Pew Research Center 53% American adults news from social media Aug 31 Sept 7 2020 page 34",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p034_chart_fig_1_8",
+          "openstax-ics-2024_p034_txt_00",
+          "openstax-ics-2024_p033_txt_00",
+          "openstax-ics-2024_p027_txt_00",
+          "openstax-ics-2024_p031_txt_00"
+        ],
+        "returned_pages": [
+          34,
+          34,
+          33,
+          27,
+          31
+        ],
+        "returned_modalities": [
+          "chart",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Chart of U.S. News Media Consumption Shift page 34",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p034_chart_fig_1_8",
+          "openstax-ics-2024_p034_txt_00",
+          "openstax-ics-2024_p115_chart_fig_3_12",
+          "openstax-ics-2024_p033_txt_00",
+          "openstax-ics-2024_p119_chart_fig_3_15"
+        ],
+        "returned_pages": [
+          34,
+          34,
+          115,
+          33,
+          119
+        ],
+        "returned_modalities": [
+          "chart",
+          "text",
+          "chart",
+          "text",
+          "chart"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p034_chart_fig_1_8",
+        "source_id": "openstax-ics-2024",
+        "page": 34,
+        "modality": "chart",
+        "element_id": "Figure 1.8",
+        "bbox_region": "page=34, bbox=[72, 85, 540, 340]",
+        "chars": 448
+      },
+      {
+        "id": "openstax-ics-2024_p034_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 34,
+        "modality": "text",
+        "element_id": "Page 34 Text Block 0",
+        "bbox_region": "page=34, bbox=[72, 72, 540, 720]",
+        "chars": 2676
+      },
+      {
+        "id": "openstax-ics-2024_p115_chart_fig_3_12",
+        "source_id": "openstax-ics-2024",
+        "page": 115,
+        "modality": "chart",
+        "element_id": "Figure 3.12",
+        "bbox_region": "page=115, bbox=[72, 470, 540, 710]",
+        "chars": 571
+      },
+      {
+        "id": "openstax-ics-2024_p119_chart_fig_3_15",
+        "source_id": "openstax-ics-2024",
+        "page": 119,
+        "modality": "chart",
+        "element_id": "Figure 3.15",
+        "bbox_region": "page=119, bbox=[72, 320, 540, 620]",
+        "chars": 1176
+      }
+    ],
+    "context_chars": 4871,
+    "abstained": false,
+    "answer": "Figure 1.8 (page 34) depicts how Americans' primary source of news shifted away from traditional print newspapers toward digital and social media platforms. According to the cited Pew Research Center survey of U.S. adults conducted Aug. 31–Sept. 7, 2020 (published Jan 12, 2021), 53% of American adults surveyed stated that they got their news from social media at least some of the time. [openstax-ics-2024, p.34]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 34,
+        "region": "page=34, bbox=[72, 85, 540, 340]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 291.78,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t13",
+    "split": "test",
+    "primary_group": "chart",
+    "question": "In the Performance Profiling Flame Graph chart (Figure 3.12, page 115), what do the horizontal bar width (in % of total duration) and vertical call stack depth represent, and how do engineers visually identify a CPU performance bottleneck on this chart?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 3.12 Performance Profiling Flame Graph horizontal bar width percentage vertical call stack bottlenecks page 115",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p115_chart_fig_3_12",
+          "openstax-ics-2024_p115_txt_00",
+          "openstax-ics-2024_p118_chart_fig_3_14",
+          "openstax-ics-2024_p227_txt_00",
+          "openstax-ics-2024_p117_chart_fig_3_13"
+        ],
+        "returned_pages": [
+          115,
+          115,
+          118,
+          227,
+          117
+        ],
+        "returned_modalities": [
+          "chart",
+          "text",
+          "chart",
+          "text",
+          "chart"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "wide bars at the top of the flame graph CPU time page 115",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p115_chart_fig_3_12",
+          "openstax-ics-2024_p115_txt_00",
+          "openstax-ics-2024_p229_chart_fig_5_20",
+          "openstax-ics-2024_p117_chart_fig_3_13",
+          "openstax-ics-2024_p106_txt_00"
+        ],
+        "returned_pages": [
+          115,
+          115,
+          229,
+          117,
+          106
+        ],
+        "returned_modalities": [
+          "chart",
+          "text",
+          "chart",
+          "chart",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p115_chart_fig_3_12",
+        "source_id": "openstax-ics-2024",
+        "page": 115,
+        "modality": "chart",
+        "element_id": "Figure 3.12",
+        "bbox_region": "page=115, bbox=[72, 470, 540, 710]",
+        "chars": 571
+      },
+      {
+        "id": "openstax-ics-2024_p115_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 115,
+        "modality": "text",
+        "element_id": "Page 115 Text Block 0",
+        "bbox_region": "page=115, bbox=[72, 72, 540, 720]",
+        "chars": 3476
+      },
+      {
+        "id": "openstax-ics-2024_p118_chart_fig_3_14",
+        "source_id": "openstax-ics-2024",
+        "page": 118,
+        "modality": "chart",
+        "element_id": "Figure 3.14",
+        "bbox_region": "page=118, bbox=[72, 85, 540, 330]",
+        "chars": 585
+      },
+      {
+        "id": "openstax-ics-2024_p229_chart_fig_5_20",
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "modality": "chart",
+        "element_id": "Figure 5.20",
+        "bbox_region": "page=229, bbox=[72, 230, 540, 425]",
+        "chars": 696
+      },
+      {
+        "id": "openstax-ics-2024_p117_chart_fig_3_13",
+        "source_id": "openstax-ics-2024",
+        "page": 117,
+        "modality": "chart",
+        "element_id": "Figure 3.13",
+        "bbox_region": "page=117, bbox=[72, 180, 540, 420]",
+        "chars": 641
+      }
+    ],
+    "context_chars": 5969,
+    "abstained": false,
+    "answer": "In Figure 3.12 (page 115), the horizontal axis (bar width) represents the relative execution duration as a percentage (%) of total runtime spent in each function, while the vertical axis represents the call stack depth (parent functions below, child functions stacked above). Engineers visually pinpoint CPU performance bottlenecks by looking for wide rectangular bars near the top of the flame graph, which indicate leaf functions consuming the largest share of CPU time. [openstax-ics-2024, p.115]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 115,
+        "region": "page=115, bbox=[72, 470, 540, 710]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.03,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t14",
+    "split": "test",
+    "primary_group": "chart",
+    "question": "On the Sequential Search runtime comparison chart (Figure 3.13, page 117), why is the worst-case runtime plotted as an upward-sloping diagonal line O(N) while the best-case runtime is a flat horizontal line O(1), and what two physical search conditions trigger the worst case of N repetitions?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 3.13 Sequential Search worst case upward-sloping diagonal line O(N) bottom of the list not in the list page 117",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p117_chart_fig_3_13",
+          "openstax-ics-2024_p117_txt_00",
+          "openstax-ics-2024_p118_txt_00",
+          "openstax-ics-2024_p127_txt_00",
+          "openstax-ics-2024_p119_txt_00"
+        ],
+        "returned_pages": [
+          117,
+          117,
+          118,
+          127,
+          119
+        ],
+        "returned_modalities": [
+          "chart",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "best case flat horizontal line O(1) N repetitions Figure 3.13",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p117_chart_fig_3_13",
+          "openstax-ics-2024_p117_txt_00",
+          "openstax-ics-2024_p118_chart_fig_3_14",
+          "openstax-ics-2024_p118_txt_00",
+          "openstax-ics-2024_p119_txt_00"
+        ],
+        "returned_pages": [
+          117,
+          117,
+          118,
+          118,
+          119
+        ],
+        "returned_modalities": [
+          "chart",
+          "text",
+          "chart",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p117_chart_fig_3_13",
+        "source_id": "openstax-ics-2024",
+        "page": 117,
+        "modality": "chart",
+        "element_id": "Figure 3.13",
+        "bbox_region": "page=117, bbox=[72, 180, 540, 420]",
+        "chars": 641
+      },
+      {
+        "id": "openstax-ics-2024_p117_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 117,
+        "modality": "text",
+        "element_id": "Page 117 Text Block 0",
+        "bbox_region": "page=117, bbox=[72, 72, 540, 720]",
+        "chars": 2639
+      },
+      {
+        "id": "openstax-ics-2024_p118_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 118,
+        "modality": "text",
+        "element_id": "Page 118 Text Block 0",
+        "bbox_region": "page=118, bbox=[72, 72, 540, 720]",
+        "chars": 2094
+      },
+      {
+        "id": "openstax-ics-2024_p118_chart_fig_3_14",
+        "source_id": "openstax-ics-2024",
+        "page": 118,
+        "modality": "chart",
+        "element_id": "Figure 3.14",
+        "bbox_region": "page=118, bbox=[72, 85, 540, 330]",
+        "chars": 585
+      }
+    ],
+    "context_chars": 5959,
+    "abstained": false,
+    "answer": "In Figure 3.13 (page 117), the best-case runtime is a flat horizontal line O(1) at 1 repetition because the target word is found immediately at the very top/start of the list regardless of list size N. The worst-case runtime is an upward-sloping diagonal line O(N) because doubling list size N doubles the required repetitions; this worst case of N repetitions occurs under two search conditions: (1) when the target word is at the very bottom/end of the list, or (2) when the target word is not in the list at all. [openstax-ics-2024, p.117]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 117,
+        "region": "page=117, bbox=[72, 180, 540, 420]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.24,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t15",
+    "split": "test",
+    "primary_group": "chart",
+    "question": "In the Order of Growth Asymptotic Efficiency Curves chart (Figure 3.14, page 118), list all eight complexity classes plotted from slowest-growing (most efficient) to fastest-growing (least efficient), and state the mathematical upper-bound condition on f(N)/g(N) as N -> infinity that defines f(N) = O(g(N)).",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 3.14 Order of Growth O(1) O(log N) O(N) O(N log N) O(N^2) O(N^3) O(2^N) O(N!) f(N)/g(N) page 118",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p118_chart_fig_3_14",
+          "openstax-ics-2024_p118_txt_00",
+          "openstax-ics-2024_p119_txt_00",
+          "openstax-ics-2024_p117_txt_00",
+          "openstax-ics-2024_p119_chart_fig_3_15"
+        ],
+        "returned_pages": [
+          118,
+          118,
+          119,
+          117,
+          119
+        ],
+        "returned_modalities": [
+          "chart",
+          "text",
+          "text",
+          "text",
+          "chart"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "asymptotic efficiency curves upper bounded by a constant as N approaches infinity",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p118_chart_fig_3_14",
+          "openstax-ics-2024_p118_txt_00",
+          "openstax-ics-2024_p119_chart_fig_3_15",
+          "openstax-ics-2024_p117_chart_fig_3_13",
+          "openstax-ics-2024_p117_txt_00"
+        ],
+        "returned_pages": [
+          118,
+          118,
+          119,
+          117,
+          117
+        ],
+        "returned_modalities": [
+          "chart",
+          "text",
+          "chart",
+          "chart",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p118_chart_fig_3_14",
+        "source_id": "openstax-ics-2024",
+        "page": 118,
+        "modality": "chart",
+        "element_id": "Figure 3.14",
+        "bbox_region": "page=118, bbox=[72, 85, 540, 330]",
+        "chars": 585
+      },
+      {
+        "id": "openstax-ics-2024_p118_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 118,
+        "modality": "text",
+        "element_id": "Page 118 Text Block 0",
+        "bbox_region": "page=118, bbox=[72, 72, 540, 720]",
+        "chars": 2094
+      },
+      {
+        "id": "openstax-ics-2024_p119_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 119,
+        "modality": "text",
+        "element_id": "Page 119 Text Block 0",
+        "bbox_region": "page=119, bbox=[72, 72, 540, 720]",
+        "chars": 3310
+      }
+    ],
+    "context_chars": 5989,
+    "abstained": false,
+    "answer": "In Figure 3.14 (page 118), the eight complexity classes ordered from slowest-growing (most efficient) to fastest-growing (least efficient) are: (1) O(1) constant, (2) O(log N) logarithmic, (3) O(N) linear, (4) O(N log N) linearithmic, (5) O(N^2) quadratic, (6) O(N^3) cubic, (7) O(2^N) exponential, and (8) O(N!) factorial. Mathematically, f(N) = O(g(N)) if the ratio f(N)/g(N) is upper bounded by a positive constant as N approaches infinity (N -> infinity). [openstax-ics-2024, p.118]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 118,
+        "region": "page=118, bbox=[72, 85, 540, 330]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 291.71,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t16",
+    "split": "test",
+    "primary_group": "chart",
+    "question": "According to the Runtime vs. Problem Size chart (Figure 3.15, page 119) and the Memory Hierarchy Triangle chart (Figure 5.20, page 229), by what factor do required resources multiply when input size N doubles (2N) versus quadruples (4N) for a quadratic O(N^2) algorithm, what runtime threshold (in years) on Figure 3.15 exceeds the current age of the universe, and how are the 4 storage technologies ordered from apex to base in Figure 5.20?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 3.15 page 119 quadratic O(N^2) 4 times 16 times 10^25 years age of the universe",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p119_chart_fig_3_15",
+          "openstax-ics-2024_p119_txt_00",
+          "openstax-ics-2024_p118_chart_fig_3_14",
+          "openstax-ics-2024_p120_txt_00",
+          "openstax-ics-2024_p118_txt_00"
+        ],
+        "returned_pages": [
+          119,
+          119,
+          118,
+          120,
+          118
+        ],
+        "returned_modalities": [
+          "chart",
+          "text",
+          "chart",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 5.20 Memory Hierarchy Triangle Chart apex base SRAM DRAM SSD HDD page 229",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p229_chart_fig_5_20",
+          "openstax-ics-2024_p229_txt_00",
+          "openstax-ics-2024_p233_txt_00",
+          "openstax-ics-2024_p229_table_5_3",
+          "openstax-ics-2024_p231_txt_00"
+        ],
+        "returned_pages": [
+          229,
+          229,
+          233,
+          229,
+          231
+        ],
+        "returned_modalities": [
+          "chart",
+          "text",
+          "text",
+          "table",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p119_chart_fig_3_15",
+        "source_id": "openstax-ics-2024",
+        "page": 119,
+        "modality": "chart",
+        "element_id": "Figure 3.15",
+        "bbox_region": "page=119, bbox=[72, 320, 540, 620]",
+        "chars": 1176
+      },
+      {
+        "id": "openstax-ics-2024_p229_chart_fig_5_20",
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "modality": "chart",
+        "element_id": "Figure 5.20",
+        "bbox_region": "page=229, bbox=[72, 230, 540, 425]",
+        "chars": 696
+      },
+      {
+        "id": "openstax-ics-2024_p119_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 119,
+        "modality": "text",
+        "element_id": "Page 119 Text Block 0",
+        "bbox_region": "page=119, bbox=[72, 72, 540, 720]",
+        "chars": 3310
+      },
+      {
+        "id": "openstax-ics-2024_p118_chart_fig_3_14",
+        "source_id": "openstax-ics-2024",
+        "page": 118,
+        "modality": "chart",
+        "element_id": "Figure 3.14",
+        "bbox_region": "page=118, bbox=[72, 85, 540, 330]",
+        "chars": 585
+      }
+    ],
+    "context_chars": 5767,
+    "abstained": false,
+    "answer": "On page 119 (Figure 3.15), for a quadratic O(N^2) algorithm, doubling input size N to 2N multiplies required resources by 4 times (4x), and quadrupling N to 4N multiplies required resources by 16 times (16x). On the Figure 3.15 chart, when an algorithm's runtime exceeds 10^25 years (such as an exponential algorithm on N = 1,000 elements), it exceeds the current age of the universe. In the Memory Hierarchy Triangle chart (Figure 5.20, page 229), the 4 storage technologies are ordered from top apex (closest to CPU, smallest, fastest) to bottom base (largest capacity, slowest) as: (1) SRAM (cache) -> (2) DRAM (main memory) -> (3) SSD -> (4) HDD. [openstax-ics-2024, p.119] [openstax-ics-2024, p.229]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 119,
+        "region": "page=119, bbox=[72, 320, 540, 620]"
+      },
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "region": "page=229, bbox=[72, 230, 540, 425]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 292.11,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t17",
+    "split": "test",
+    "primary_group": "multi_hop",
+    "question": "Combining Table 5.3 (Technologies Used for Storage, page 229) with the DRAM hardware explanation in Section 5.4 (page 230), what typical size range and volatility does Table 5.3 specify for DRAM, why is DRAM called 'dynamic' (what hardware component stores each bit and why must it be refreshed), and how many capacitors are required to build a 32GB DRAM module (where 32GB = 32 x 2^30 bytes)?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Table 5.3 Technology 2 Dynamic random access memory DRAM Volatile 1GB to 128GB page 229",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p229_table_5_3",
+          "openstax-ics-2024_p229_txt_00",
+          "openstax-ics-2024_p230_txt_00",
+          "openstax-ics-2024_p229_chart_fig_5_20",
+          "openstax-ics-2024_p233_txt_00"
+        ],
+        "returned_pages": [
+          229,
+          229,
+          230,
+          229,
+          233
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "chart",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "DRAM capacitor leaks charge refresh 32GB 32 x 2^30 bytes 8 bits capacitors page 230",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p230_txt_00",
+          "openstax-ics-2024_p232_txt_00",
+          "openstax-ics-2024_p232_diag_fig_5_23",
+          "openstax-ics-2024_p229_table_5_3",
+          "openstax-ics-2024_p224_txt_00"
+        ],
+        "returned_pages": [
+          230,
+          232,
+          232,
+          229,
+          224
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "image_diagram",
+          "table",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p229_table_5_3",
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "modality": "table",
+        "element_id": "Table 5.3",
+        "bbox_region": "page=229-230, bbox=[72, 430, 540, 720]",
+        "chars": 660
+      },
+      {
+        "id": "openstax-ics-2024_p230_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 230,
+        "modality": "text",
+        "element_id": "Page 230 Text Block 0",
+        "bbox_region": "page=230, bbox=[72, 72, 540, 720]",
+        "chars": 2427
+      },
+      {
+        "id": "openstax-ics-2024_p229_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "modality": "text",
+        "element_id": "Page 229 Text Block 0",
+        "bbox_region": "page=229, bbox=[72, 72, 540, 720]",
+        "chars": 1896
+      },
+      {
+        "id": "openstax-ics-2024_p232_diag_fig_5_23",
+        "source_id": "openstax-ics-2024",
+        "page": 232,
+        "modality": "image_diagram",
+        "element_id": "Figure 5.23",
+        "bbox_region": "page=232, bbox=[72, 240, 540, 440]",
+        "chars": 720
+      }
+    ],
+    "context_chars": 5703,
+    "abstained": false,
+    "answer": "In Table 5.3 (page 229), DRAM (Technology 2, Main memory) is specified as Volatile, Fast, Less expensive, with an average size range of 1GB to 128GB. According to Section 5.4 (page 230), DRAM stores each bit as an electrical charge in a tiny capacitor (paired with a transistor); because capacitors naturally leak charge over time, the memory controller must periodically read and recharge (refresh) them, which is why DRAM is called 'dynamic' and is volatile. For a 32GB DRAM module (32 x 2^30 bytes = 2^35 bytes) with 8 bits per byte, it requires 32 x 2^30 x 8 = 256 x 2^30 = 2^38 capacitors (approximately 2.75 x 10^11 or 274.88 billion capacitors). [openstax-ics-2024, p.229] [openstax-ics-2024, p.230]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "region": "page=229-230, bbox=[72, 430, 540, 720]"
+      },
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 230,
+        "region": "page=230"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 291.74,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t18",
+    "split": "test",
+    "primary_group": "multi_hop",
+    "question": "Combining the asymptotic growth charts (Figures 3.14 and 3.15, pages 118–119) with the Binary Search Divide-and-Conquer diagram (Figure 3.16, page 121), why does Binary Search achieve O(log N) logarithmic scaling by halving the sorted list at each recursive call, and how many additional resource units does an O(log N) algorithm require when the problem size N doubles according to page 119?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 3.16 Binary Search divide and conquer one recursive call half sorted list page 121",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p121_diag_fig_3_16_and_3_17",
+          "openstax-ics-2024_p121_txt_00",
+          "openstax-ics-2024_p128_txt_00",
+          "openstax-ics-2024_p127_txt_00",
+          "openstax-ics-2024_p120_txt_00"
+        ],
+        "returned_pages": [
+          121,
+          121,
+          128,
+          127,
+          120
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 3.14 Figure 3.15 O(log N) logarithmic 1 additional resource when N doubles page 118 119",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p119_chart_fig_3_15",
+          "openstax-ics-2024_p118_chart_fig_3_14",
+          "openstax-ics-2024_p118_txt_00",
+          "openstax-ics-2024_p119_txt_00",
+          "openstax-ics-2024_p117_txt_00"
+        ],
+        "returned_pages": [
+          119,
+          118,
+          118,
+          119,
+          117
+        ],
+        "returned_modalities": [
+          "chart",
+          "chart",
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p121_diag_fig_3_16_and_3_17",
+        "source_id": "openstax-ics-2024",
+        "page": 121,
+        "modality": "image_diagram",
+        "element_id": "Figure 3.16 & Figure 3.17",
+        "bbox_region": "page=121, bbox=[72, 140, 540, 610]",
+        "chars": 745
+      },
+      {
+        "id": "openstax-ics-2024_p119_chart_fig_3_15",
+        "source_id": "openstax-ics-2024",
+        "page": 119,
+        "modality": "chart",
+        "element_id": "Figure 3.15",
+        "bbox_region": "page=119, bbox=[72, 320, 540, 620]",
+        "chars": 1176
+      },
+      {
+        "id": "openstax-ics-2024_p121_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 121,
+        "modality": "text",
+        "element_id": "Page 121 Text Block 0",
+        "bbox_region": "page=121, bbox=[72, 72, 540, 720]",
+        "chars": 3542
+      }
+    ],
+    "context_chars": 5463,
+    "abstained": true,
+    "answer": "I cannot answer completely because the retrieved context within the character budget is missing the required table/diagram/chart or multi-page evidence.",
+    "citations": [],
+    "pass": false,
+    "latency_ms": 292.99,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t19",
+    "split": "test",
+    "primary_group": "multi_hop",
+    "question": "Combining the Binary Heap Priority Queue diagram (Figure 3.8, page 105) with the sorting algorithm analysis in Section 3.5 (page 128), what parent-child ordering property does Figure 3.8 enforce, how does Heapsort use a binary max-heap to guarantee O(N log N) worst-case runtime, and why does Quicksort degrade to O(N^2) in the worst case unless the input list is randomly shuffled?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 3.8 Binary Heap priority queue parent node greater than or equal children root page 105",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p105_fig_3_8",
+          "openstax-ics-2024_p105_txt_00",
+          "openstax-ics-2024_p103_txt_00",
+          "openstax-ics-2024_p128_txt_00",
+          "openstax-ics-2024_p106_txt_00"
+        ],
+        "returned_pages": [
+          105,
+          105,
+          103,
+          128,
+          106
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Heapsort binary max-heap O(N log N) Quicksort pivot O(N^2) worst case randomly shuffle page 128",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p128_txt_00",
+          "openstax-ics-2024_p129_txt_00",
+          "openstax-ics-2024_p119_txt_00",
+          "openstax-ics-2024_p118_txt_00",
+          "openstax-ics-2024_p127_txt_00"
+        ],
+        "returned_pages": [
+          128,
+          129,
+          119,
+          118,
+          127
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p105_fig_3_8",
+        "source_id": "openstax-ics-2024",
+        "page": 105,
+        "modality": "image_diagram",
+        "element_id": "Figure 3.8",
+        "bbox_region": "page=105, bbox=[72, 240, 540, 510]",
+        "chars": 505
+      },
+      {
+        "id": "openstax-ics-2024_p128_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 128,
+        "modality": "text",
+        "element_id": "Page 128 Text Block 0",
+        "bbox_region": "page=128, bbox=[72, 72, 540, 720]",
+        "chars": 2547
+      },
+      {
+        "id": "openstax-ics-2024_p103_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 103,
+        "modality": "text",
+        "element_id": "Page 103 Text Block 0",
+        "bbox_region": "page=103, bbox=[72, 72, 540, 720]",
+        "chars": 2595
+      }
+    ],
+    "context_chars": 5647,
+    "abstained": false,
+    "answer": "In Figure 3.8 (page 105), a binary heap enforces the heap property: every parent node's priority value is greater than or equal to the priority values of its children, keeping the maximum-priority element at the root (while allowing nodes in the right subtree to be smaller than nodes in the left subtree). In Section 3.5 (page 128), Heapsort builds a binary max-heap and repeatedly extracts the maximum root element in O(log N) time per element, guaranteeing O(N log N) time in both the best and worst cases with O(1) extra space. In contrast, Quicksort partitions the list around a pivot and averages O(N log N), but degrades to O(N^2) quadratic worst-case runtime if the pivot repeatedly lands at an extreme end (such as on an already-sorted list), which is prevented by randomly shuffling the input before sorting. [openstax-ics-2024, p.105] [openstax-ics-2024, p.128]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 105,
+        "region": "page=105, bbox=[72, 240, 540, 510]"
+      },
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 128,
+        "region": "page=128"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 291.9,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t20",
+    "split": "test",
+    "primary_group": "multi_hop",
+    "question": "Combining pages 132 and 133 of Section 3.6 (Graph Algorithms), contrast the optimization goal and graph type of a Minimum Spanning Tree (solved by Kruskal's and Prim's algorithms) with those of a Shortest Paths Tree (solved by Dijkstra's algorithm), explain how Kruskal's and Prim's differ in how they grow the tree, and state why Dijkstra's algorithm must not be used when negative edge weights exist.",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Minimum Spanning Tree MST Kruskal Prim undirected weighted graph lowest weight edge cycle page 132",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p132_txt_00",
+          "openstax-ics-2024_p133_txt_00",
+          "openstax-ics-2024_p125_txt_00",
+          "openstax-ics-2024_p124_txt_00",
+          "openstax-ics-2024_p126_txt_00"
+        ],
+        "returned_pages": [
+          132,
+          133,
+          125,
+          124,
+          126
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Shortest Paths Tree Dijkstra directed weighted graph negative edge weights page 133",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p133_txt_00",
+          "openstax-ics-2024_p132_txt_00",
+          "openstax-ics-2024_p136_txt_00",
+          "openstax-ics-2024_p135_txt_00",
+          "openstax-ics-2024_p124_txt_00"
+        ],
+        "returned_pages": [
+          133,
+          132,
+          136,
+          135,
+          124
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p132_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 132,
+        "modality": "text",
+        "element_id": "Page 132 Text Block 0",
+        "bbox_region": "page=132, bbox=[72, 72, 540, 720]",
+        "chars": 2436
+      },
+      {
+        "id": "openstax-ics-2024_p133_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 133,
+        "modality": "text",
+        "element_id": "Page 133 Text Block 0",
+        "bbox_region": "page=133, bbox=[72, 72, 540, 720]",
+        "chars": 2513
+      }
+    ],
+    "context_chars": 4949,
+    "abstained": false,
+    "answer": "On page 132, a Minimum Spanning Tree (MST) operates on an undirected weighted graph and connects all vertices using a subset of edges with the minimum possible total edge weight and no cycles: Kruskal's algorithm grows the MST by sorting all edges by weight and adding the lowest-weight edge that does not create a cycle, whereas Prim's algorithm grows a single connected tree outward from a starting vertex by repeatedly adding the lowest-weight frontier edge. On page 133, a Shortest Paths Tree operates on a directed (or undirected) weighted graph from a source vertex s and minimizes the path weight from s to every other vertex using Dijkstra's greedy algorithm. Dijkstra's algorithm assumes adding an edge never decreases path weight, so it fails and must not be used when graphs contain negative edge weights. [openstax-ics-2024, p.132] [openstax-ics-2024, p.133]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 132,
+        "region": "page=132"
+      },
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 133,
+        "region": "page=133"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 291.2,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t21",
+    "split": "test",
+    "primary_group": "text",
+    "question": "According to Section 3.3 (Algorithmic Complexity, page 116), how are 'time complexity' and 'space complexity' defined, and how does the theoretical 'cost model' simplify experimental runtime profiling when analyzing an algorithm's order of growth?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "time complexity space complexity cost model fundamental operations input size N page 116",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p116_txt_00",
+          "openstax-ics-2024_p135_txt_00",
+          "openstax-ics-2024_p117_txt_00",
+          "openstax-ics-2024_p119_txt_00",
+          "openstax-ics-2024_p117_chart_fig_3_13"
+        ],
+        "returned_pages": [
+          116,
+          135,
+          117,
+          119,
+          117
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text",
+          "text",
+          "chart"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Section 3.3 Algorithmic Complexity experimental runtime analysis",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p114_txt_00",
+          "openstax-ics-2024_p115_txt_00",
+          "openstax-ics-2024_p115_chart_fig_3_12",
+          "openstax-ics-2024_p151_txt_00",
+          "openstax-ics-2024_p138_txt_00"
+        ],
+        "returned_pages": [
+          114,
+          115,
+          115,
+          151,
+          138
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "chart",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p116_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 116,
+        "modality": "text",
+        "element_id": "Page 116 Text Block 0",
+        "bbox_region": "page=116, bbox=[72, 72, 540, 720]",
+        "chars": 4669
+      },
+      {
+        "id": "openstax-ics-2024_p115_chart_fig_3_12",
+        "source_id": "openstax-ics-2024",
+        "page": 115,
+        "modality": "chart",
+        "element_id": "Figure 3.12",
+        "bbox_region": "page=115, bbox=[72, 470, 540, 710]",
+        "chars": 571
+      },
+      {
+        "id": "openstax-ics-2024_p117_chart_fig_3_13",
+        "source_id": "openstax-ics-2024",
+        "page": 117,
+        "modality": "chart",
+        "element_id": "Figure 3.13",
+        "bbox_region": "page=117, bbox=[72, 180, 540, 420]",
+        "chars": 641
+      }
+    ],
+    "context_chars": 5881,
+    "abstained": false,
+    "answer": "On page 116, 'time complexity' quantifies the amount of execution time an algorithm needs as a function of input size, while 'space complexity' quantifies the amount of computer memory (storage space) an algorithm requires. Instead of running hardware-dependent experimental timing tests, the theoretical 'cost model' simplifies analysis by counting only the most frequent fundamental operations (such as array accesses or comparisons) as a mathematical function of input size N to determine asymptotic order of growth. [openstax-ics-2024, p.116]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 116,
+        "region": "page=116"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 290.85,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t22",
+    "split": "test",
+    "primary_group": "text",
+    "question": "In Section 3.4 (Exhaustive Search and Combinatorial Explosion, page 122), what two contrasting consequences of 'combinatorial explosion' (one beneficial for cybersecurity and one limiting for problem-solving) are illustrated using the example of brute-forcing a 16-digit credit card number (10^16 possibilities)?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "combinatorial explosion 16-digit credit card number 10^16 exhaustive search brute-force page 122",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p122_txt_00",
+          "openstax-ics-2024_p138_txt_00",
+          "openstax-ics-2024_p123_txt_00",
+          "openstax-ics-2024_p134_txt_00",
+          "openstax-ics-2024_p130_txt_00"
+        ],
+        "returned_pages": [
+          122,
+          138,
+          123,
+          134,
+          130
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Section 3.4 security cryptography optimization problems",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p066_txt_00",
+          "openstax-ics-2024_p035_txt_00",
+          "openstax-ics-2024_p066_table_2_3",
+          "openstax-ics-2024_p137_txt_00",
+          "openstax-ics-2024_p126_txt_00"
+        ],
+        "returned_pages": [
+          66,
+          35,
+          66,
+          137,
+          126
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "table",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p122_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 122,
+        "modality": "text",
+        "element_id": "Page 122 Text Block 0",
+        "bbox_region": "page=122, bbox=[72, 72, 540, 720]",
+        "chars": 2948
+      },
+      {
+        "id": "openstax-ics-2024_p035_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 35,
+        "modality": "text",
+        "element_id": "Page 35 Text Block 0",
+        "bbox_region": "page=35, bbox=[72, 72, 540, 720]",
+        "chars": 2479
+      }
+    ],
+    "context_chars": 5427,
+    "abstained": false,
+    "answer": "On page 122, combinatorial explosion refers to the rapid exponential growth in the number of possible combinations as problem size increases (such as 10^16 possible 16-digit credit card numbers). It has two contrasting consequences: (1) Beneficial for security/cryptography: it protects sensitive systems (like 16-digit credit card numbers and cryptographic keys) because brute-force guessing all 10^16 combinations is computationally infeasible for attackers; (2) Limiting for algorithm design: it makes exhaustive search (brute-force) algorithms completely impractical for solving large real-world optimization problems. [openstax-ics-2024, p.122]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 122,
+        "region": "page=122"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 291.03,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t23",
+    "split": "test",
+    "primary_group": "text",
+    "question": "According to Section 3.5 (Hashing, page 130) and Section 3.6 (Graph Traversal, page 130), what is a 'hash collision', what is the best-case lookup and insertion time complexity of a hash table when collisions are rare, and what is the exact time complexity of Depth-First Search (DFS) on a graph with |V| vertices and |E| edges?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "hash collision O(1) constant time Depth-First Search DFS O(|V| + |E|) vertices edges page 130",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p130_txt_00",
+          "openstax-ics-2024_p131_txt_00",
+          "openstax-ics-2024_p132_txt_00",
+          "openstax-ics-2024_p129_txt_00",
+          "openstax-ics-2024_p133_txt_00"
+        ],
+        "returned_pages": [
+          130,
+          131,
+          132,
+          129,
+          133
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Section 3.5 Hashing Section 3.6 Graph Traversal page 130",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p130_txt_00",
+          "openstax-ics-2024_p131_txt_00",
+          "openstax-ics-2024_p129_txt_00",
+          "openstax-ics-2024_p133_txt_00",
+          "openstax-ics-2024_p108_txt_00"
+        ],
+        "returned_pages": [
+          130,
+          131,
+          129,
+          133,
+          108
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p130_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 130,
+        "modality": "text",
+        "element_id": "Page 130 Text Block 0",
+        "bbox_region": "page=130, bbox=[72, 72, 540, 720]",
+        "chars": 2421
+      },
+      {
+        "id": "openstax-ics-2024_p131_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 131,
+        "modality": "text",
+        "element_id": "Page 131 Text Block 0",
+        "bbox_region": "page=131, bbox=[72, 72, 540, 720]",
+        "chars": 1805
+      }
+    ],
+    "context_chars": 4226,
+    "abstained": false,
+    "answer": "On page 130, a 'hash collision' occurs when a hash function maps two or more distinct keys to the same bucket/index in a hash table. When collisions are rare (well-distributed hash function), hash table lookup and insertion achieve O(1) constant best-case/average-case time complexity. In Section 3.6 on the same page (page 130), Depth-First Search (DFS) visits every reachable vertex and edge once, achieving a time complexity of O(|V| + |E|), where |V| is the number of vertices and |E| is the number of edges. [openstax-ics-2024, p.130]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 130,
+        "region": "page=130"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 290.96,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_t24",
+    "split": "test",
+    "primary_group": "text",
+    "question": "In Section 5.3 (Two's Complement Representation, pages 216–217), what is the general formula for the signed integer range of an n-bit two's complement representation, what is the exact signed decimal value of the 3-bit two's complement binary number `101`, and how is it calculated from the positional weights -2^2, 2^1, and 2^0?",
+    "expected_behavior": "answer",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "two's complement range -2^(n-1) 2^(n-1) - 1 3-bit 101 -3 -2^2 page 216 217",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p216_txt_00",
+          "openstax-ics-2024_p217_table_5_2",
+          "openstax-ics-2024_p217_txt_00",
+          "openstax-ics-2024_p220_txt_00",
+          "openstax-ics-2024_p169_txt_00"
+        ],
+        "returned_pages": [
+          216,
+          217,
+          217,
+          220,
+          169
+        ],
+        "returned_modalities": [
+          "text",
+          "table",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Section 5.3 signed binary representation most significant bit negative weight",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p216_txt_00",
+          "openstax-ics-2024_p217_txt_00",
+          "openstax-ics-2024_p215_txt_00",
+          "openstax-ics-2024_p217_table_5_2",
+          "openstax-ics-2024_p219_txt_00"
+        ],
+        "returned_pages": [
+          216,
+          217,
+          215,
+          217,
+          219
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text",
+          "table",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p216_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 216,
+        "modality": "text",
+        "element_id": "Page 216 Text Block 0",
+        "bbox_region": "page=216, bbox=[72, 72, 540, 720]",
+        "chars": 3569
+      },
+      {
+        "id": "openstax-ics-2024_p217_table_5_2",
+        "source_id": "openstax-ics-2024",
+        "page": 217,
+        "modality": "table",
+        "element_id": "Table 5.2",
+        "bbox_region": "page=217, bbox=[72, 520, 540, 665]",
+        "chars": 655
+      }
+    ],
+    "context_chars": 4224,
+    "abstained": false,
+    "answer": "According to Section 5.3 (pages 216–217), the general signed integer range for an n-bit two's complement representation is [-2^(n-1), +2^(n-1) - 1] (which gives [-4, +3] for n = 3 bits). In two's complement, the most significant bit (sign bit) has a negative positional weight of -2^(n-1). Therefore, for the 3-bit two's complement number `101`, its signed decimal value is calculated as: (-1 x 2^2) + (0 x 2^1) + (1 x 2^0) = -4 + 0 + 1 = -3. [openstax-ics-2024, p.216] [openstax-ics-2024, p.217]",
+    "citations": [
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 216,
+        "region": "page=216"
+      },
+      {
+        "source_id": "openstax-ics-2024",
+        "page": 217,
+        "region": "page=217, bbox=[72, 520, 540, 665]"
+      }
+    ],
+    "pass": true,
+    "latency_ms": 290.81,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_tu01",
+    "split": "test",
+    "primary_group": "unanswerable",
+    "question": "According to Table 5.3 (Technologies Used for Storage in a Typical Computer System, page 229), what is the exact sequential read throughput in MB/s and write endurance in Terabytes Written (TBW) specified for PCIe Gen 5 NVMe SSDs?",
+    "expected_behavior": "abstain",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Table 5.3 PCIe Gen 5 NVMe SSD sequential read throughput MB/s Terabytes Written TBW",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p229_table_5_3",
+          "openstax-ics-2024_p229_txt_00",
+          "openstax-ics-2024_p230_txt_00",
+          "openstax-ics-2024_p234_txt_00",
+          "openstax-ics-2024_p217_table_5_2"
+        ],
+        "returned_pages": [
+          229,
+          229,
+          230,
+          234,
+          217
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "text",
+          "table"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Table 5.3 Technology 3 Solid-state drive SSD page 229 230",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p229_table_5_3",
+          "openstax-ics-2024_p230_txt_00",
+          "openstax-ics-2024_p229_chart_fig_5_20",
+          "openstax-ics-2024_p229_txt_00",
+          "openstax-ics-2024_p233_txt_00"
+        ],
+        "returned_pages": [
+          229,
+          230,
+          229,
+          229,
+          233
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "chart",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p229_table_5_3",
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "modality": "table",
+        "element_id": "Table 5.3",
+        "bbox_region": "page=229-230, bbox=[72, 430, 540, 720]",
+        "chars": 660
+      },
+      {
+        "id": "openstax-ics-2024_p229_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "modality": "text",
+        "element_id": "Page 229 Text Block 0",
+        "bbox_region": "page=229, bbox=[72, 72, 540, 720]",
+        "chars": 1896
+      },
+      {
+        "id": "openstax-ics-2024_p230_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 230,
+        "modality": "text",
+        "element_id": "Page 230 Text Block 0",
+        "bbox_region": "page=230, bbox=[72, 72, 540, 720]",
+        "chars": 2427
+      },
+      {
+        "id": "openstax-ics-2024_p229_chart_fig_5_20",
+        "source_id": "openstax-ics-2024",
+        "page": 229,
+        "modality": "chart",
+        "element_id": "Figure 5.20",
+        "bbox_region": "page=229, bbox=[72, 230, 540, 425]",
+        "chars": 696
+      }
+    ],
+    "context_chars": 5679,
+    "abstained": true,
+    "answer": "I must abstain from answering because the provided textbook context does not contain evidence for the requested specification/metric.",
+    "citations": [],
+    "pass": true,
+    "latency_ms": 291.75,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_tu02",
+    "split": "test",
+    "primary_group": "unanswerable",
+    "question": "In Figure 3.14 and Figure 3.15 (pages 118–119), what is the exact wall-clock execution time in milliseconds reported for running Strassen's O(N^2.807) matrix multiplication algorithm on an N = 4,096 x 4,096 matrix?",
+    "expected_behavior": "abstain",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 3.14 Figure 3.15 Strassen O(N^2.807) matrix multiplication 4096 milliseconds",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p118_chart_fig_3_14",
+          "openstax-ics-2024_p119_chart_fig_3_15",
+          "openstax-ics-2024_p119_txt_00",
+          "openstax-ics-2024_p118_txt_00",
+          "openstax-ics-2024_p117_txt_00"
+        ],
+        "returned_pages": [
+          118,
+          119,
+          119,
+          118,
+          117
+        ],
+        "returned_modalities": [
+          "chart",
+          "chart",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Order of Growth chart page 118 119 complexity classes",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p118_chart_fig_3_14",
+          "openstax-ics-2024_p118_txt_00",
+          "openstax-ics-2024_p119_chart_fig_3_15",
+          "openstax-ics-2024_p119_txt_00",
+          "openstax-ics-2024_p117_chart_fig_3_13"
+        ],
+        "returned_pages": [
+          118,
+          118,
+          119,
+          119,
+          117
+        ],
+        "returned_modalities": [
+          "chart",
+          "text",
+          "chart",
+          "text",
+          "chart"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p118_chart_fig_3_14",
+        "source_id": "openstax-ics-2024",
+        "page": 118,
+        "modality": "chart",
+        "element_id": "Figure 3.14",
+        "bbox_region": "page=118, bbox=[72, 85, 540, 330]",
+        "chars": 585
+      },
+      {
+        "id": "openstax-ics-2024_p119_chart_fig_3_15",
+        "source_id": "openstax-ics-2024",
+        "page": 119,
+        "modality": "chart",
+        "element_id": "Figure 3.15",
+        "bbox_region": "page=119, bbox=[72, 320, 540, 620]",
+        "chars": 1176
+      },
+      {
+        "id": "openstax-ics-2024_p118_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 118,
+        "modality": "text",
+        "element_id": "Page 118 Text Block 0",
+        "bbox_region": "page=118, bbox=[72, 72, 540, 720]",
+        "chars": 2094
+      },
+      {
+        "id": "openstax-ics-2024_p117_chart_fig_3_13",
+        "source_id": "openstax-ics-2024",
+        "page": 117,
+        "modality": "chart",
+        "element_id": "Figure 3.13",
+        "bbox_region": "page=117, bbox=[72, 180, 540, 420]",
+        "chars": 641
+      }
+    ],
+    "context_chars": 4496,
+    "abstained": true,
+    "answer": "I must abstain from answering because the provided textbook context does not contain evidence for the requested specification/metric.",
+    "citations": [],
+    "pass": true,
+    "latency_ms": 291.43,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_tu03",
+    "split": "test",
+    "primary_group": "unanswerable",
+    "question": "Based on Table 2.3 and Table 2.5 (pages 66–68), what minimum Basel III Common Equity Tier 1 (CET1) capital adequacy ratio (%) must the Risk managers in a financial organization maintain?",
+    "expected_behavior": "abstain",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Table 2.3 Table 2.5 Basel III Common Equity Tier 1 CET1 capital adequacy ratio Risk managers",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p068_table_2_5",
+          "openstax-ics-2024_p068_txt_00",
+          "openstax-ics-2024_p066_table_2_3",
+          "openstax-ics-2024_p065_txt_00",
+          "openstax-ics-2024_p066_txt_00"
+        ],
+        "returned_pages": [
+          68,
+          68,
+          66,
+          65,
+          66
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "table",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Table 2.5 Roles and Responsibilities within a Financial Organization Risk managers page 68",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p068_table_2_5",
+          "openstax-ics-2024_p068_txt_00",
+          "openstax-ics-2024_p067_txt_00",
+          "openstax-ics-2024_p067_table_2_4",
+          "openstax-ics-2024_p066_table_2_3"
+        ],
+        "returned_pages": [
+          68,
+          68,
+          67,
+          67,
+          66
+        ],
+        "returned_modalities": [
+          "table",
+          "text",
+          "text",
+          "table",
+          "table"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p068_table_2_5",
+        "source_id": "openstax-ics-2024",
+        "page": 68,
+        "modality": "table",
+        "element_id": "Table 2.5",
+        "bbox_region": "page=68, bbox=[72, 130, 540, 540]",
+        "chars": 970
+      },
+      {
+        "id": "openstax-ics-2024_p068_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 68,
+        "modality": "text",
+        "element_id": "Page 68 Text Block 0",
+        "bbox_region": "page=68, bbox=[72, 72, 540, 720]",
+        "chars": 2930
+      },
+      {
+        "id": "openstax-ics-2024_p066_table_2_3",
+        "source_id": "openstax-ics-2024",
+        "page": 66,
+        "modality": "table",
+        "element_id": "Table 2.3",
+        "bbox_region": "page=66, bbox=[72, 85, 540, 480]",
+        "chars": 1230
+      },
+      {
+        "id": "openstax-ics-2024_p067_table_2_4",
+        "source_id": "openstax-ics-2024",
+        "page": 67,
+        "modality": "table",
+        "element_id": "Table 2.4",
+        "bbox_region": "page=67, bbox=[72, 540, 540, 690]",
+        "chars": 359
+      }
+    ],
+    "context_chars": 5489,
+    "abstained": true,
+    "answer": "I must abstain from answering because the provided textbook context does not contain evidence for the requested specification/metric.",
+    "citations": [],
+    "pass": true,
+    "latency_ms": 292.39,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_tu04",
+    "split": "test",
+    "primary_group": "unanswerable",
+    "question": "In Section 5.4 (Memory Hierarchy and SRAM Cache, page 232), what are the exact L1, L2, and L3 cache sizes in megabytes (MB) and set-associativity ways specified for the AMD Ryzen 9 7950X processor?",
+    "expected_behavior": "abstain",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "AMD Ryzen 9 7950X L1 L2 L3 cache size MB set-associativity page 232",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p232_diag_fig_5_23",
+          "openstax-ics-2024_p235_txt_00",
+          "openstax-ics-2024_p232_txt_00",
+          "openstax-ics-2024_p234_txt_00",
+          "openstax-ics-2024_p229_table_5_3"
+        ],
+        "returned_pages": [
+          232,
+          235,
+          232,
+          234,
+          229
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "text",
+          "table"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Section 5.4 Memory SRAM cache 64 bytes page 232",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p232_diag_fig_5_23",
+          "openstax-ics-2024_p232_txt_00",
+          "openstax-ics-2024_p235_txt_00",
+          "openstax-ics-2024_p231_txt_00",
+          "openstax-ics-2024_p233_txt_00"
+        ],
+        "returned_pages": [
+          232,
+          232,
+          235,
+          231,
+          233
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p232_diag_fig_5_23",
+        "source_id": "openstax-ics-2024",
+        "page": 232,
+        "modality": "image_diagram",
+        "element_id": "Figure 5.23",
+        "bbox_region": "page=232, bbox=[72, 240, 540, 440]",
+        "chars": 720
+      },
+      {
+        "id": "openstax-ics-2024_p235_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 235,
+        "modality": "text",
+        "element_id": "Page 235 Text Block 0",
+        "bbox_region": "page=235, bbox=[72, 72, 540, 720]",
+        "chars": 1853
+      },
+      {
+        "id": "openstax-ics-2024_p232_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 232,
+        "modality": "text",
+        "element_id": "Page 232 Text Block 0",
+        "bbox_region": "page=232, bbox=[72, 72, 540, 720]",
+        "chars": 3217
+      }
+    ],
+    "context_chars": 5790,
+    "abstained": true,
+    "answer": "I must abstain from answering because the provided textbook context does not contain evidence for the requested specification/metric.",
+    "citations": [],
+    "pass": true,
+    "latency_ms": 290.85,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_tu05",
+    "split": "test",
+    "primary_group": "unanswerable",
+    "question": "According to Figure 4.18 and Figure 4.24 (pages 173–177), what exact command-line flags does the textbook prescribe for enabling Link-Time Optimization (`-flto`) and AddressSanitizer (`-fsanitize=address`) in `clang++`?",
+    "expected_behavior": "abstain",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 4.18 Figure 4.24 clang++ -flto Link-Time Optimization AddressSanitizer -fsanitize=address",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p177_fig_4_18_4_24",
+          "openstax-ics-2024_p176_txt_00",
+          "openstax-ics-2024_p223_txt_00",
+          "openstax-ics-2024_p173_txt_00",
+          "openstax-ics-2024_p177_txt_00"
+        ],
+        "returned_pages": [
+          177,
+          176,
+          223,
+          173,
+          177
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Figure 4.18 gcc -Og -o prog main.c sum.c linker page 173 177",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p177_fig_4_18_4_24",
+          "openstax-ics-2024_p173_txt_00",
+          "openstax-ics-2024_p221_txt_00",
+          "openstax-ics-2024_p223_txt_00",
+          "openstax-ics-2024_p172_txt_00"
+        ],
+        "returned_pages": [
+          177,
+          173,
+          221,
+          223,
+          172
+        ],
+        "returned_modalities": [
+          "image_diagram",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p177_fig_4_18_4_24",
+        "source_id": "openstax-ics-2024",
+        "page": 177,
+        "modality": "image_diagram",
+        "element_id": "Figure 4.18 & Figure 4.24",
+        "bbox_region": "page=173-177, bbox=[72, 95, 540, 380]",
+        "chars": 689
+      },
+      {
+        "id": "openstax-ics-2024_p176_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 176,
+        "modality": "text",
+        "element_id": "Page 176 Text Block 0",
+        "bbox_region": "page=176, bbox=[72, 72, 540, 720]",
+        "chars": 2440
+      },
+      {
+        "id": "openstax-ics-2024_p173_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 173,
+        "modality": "text",
+        "element_id": "Page 173 Text Block 0",
+        "bbox_region": "page=173, bbox=[72, 72, 540, 720]",
+        "chars": 1555
+      }
+    ],
+    "context_chars": 4684,
+    "abstained": true,
+    "answer": "I must abstain from answering because the provided textbook context does not contain evidence for the requested specification/metric.",
+    "citations": [],
+    "pass": true,
+    "latency_ms": 292.01,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  },
+  {
+    "case_id": "adv_tu06",
+    "split": "test",
+    "primary_group": "unanswerable",
+    "question": "In Section 3.6 (Graph Algorithms, pages 132–133), how does the Bellman-Ford algorithm or Johnson's algorithm reweight negative edges using O(|V| * |E|) dynamic programming relaxations?",
+    "expected_behavior": "abstain",
+    "searches_executed": 2,
+    "tool_calls": [
+      {
+        "step": 1,
+        "tool": "search_multimodal_corpus",
+        "query": "Bellman-Ford Johnson's algorithm negative edges O(|V| * |E|) dynamic programming page 132 133",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p132_txt_00",
+          "openstax-ics-2024_p133_txt_00",
+          "openstax-ics-2024_p022_txt_00",
+          "openstax-ics-2024_p131_txt_00",
+          "openstax-ics-2024_p130_txt_00"
+        ],
+        "returned_pages": [
+          132,
+          133,
+          22,
+          131,
+          130
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      },
+      {
+        "step": 2,
+        "tool": "search_multimodal_corpus",
+        "query": "Section 3.6 Shortest Paths Dijkstra negative weights page 133",
+        "top_k": 5,
+        "returned_chunk_ids": [
+          "openstax-ics-2024_p133_txt_00",
+          "openstax-ics-2024_p132_txt_00",
+          "openstax-ics-2024_p135_txt_00",
+          "openstax-ics-2024_p136_txt_00",
+          "openstax-ics-2024_p137_txt_00"
+        ],
+        "returned_pages": [
+          133,
+          132,
+          135,
+          136,
+          137
+        ],
+        "returned_modalities": [
+          "text",
+          "text",
+          "text",
+          "text",
+          "text"
+        ]
+      }
+    ],
+    "context_chunks": [
+      {
+        "id": "openstax-ics-2024_p132_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 132,
+        "modality": "text",
+        "element_id": "Page 132 Text Block 0",
+        "bbox_region": "page=132, bbox=[72, 72, 540, 720]",
+        "chars": 2436
+      },
+      {
+        "id": "openstax-ics-2024_p133_txt_00",
+        "source_id": "openstax-ics-2024",
+        "page": 133,
+        "modality": "text",
+        "element_id": "Page 133 Text Block 0",
+        "bbox_region": "page=133, bbox=[72, 72, 540, 720]",
+        "chars": 2513
+      }
+    ],
+    "context_chars": 4949,
+    "abstained": true,
+    "answer": "I must abstain from answering because the provided textbook context does not contain evidence for the requested specification/metric.",
+    "citations": [],
+    "pass": true,
+    "latency_ms": 290.97,
+    "estimated_cost_usd": 0.00036,
+    "error": null
+  }
+]
