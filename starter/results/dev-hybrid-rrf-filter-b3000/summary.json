@@ -1,0 +1,15 @@
+{
+  "strategy": "4_method3_improve2_hybrid_rrf_filter_b3000",
+  "description": "Method 3 & Improvement 2 (Selected): Hybrid (Dense pgvector + BM25 + RRF) + Metadata Filter, top_k=3, budget=3000 chars",
+  "split": "dev",
+  "n": 15,
+  "hit1": 15,
+  "hit1_rate": 1.0,
+  "hit3": 15,
+  "hit3_rate": 1.0,
+  "context_hit": 15,
+  "context_hit_rate": 1.0,
+  "avg_context_chars": 2652.9,
+  "median_ms": 14.59,
+  "service_cost_usd": 0.0
+}

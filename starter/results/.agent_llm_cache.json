@@ -1,0 +1,252 @@
+{
+  "e16f5d61bc5dda7b8006639d174e65e34094309b3cdfd55dd261cb8920c2e6d4": {
+    "action": "search",
+    "query": "When did Richard Bellman invent dynamic programming and how does this methodology solve complex problems?"
+  },
+  "d1d6043c9a4fb92c3223b76fd38e79caedd218a3a26efc1ab0d37259b82212c5": {
+    "action": "search",
+    "query": "When did Richard Bellman invent dynamic programming and how does this methodology solve complex problems?"
+  },
+  "8d158ffb530d7582892e755414a5eb3656190f66728685c5d8050eac8aeadfc8": {
+    "action": "search",
+    "query": "How did the ENIAC represent binary 0 and 1 in memory and what hardware components were used?"
+  },
+  "f06851939a92d664335a681fa170d01d1ead1c9ab0032de8db6340bb5a13ad02": {
+    "action": "search",
+    "query": "What hardware architecture did Mark Dean help develop at IBM and how many of the original PC patents did he hold?"
+  },
+  "2d2cffac7e3384c29e30d4f1b94f7bd6054bda2cbb9502091f3d2e060b8a40f7": {
+    "action": "search",
+    "query": "Mark Dean IBM hardware architecture ISA bus original PC patents"
+  },
+  "db6ffbef089740d20c5a1da0a7616bde5d941b6ce198dc838d2ed619b8285af7": {
+    "action": "search",
+    "query": "U.S. H-1B visa program annual caps initial validity period and extension rules"
+  },
+  "03fc46dbbbd4146f9e688bbc784322b1f586f1d7490cb25287ac9eed612142b7": {
+    "action": "search",
+    "query": "U.S. H-1B visa annual cap, initial validity period, and extension rules"
+  },
+  "7e9a526cf5e3943f03a761b18f4cbdffcbb7f4b3681350f8ba4c26ccc560deca": {
+    "action": "search",
+    "query": "Public Health England COVID-19 reporting failure spreadsheet limitations"
+  },
+  "8050c27cd62e38d9415be80e0367401d5630e5dae81db3f2a1001cda3868bbca": {
+    "action": "search",
+    "query": "Public Health England COVID-19 spreadsheet reporting failure technical limitations"
+  },
+  "5b59bb7d61fc9f7a951f93856f49fbf32d6c5100bf6f794b9d28d92f90e2bb30": {
+    "action": "search",
+    "query": "causes of Y2K millennium bug early programmer design choices John Hamre description"
+  },
+  "b2f0f0e742412a77fc23609177c772da8fe8e26ddbba75913b18bc7940977118": {
+    "action": "search",
+    "query": "causes of Y2K millennium bug early programmer design choices John Hamre description"
+  },
+  "d0e366873ebbae47fe917f73e9068156fef4989f1c9c15a4d62c8fbac1041183": {
+    "action": "search",
+    "query": "What are the three As phases of computational thinking?"
+  },
+  "48e8d975a9b8088fcff2e13bbbbe790db5b54db6375f442d0e99c16e7a16de8c": {
+    "action": "search",
+    "query": "What are the three As phases of computational thinking?"
+  },
+  "7f1fe80d76693660e8ed81bc3d07ba4165c9f8b07c8c960ce0a5bd827221d03f": {
+    "action": "answer",
+    "answer": "",
+    "citations": []
+  },
+  "d9bfa5a9e0dee52f94329c2e8c0ab768c57ad66518ff6cc052baebd9424c39c1": {
+    "action": "answer",
+    "answer": "The provided text does not contain information regarding the clock frequency or retail launch price of the Intel Core i9 processor.",
+    "citations": []
+  },
+  "28904691d9aa1cf31abbb89a213204a8d3f8c67b6c581e7c659aece327ec81de": {
+    "action": "answer",
+    "answer": "The Difference Engine was invented by English mathematician Charles Babbage in the 1820s [openstax-ics-2024_p021_para_00]. It was designed to automate the calculations of polynomial functions and astronomical calculations [openstax-ics-2024_p021_para_00].",
+    "citations": [
+      "openstax-ics-2024_p021_para_00"
+    ]
+  },
+  "d3c964b8879aa64307bd7c53f7a0f142da96a5ec98b72d5e29a8b4de71ed71bf": {
+    "action": "answer",
+    "answer": "Richard Bellman invented dynamic programming in 1953 [openstax-ics-2024_p022_para_00]. This methodology solves complex problems by dividing them into more manageable subproblems, solving each subproblem, and storing the results to ultimately reach a solution for the overall complex problem [openstax-ics-2024_p022_para_00].",
+    "citations": [
+      "openstax-ics-2024_p022_para_00"
+    ]
+  },
+  "894dc1b2e19ca8eb951599edf1afd5524f35f78e7b6ce77fc7afad15a780902d": {
+    "action": "answer",
+    "answer": "The four core physical hardware components of a computer system and their primary functions are: 1) Processor: acts as the computer's \"brain\" by following instructions from algorithms and processing data [openstax-ics-2024_p023_para_01]. 2) Memory: addresses information by storing it in consistent locations [openstax-ics-2024_p023_para_01]. 3) Network: refers to the various technological devices that are connected and share information [openstax-ics-2024_p023_para_01]. 4) Storage: the physical components that permanently house a computer's data [openstax-ics-2024_p023_para_01].",
+    "citations": [
+      "openstax-ics-2024_p023_para_01"
+    ]
+  },
+  "6c1037f3662613f1c9c100cea3a9c53b1c7a8782c7fb3d5e3b1632287f7631ed": {
+    "action": "answer",
+    "answer": "The ENIAC used vacuum tubes, which are physical devices similar to light bulbs, to represent binary data. A vacuum tube represents the number 0 when its \"light\" is off and the number 1 when its \"light\" is on [openstax-ics-2024_p023_para_02].",
+    "citations": [
+      "openstax-ics-2024_p023_para_02"
+    ]
+  },
+  "950230980017e1eb1ebcb6de19e205d65ef0a6b56f2e1bd86f908601ba213241": {
+    "action": "answer",
+    "answer": "Theoretical computer science investigates three fundamental questions regarding Turing-complete computation: (1) whether a problem can be computed by a Turing-complete computer at all, (2) how that problem might be computed using an algorithm, and (3) how quickly or efficiently a computer can run such an algorithm [openstax-ics-2024_p024_para_02].",
+    "citations": [
+      "openstax-ics-2024_p024_para_02"
+    ]
+  },
+  "3337eb4dd0d61ef6a47312db3a22ddbc8073372963597ed522dc3e44af4ebc65": {
+    "action": "answer",
+    "answer": "The LOGO programming language was designed in the late 1960s by Wally Feurzeig, Seymour Papert, and Cynthia Solomon [openstax-ics-2024_p025_para_03]. Its primary educational purpose was to enable new kinds of computer-mediated expression and communication, specifically helping students learn concepts in mathematics and physics through body-syntonic reasoning by controlling a digital turtle [openstax-ics-2024_p025_para_03].",
+    "citations": [
+      "openstax-ics-2024_p025_para_03"
+    ]
+  },
+  "2bf84cceacad61ff7043eee025b1e4b0c665ca6196c4b76770a7a5548a8177a1": {
+    "action": "answer",
+    "answer": "Mark Dean helped develop the Industry Standard Architecture (ISA) bus at IBM, which allowed a computer's processor to communicate with other components [openstax-ics-2024_p027_para_00]. He held three of the nine patents used to create the original PC [openstax-ics-2024_p027_para_00].",
+    "citations": [
+      "openstax-ics-2024_p027_para_00"
+    ]
+  },
+  "39a4980c47dc03301d2254beb2f5b8e304f0fd6285f003aaa695b6bf77f377e5": {
+    "action": "answer",
+    "answer": "Under the U.S. H-1B visa program, there is an annual cap of 65,000 visa numbers, along with an additional 20,000 visa numbers for the master's exemption [openstax-ics-2024_p028_para_01]. These visas are initially valid for a period of three years, and employers can petition to extend them for an additional three years [openstax-ics-2024_p028_para_01].",
+    "citations": [
+      "openstax-ics-2024_p028_para_01"
+    ]
+  },
+  "73a11ecdf588c67518f21391b70474ea2dd0c97f4799455a90ed4e0aea8048ab": {
+    "action": "answer",
+    "answer": "The October 2020 Public Health England COVID-19 reporting failure highlighted a technical limitation regarding the maximum number of rows supported by spreadsheet software, which is often less than the data capacity of modern computers [openstax-ics-2024_p030_para_02]. Additionally, it exposed design limitations in software that fails to communicate data loss, irregularities, or errors to users [openstax-ics-2024_p030_para_02]. In this instance, mismanaged row limits led to the failure to report 15,841 positive cases [openstax-ics-2024_p030_para_02].",
+    "citations": [
+      "openstax-ics-2024_p030_para_02"
+    ]
+  },
+  "30634eb25af80b63e5277b6cb55b945d8769529308f715442647a4acee38e1b9": {
+    "action": "answer",
+    "answer": "The Y2K millennium bug was caused by the decision to store only the last two digits of a year instead of all four [openstax-ics-2024_p036_para_00]. Early programmers made this design choice because memory was expensive on both mainframe computers and early personal computers at the time [openstax-ics-2024_p036_para_00]. John Hamre, the United States Deputy Secretary of Defense, described the problem as the \"electronic equivalent of the El Niño\" [openstax-ics-2024_p036_para_00].",
+    "citations": [
+      "openstax-ics-2024_p036_para_00"
+    ]
+  },
+  "798311c76132a493cadad4e6aa14b01520aa07cff0a4900b0283bdba101ecceb": {
+    "action": "answer",
+    "answer": "Critics of the social determination of technology argue that AI algorithms are not neutral because the way they learn from big data represents a social value [openstax-ics-2024_p038_para_01]. Specifically, they point out that these algorithms encode a default preference for reproducing the biases inherent in big data, regardless of the application [openstax-ics-2024_p038_para_01]. While social determination attributes AI bias solely to the social values of the data, critics contend that the design of the algorithms themselves is a factor [openstax-ics-2024_p038_para_01].",
+    "citations": [
+      "openstax-ics-2024_p038_para_01"
+    ]
+  },
+  "04c18ed540560d946c772e36813ad3d0fcb576850cd75422dc4ffe13b876d9f8": {
+    "action": "answer",
+    "answer": "Digital redlining is defined as the practice of using technology, such as targeted advertisements, to promote discrimination [openstax-ics-2024_p041_para_01]. A cited example is a 2021 class-action lawsuit filed by a Facebook user against nine companies in the Washington, D.C., area, which alleged that the companies deliberately excluded people over the age of 50 from seeing housing advertisements in order to attract younger residents [openstax-ics-2024_p041_para_02].",
+    "citations": [
+      "openstax-ics-2024_p041_para_01",
+      "openstax-ics-2024_p041_para_02"
+    ]
+  },
+  "26e95e418f46c34e7da063b5503ab58ad081b94b7502a7953f3f427975cb3530": {
+    "action": "answer",
+    "answer": "The 'three As' phases of computational thinking are: 1. Abstraction, which involves problem formulation; 2. Automation, which focuses on expressing the solution; and 3. Analysis, which encompasses solution execution and evaluation [openstax-ics-2024_p052_para_01].",
+    "citations": [
+      "openstax-ics-2024_p052_para_01"
+    ]
+  },
+  "883b81129430676cbcde9901ce6724a3f7e5f36b0f33cd2123e8effb2bf29782": {
+    "action": "answer",
+    "answer": "An algorithm is defined as a sequence of steps or instructions that must be followed in a specific order to solve a problem [openstax-ics-2024_p056_para_00]. The two formats most commonly used to write algorithms are pseudocode, which is a written outline of logic using language and programming concepts, and flowcharts, which use diagrams to visually show the flow and direction of decisions [openstax-ics-2024_p056_para_00].",
+    "citations": [
+      "openstax-ics-2024_p056_para_00"
+    ]
+  },
+  "7b90a60b687e49863300c9cac0104d9571bbb0889f4dbdb70a0565bf0867127e": {
+    "action": "answer",
+    "answer": "Massive genetic datasets in DNA sequencing are processed using computational thinking by first breaking large DNA sequences into smaller pieces through decomposition [openstax-ics-2024_p061_para_00]. This is followed by pattern recognition to identify similarities or specific sequences, such as genes, within those pieces [openstax-ics-2024_p061_para_00]. Abstraction is then used to focus on the most relevant genetic regions while discarding unnecessary data [openstax-ics-2024_p061_para_00]. Finally, refined algorithms process and reconstruct the original sequence to identify genetic variations [openstax-ics-2024_p061_para_00].",
+    "citations": [
+      "openstax-ics-2024_p061_para_00"
+    ]
+  },
+  "73dcf7e1b081debb38ccfe656640b1b7783dc4c09e1e0935f7fa505e44b5752b": {
+    "action": "search",
+    "query": "Intel Core i9 clock frequency GHz retail launch price USD Chapter 1"
+  },
+  "f1c676eea031e71b3dbb69ed12a48ffabcac45ae36c7e677fa1b24ba5036ac66": {
+    "action": "search",
+    "query": "Intel Core i9 clock frequency GHz retail launch price USD Chapter 1"
+  },
+  "f998980b4cca4a76c2fad2914a4b279347d57a99a19d7536c5aea74dd15ab204": {
+    "action": "answer",
+    "answer": "",
+    "citations": []
+  },
+  "5d60f89e774c79ae9e25a9db7fd64d2ce2d1723ca9c400a6bbfdc12c5ea69c33": {
+    "action": "answer",
+    "answer": "The binary search algorithm locates a target number in a sorted array by repeatedly dividing the search interval in half [openstax-ics-2024_p020_para_03]. If the target number is less than the integer in the middle of the interval, the search narrows to the lower half; otherwise, it narrows to the upper half [openstax-ics-2024_p020_para_03]. This process continues until the number is found or the search interval is empty [openstax-ics-2024_p020_para_03].",
+    "citations": [
+      "openstax-ics-2024_p020_para_03"
+    ]
+  },
+  "7e7b86b04bf2ad40df027b14bf4bc7eabe6e99678afc872faae2d7244842e2d0": {
+    "action": "answer",
+    "answer": "When a user submits a prompt to a GenAI application, layers of abstraction operate to simplify interaction and manage complexity: the user interacts via a straightforward interface, the application's logic validates and directs the prompt invisibly, and the back end processes the prompt to generate a response [openstax-ics-2024_p055_para_02]. Each layer performs a distinct role to ensure the process remains efficient for both the user and the system [openstax-ics-2024_p055_para_02].",
+    "citations": [
+      "openstax-ics-2024_p055_para_02"
+    ]
+  },
+  "8bdbe1a94dd00c383d80fcb92652226c2b837ec8ccf705352039cc7d4e515579": {
+    "action": "answer",
+    "answer": "The provided text does not contain information regarding an OpenStax Certified Ethical Hacking degree program, nor does it specify GPA or tuition requirements.",
+    "citations": []
+  },
+  "8d3e0f0004a556d92d6b283b109901865559f0121270ea27c8057e9b6ecbccd2": {
+    "action": "answer",
+    "answer": "The binary search algorithm locates a target number in a sorted array by repeatedly dividing the search interval in half [openstax-ics-2024_p020_para_03]. If the target is less than the middle integer, the search interval is narrowed to the lower half; otherwise, it is narrowed to the upper half [openstax-ics-2024_p020_para_03]. This process repeats until the number is found or the interval becomes empty [openstax-ics-2024_p020_para_03].",
+    "citations": [
+      "openstax-ics-2024_p020_para_03"
+    ]
+  },
+  "8befeabbaac66d14c195319cc6c5a380f74c78daf08c047215750f813eb393ed": {
+    "action": "answer",
+    "answer": "According to Morgan Ames, the OLPC initiative failed to achieve its goals due to several factors, including electricity infrastructure problems, hardware reliability issues, software frustrations, and a lack of curricular materials [openstax-ics-2024_p028_para_03]. Additionally, the project's educational vision did not materialize because children frequently used the laptops for personal entertainment rather than the intended learning experiences [openstax-ics-2024_p029_para_00]. Ames argues that the project was deceptive in making social change and technological adoption appear straightforward, ignoring the complex social context and history in which the technology was embedded [openstax-ics-2024_p028_para_03, openstax-ics-2024_p029_para_00].",
+    "citations": [
+      "openstax-ics-2024_p028_para_03",
+      "openstax-ics-2024_p029_para_00"
+    ]
+  },
+  "f94480670cddb504571b139b546e8e025158d06af45c2967424944d8c770d29d": {
+    "action": "answer",
+    "answer": "Large neural networks often misidentify objects because they lack a deeper, conceptual representation of objects [openstax-ics-2024_p038_para_02]. Instead of relying on an intrinsic idea of an object, these networks function by memorizing every configuration of edges as they appear in sample images [openstax-ics-2024_p038_para_02]. Consequently, coincidental patterns of edges can trigger the network to misidentify objects, or minor input tweaks can cause chain reactions that lead to severe misidentification [openstax-ics-2024_p038_para_03].",
+    "citations": [
+      "openstax-ics-2024_p038_para_02",
+      "openstax-ics-2024_p038_para_03"
+    ]
+  },
+  "6375202b023b90c2d28bb2ffc5e1546b8be26cc981b152f847dd33ad47245563": {
+    "action": "answer",
+    "answer": "When a computer has only one CPU, it cannot execute algorithms simultaneously. Instead, it simulates parallelism by having the operating system execute the algorithms concurrently as separate tasks that share the single processor's resources [openstax-ics-2024_p057_para_01]. This simulated approach is less efficient than true parallelism [openstax-ics-2024_p057_para_01].",
+    "citations": [
+      "openstax-ics-2024_p057_para_01"
+    ]
+  },
+  "6421b84aa6b45f17568c7e6dd33eff1b41f728fd8b781c11415dd0de91dfeabb": {
+    "action": "answer",
+    "answer": "When a user submits a prompt to a GenAI application, layers of abstraction simplify the process: the user interacts with a straightforward interface, the application's logic validates and directs the prompt invisibly, and the back end processes the prompt to generate a response [openstax-ics-2024_p055_para_02]. Each layer performs a specific role to ensure the process remains efficient for both the user and the system [openstax-ics-2024_p055_para_02, openstax-ics-2024_p056_para_00].",
+    "citations": [
+      "openstax-ics-2024_p055_para_02",
+      "openstax-ics-2024_p056_para_00"
+    ]
+  },
+  "06cab2f0c14bc5d8ba9c9dc4a20b3f8124ecabeedd6e49a7a5155f0e60f03e5e": {
+    "action": "answer",
+    "answer": "The provided text does not state the exact civil fine imposed on the nine Washington, D.C. housing companies; it only mentions that a class-action lawsuit was filed in 2021 regarding the exclusion of people over the age of 50 from housing advertisements [openstax-ics-2024_p041_para_02].",
+    "citations": [
+      "openstax-ics-2024_p041_para_02"
+    ]
+  },
+  "82ed1e0b105eadabe74c5ef7c118e93ad10d750921e98573446997b87b5dead8": {
+    "action": "answer",
+    "answer": "The provided text does not contain information regarding an OpenStax Certified Ethical Hacking degree program, nor does it specify GPA or tuition requirements.",
+    "citations": []
+  }
+}

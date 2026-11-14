@@ -1,0 +1,15 @@
+{
+  "strategy": "2_dense_pgvector_b800",
+  "description": "Method 2: Dense Retrieval on Day 6 pgvector (gemini-embedding-001 768d), top_k=3, no filter, budget=800 chars",
+  "split": "dev",
+  "n": 15,
+  "hit1": 15,
+  "hit1_rate": 1.0,
+  "hit3": 15,
+  "hit3_rate": 1.0,
+  "context_hit": 0,
+  "context_hit_rate": 0.0,
+  "avg_context_chars": 113.5,
+  "median_ms": 13.01,
+  "service_cost_usd": 0.0
+}

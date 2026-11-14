@@ -1,0 +1,15 @@
+{
+  "strategy": "5_method4_improve3_hybrid_window_pack_b1500",
+  "description": "Method 4 & Improvement 3: Hybrid + Query-Focused Sentence-Window Compression under tight budget=1500 chars",
+  "split": "dev",
+  "n": 15,
+  "hit1": 15,
+  "hit1_rate": 1.0,
+  "hit3": 15,
+  "hit3_rate": 1.0,
+  "context_hit": 8,
+  "context_hit_rate": 0.5333,
+  "avg_context_chars": 1270.5,
+  "median_ms": 15.12,
+  "service_cost_usd": 0.0
+}

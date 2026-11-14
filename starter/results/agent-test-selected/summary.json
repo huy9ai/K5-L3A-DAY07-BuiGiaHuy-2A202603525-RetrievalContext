@@ -1,0 +1,51 @@
+{
+  "suite": "agent_test_selected_hybrid_b3000",
+  "split": "test",
+  "budget_chars": 3000,
+  "top_k": 3,
+  "max_searches": 2,
+  "use_filter": true,
+  "cases": 7,
+  "provider_errors": 7,
+  "tool_use": {
+    "n": 0,
+    "N": 0
+  },
+  "grounded_answer": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "N": 0,
+    "mean": null
+  },
+  "citation_validity": {
+    "n": 0,
+    "N": 0
+  },
+  "answer_citation_coverage": {
+    "n": 0,
+    "N": 0
+  },
+  "abstention": {
+    "n": 0,
+    "N": 0
+  },
+  "false_abstention": {
+    "n": 0,
+    "N": 0
+  },
+  "avg_searches_per_case": 0.0,
+  "search_count_distribution": {},
+  "context_grade_distribution_answerable": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "N": 0,
+    "mean": 0.0
+  },
+  "median_ms": 130006.99,
+  "llm_api_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "estimated_cost_usd": 0.0
+}

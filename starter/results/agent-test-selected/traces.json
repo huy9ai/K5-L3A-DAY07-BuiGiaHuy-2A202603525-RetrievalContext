@@ -1,0 +1,112 @@
+[
+  {
+    "query_id": "q16",
+    "split": "test",
+    "question": "How does the binary search algorithm locate a target number in a sorted array of integers?",
+    "answerable": true,
+    "applied_filter": null,
+    "status": "error",
+    "error": "connection timeout expired",
+    "answer": "",
+    "citations": [],
+    "num_searches": 0,
+    "elapsed_ms": 130006.99,
+    "events": []
+  },
+  {
+    "query_id": "q17",
+    "split": "test",
+    "question": "According to Morgan Ames in The Charisma Machine, why did the MIT Media Lab's One Laptop Per Child (OLPC) initiative fail to achieve its goals?",
+    "answerable": true,
+    "applied_filter": null,
+    "status": "error",
+    "error": "connection timeout expired",
+    "answer": "",
+    "citations": [],
+    "num_searches": 0,
+    "elapsed_ms": 130013.69,
+    "events": []
+  },
+  {
+    "query_id": "q18",
+    "split": "test",
+    "question": "Why do large neural networks sometimes misidentify objects in images instead of relying on an intrinsic concept of objects?",
+    "answerable": true,
+    "applied_filter": {
+      "chapter": "chapter_1",
+      "section": "1.3"
+    },
+    "status": "error",
+    "error": "connection timeout expired",
+    "answer": "",
+    "citations": [],
+    "num_searches": 0,
+    "elapsed_ms": 130014.19,
+    "events": []
+  },
+  {
+    "query_id": "q19",
+    "split": "test",
+    "question": "When a computer has only one central processing unit (CPU), how does it handle parallel algorithm execution, and how does this compare to true parallelism?",
+    "answerable": true,
+    "applied_filter": null,
+    "status": "error",
+    "error": "connection timeout expired",
+    "answer": "",
+    "citations": [],
+    "num_searches": 0,
+    "elapsed_ms": 130003.65,
+    "events": []
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "question": "How do layers of abstraction operate from the user interface to the back end when a user submits a prompt to a generative AI (GenAI) application?",
+    "answerable": true,
+    "applied_filter": {
+      "chapter": "chapter_2",
+      "section": "2.1"
+    },
+    "status": "error",
+    "error": "connection timeout expired",
+    "answer": "",
+    "citations": [],
+    "num_searches": 0,
+    "elapsed_ms": 130012.96,
+    "events": []
+  },
+  {
+    "query_id": "u03",
+    "split": "test",
+    "question": "What exact civil fine in dollars did the court impose on the nine Washington, D.C. housing companies in the 2021 Facebook targeted-advertising lawsuit discussed in Section 1.3?",
+    "answerable": false,
+    "applied_filter": {
+      "chapter": "chapter_1",
+      "section": "1.3"
+    },
+    "status": "error",
+    "error": "connection timeout expired",
+    "answer": "",
+    "citations": [],
+    "num_searches": 0,
+    "elapsed_ms": 130004.33,
+    "events": []
+  },
+  {
+    "query_id": "u04",
+    "split": "test",
+    "question": "According to Section 1.2, what minimum GPA and tuition fee are required to enroll in the OpenStax Certified Ethical Hacking degree program?",
+    "answerable": false,
+    "applied_filter": {
+      "chapter": "chapter_1",
+      "section": "1.2"
+    },
+    "status": "error",
+    "error": "connection timeout expired",
+    "answer": "",
+    "citations": [],
+    "num_searches": 0,
+    "elapsed_ms": 130006.9,
+    "events": []
+  }
+]

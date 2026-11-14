@@ -1,0 +1,15 @@
+{
+  "strategy": "1_baseline_tfidf_b800",
+  "description": "Method 1 (Baseline): Lexical TF-IDF, top_k=3, no filter, budget=800 chars",
+  "split": "dev",
+  "n": 15,
+  "hit1": 13,
+  "hit1_rate": 0.8667,
+  "hit3": 15,
+  "hit3_rate": 1.0,
+  "context_hit": 0,
+  "context_hit_rate": 0.0,
+  "avg_context_chars": 242.3,
+  "median_ms": 0.34,
+  "service_cost_usd": 0.0
+}

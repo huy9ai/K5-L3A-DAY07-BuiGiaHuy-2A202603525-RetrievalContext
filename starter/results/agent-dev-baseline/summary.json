@@ -1,0 +1,53 @@
+{
+  "suite": "agent_dev_baseline_tfidf_b800",
+  "split": "dev",
+  "budget_chars": 800,
+  "top_k": 3,
+  "max_searches": 2,
+  "use_filter": false,
+  "cases": 17,
+  "provider_errors": 0,
+  "tool_use": {
+    "n": 17,
+    "N": 17
+  },
+  "grounded_answer": {
+    "0": 15,
+    "1": 0,
+    "2": 0,
+    "N": 15,
+    "mean": 0.0
+  },
+  "citation_validity": {
+    "n": 0,
+    "N": 0
+  },
+  "answer_citation_coverage": {
+    "n": 0,
+    "N": 0
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2
+  },
+  "false_abstention": {
+    "n": 15,
+    "N": 15
+  },
+  "avg_searches_per_case": 2,
+  "search_count_distribution": {
+    "2": 17
+  },
+  "context_grade_distribution_answerable": {
+    "0": 7,
+    "1": 8,
+    "2": 0,
+    "N": 15,
+    "mean": 0.5333
+  },
+  "median_ms": 0.75,
+  "llm_api_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "estimated_cost_usd": 0.0
+}

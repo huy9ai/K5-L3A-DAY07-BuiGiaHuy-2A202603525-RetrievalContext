@@ -1,0 +1,15 @@
+{
+  "strategy": "test_selected_hybrid_rrf_filter_b3000",
+  "description": "Selected Config on Test: Hybrid (Dense pgvector + BM25 + RRF) + Metadata Filter, top_k=3, budget=3000 chars",
+  "split": "test",
+  "n": 5,
+  "hit1": 4,
+  "hit1_rate": 0.8,
+  "hit3": 5,
+  "hit3_rate": 1.0,
+  "context_hit": 5,
+  "context_hit_rate": 1.0,
+  "avg_context_chars": 2334.4,
+  "median_ms": 12.65,
+  "service_cost_usd": 0.0
+}

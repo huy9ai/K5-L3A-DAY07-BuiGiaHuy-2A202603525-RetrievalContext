@@ -1,0 +1,15 @@
+{
+  "strategy": "3_improve1_dense_pgvector_b3000",
+  "description": "Improvement 1: Dense pgvector + Expand Context Budget to 3000 chars (fixes Dev Error #1 chunk drop)",
+  "split": "dev",
+  "n": 15,
+  "hit1": 15,
+  "hit1_rate": 1.0,
+  "hit3": 15,
+  "hit3_rate": 1.0,
+  "context_hit": 15,
+  "context_hit_rate": 1.0,
+  "avg_context_chars": 2628.3,
+  "median_ms": 26.03,
+  "service_cost_usd": 0.0
+}
